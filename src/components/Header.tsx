@@ -62,6 +62,9 @@ export default function Header() {
             <Link href="/tools/compare" className="text-sm text-gray-600 hover:text-blue-600 transition-colors">
               专业比对
             </Link>
+            <Link href="/guides" className="text-sm text-gray-600 hover:text-blue-600 transition-colors">
+              专题文章
+            </Link>
           </nav>
 
           {/* Mobile menu button */}
@@ -99,6 +102,9 @@ export default function Header() {
             </Link>
             <Link href="/tools/compare" className="block py-2 text-sm text-gray-700 hover:text-blue-600">
               专业比对
+            </Link>
+            <Link href="/guides" className="block py-2 text-sm text-gray-700 hover:text-blue-600">
+              专题文章
             </Link>
           </div>
         )}

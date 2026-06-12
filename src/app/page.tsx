@@ -7,12 +7,14 @@ import {
   getAISafeMajors,
   getAllMajors,
 } from '@/lib/majors';
+import { getAllGuides } from '@/lib/guides';
 
 export default function HomePage() {
   const topROI = getTopMajorsByROI(6);
   const topSalary = getTopMajorsBySalary(6);
   const aiSafe = getAISafeMajors(6);
   const allCount = getAllMajors().length;
+  const guides = getAllGuides();
 
   return (
     <div>
@@ -108,6 +110,42 @@ export default function HomePage() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {aiSafe.map((m) => (<MajorCard key={m.id} major={m} />))}
+        </div>
+      </section>
+
+      {/* Guides */}
+      <section className="bg-gray-50 py-14">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-end justify-between mb-6">
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900">专题深度文章</h2>
+              <p className="text-sm text-gray-500 mt-1">专业对比分析、志愿填报指南、AI时代选专业策略</p>
+            </div>
+            <Link href="/guides/" className="text-sm text-blue-600 font-medium shrink-0">查看全部 →</Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {guides.slice(0, 3).map((g) => (
+              <Link
+                key={g.slug}
+                href={`/guide/${g.slug}/`}
+                className="block bg-white rounded-xl border border-gray-200 p-5 hover:border-blue-300 hover:shadow-md transition-all group"
+              >
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-lg">{g.coverEmoji}</span>
+                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">{g.category}</span>
+                </div>
+                <h3 className="text-sm font-bold text-gray-900 group-hover:text-blue-700 transition-colors line-clamp-2 mb-1.5">
+                  {g.title}
+                </h3>
+                <p className="text-xs text-gray-500 line-clamp-2 mb-2">{g.description}</p>
+                <div className="flex items-center gap-2 text-xs text-gray-400">
+                  <span>{g.readTime}</span>
+                  <span>·</span>
+                  <span>{g.date}</span>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
