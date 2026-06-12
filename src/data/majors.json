@@ -11,11 +11,26 @@
     "salary_3year": 22000,
     "salary_5year": 35000,
     "salary_trend": [
-      { "year": 1, "salary": 10500 },
-      { "year": 2, "salary": 14500 },
-      { "year": 3, "salary": 19500 },
-      { "year": 4, "salary": 26000 },
-      { "year": 5, "salary": 32000 }
+      {
+        "year": 1,
+        "salary": 10500
+      },
+      {
+        "year": 2,
+        "salary": 14500
+      },
+      {
+        "year": 3,
+        "salary": 19500
+      },
+      {
+        "year": 4,
+        "salary": 26000
+      },
+      {
+        "year": 5,
+        "salary": 32000
+      }
     ],
     "employment_rate": 95.2,
     "relevance_rate": 78.5,
@@ -25,26 +40,93 @@
     "ai_risk_level": "低",
     "ai_risk_score": 15,
     "ai_risk_description": "计算机专业毕业生是AI工具的创造者而非被替代者。虽然基础编程工作可能被AI辅助，但系统架构设计、复杂问题求解、跨领域创新等核心能力仍不可替代。该专业毕业生掌握AI底层技术，在AI时代反而需求更大。",
-    "top_industries": ["互联网/IT", "金融科技", "人工智能", "游戏开发", "通信"],
-    "top_positions": ["软件开发工程师", "算法工程师", "系统架构师", "数据分析师", "产品经理"],
-    "top_cities": ["北京", "深圳", "上海", "杭州", "成都"],
+    "top_industries": [
+      "互联网/IT",
+      "金融科技",
+      "人工智能",
+      "游戏开发",
+      "通信"
+    ],
+    "top_positions": [
+      "软件开发工程师",
+      "算法工程师",
+      "系统架构师",
+      "数据分析师",
+      "产品经理"
+    ],
+    "top_cities": [
+      "北京",
+      "深圳",
+      "上海",
+      "杭州",
+      "成都"
+    ],
     "top_schools": [
-      { "name": "清华大学", "employment_rate": 98.5, "avg_salary": 28000 },
-      { "name": "北京大学", "employment_rate": 97.8, "avg_salary": 26000 },
-      { "name": "浙江大学", "employment_rate": 97.2, "avg_salary": 24000 },
-      { "name": "上海交通大学", "employment_rate": 96.8, "avg_salary": 25000 },
-      { "name": "北京航空航天大学", "employment_rate": 96.5, "avg_salary": 23000 }
+      {
+        "name": "清华大学",
+        "employment_rate": 98.5,
+        "avg_salary": 28000
+      },
+      {
+        "name": "北京大学",
+        "employment_rate": 97.8,
+        "avg_salary": 26000
+      },
+      {
+        "name": "浙江大学",
+        "employment_rate": 97.2,
+        "avg_salary": 24000
+      },
+      {
+        "name": "上海交通大学",
+        "employment_rate": 96.8,
+        "avg_salary": 25000
+      },
+      {
+        "name": "北京航空航天大学",
+        "employment_rate": 96.5,
+        "avg_salary": 23000
+      }
     ],
-    "related_majors": ["ruanjian-gongcheng", "rengong-zhineng", "shuju-kexue-yu-dashuju", "wangluo-gongcheng", "xinxi-anquan"],
+    "related_majors": [
+      "ruanjian-gongcheng",
+      "rengong-zhineng",
+      "shuju-kexue-yu-dashuju",
+      "wangluo-gongcheng",
+      "xinxi-anquan"
+    ],
     "faq": [
-      { "q": "计算机科学与技术和软件工程有什么区别？", "a": "计算机科学偏重理论和底层（算法、操作系统、体系结构），软件工程偏重工程实践（项目管理、软件开发流程）。CS毕业生选择面更宽，软件工程毕业生上手更快。从就业来看两者高度重叠，但算法岗和大厂核心研发岗更偏爱CS背景。" },
-      { "q": "学计算机必须数学很好吗？", "a": "计算机核心课程（算法、数据结构、离散数学、机器学习）确实需要一定的数学基础，但不需要数学竞赛级别的天赋。高考数学120分以上基本可以胜任。更重要的是逻辑思维能力和持续学习的意愿。" },
-      { "q": "计算机专业饱和了吗？", "a": "低端岗位确实在饱和（简单的CRUD开发），但高端岗位（AI、系统架构、安全、量化）严重供不应求。关键在于在校期间学到什么深度，而不只是拿到一个学位。" },
-      { "q": "AI会让程序员失业吗？", "a": "AI会替代部分重复性编程工作，但同时会创造更多高层次需求：AI系统开发、提示工程、AI安全、AI产品设计等。掌握AI工具的开发者生产力大幅提升，反而更具竞争力。" }
+      {
+        "q": "计算机科学与技术和软件工程有什么区别？",
+        "a": "计算机科学偏重理论和底层（算法、操作系统、体系结构），软件工程偏重工程实践（项目管理、软件开发流程）。CS毕业生选择面更宽，软件工程毕业生上手更快。从就业来看两者高度重叠，但算法岗和大厂核心研发岗更偏爱CS背景。"
+      },
+      {
+        "q": "学计算机必须数学很好吗？",
+        "a": "计算机核心课程（算法、数据结构、离散数学、机器学习）确实需要一定的数学基础，但不需要数学竞赛级别的天赋。高考数学120分以上基本可以胜任。更重要的是逻辑思维能力和持续学习的意愿。"
+      },
+      {
+        "q": "计算机专业饱和了吗？",
+        "a": "低端岗位确实在饱和（简单的CRUD开发），但高端岗位（AI、系统架构、安全、量化）严重供不应求。关键在于在校期间学到什么深度，而不只是拿到一个学位。"
+      },
+      {
+        "q": "AI会让程序员失业吗？",
+        "a": "AI会替代部分重复性编程工作，但同时会创造更多高层次需求：AI系统开发、提示工程、AI安全、AI产品设计等。掌握AI工具的开发者生产力大幅提升，反而更具竞争力。"
+      }
     ],
-    "tags": ["高薪", "好就业", "IT", "编程", "互联网"],
+    "tags": [
+      "高薪",
+      "好就业",
+      "IT",
+      "编程",
+      "互联网"
+    ],
     "gender_ratio": "男7:女3",
-    "recommended_for": ["数学/物理成绩好", "喜欢逻辑推理", "对新技术敏感", "自主学习能力强"],
+    "recommended_for": [
+      "数学/物理成绩好",
+      "喜欢逻辑推理",
+      "对新技术敏感",
+      "自主学习能力强"
+    ],
     "seo_title": "计算机科学与技术专业就业前景与薪资分析（2026最新数据）",
     "seo_description": "计算机科学与技术专业2025届毕业生平均起薪12500元/月，就业率95.2%。深度分析计算机专业的薪资走势、就业方向、推荐院校及AI时代前景。"
   },
@@ -60,11 +142,26 @@
     "salary_3year": 21000,
     "salary_5year": 33000,
     "salary_trend": [
-      { "year": 1, "salary": 10000 },
-      { "year": 2, "salary": 14000 },
-      { "year": 3, "salary": 18500 },
-      { "year": 4, "salary": 25000 },
-      { "year": 5, "salary": 30000 }
+      {
+        "year": 1,
+        "salary": 10000
+      },
+      {
+        "year": 2,
+        "salary": 14000
+      },
+      {
+        "year": 3,
+        "salary": 18500
+      },
+      {
+        "year": 4,
+        "salary": 25000
+      },
+      {
+        "year": 5,
+        "salary": 30000
+      }
     ],
     "employment_rate": 94.8,
     "relevance_rate": 80.2,
@@ -74,24 +171,84 @@
     "ai_risk_level": "低",
     "ai_risk_score": 20,
     "ai_risk_description": "软件工程强调工程管理和团队协作，AI工具可以提升编码效率但无法替代需求理解、架构决策和项目管理。软件工程师在使用AI辅助开发后生产力大幅提高，需求不减反增。",
-    "top_industries": ["互联网/IT", "金融科技", "企业服务SaaS", "游戏", "电商"],
-    "top_positions": ["全栈开发工程师", "前端开发工程师", "后端开发工程师", "技术项目经理", "DevOps工程师"],
-    "top_cities": ["北京", "深圳", "上海", "杭州", "广州"],
+    "top_industries": [
+      "互联网/IT",
+      "金融科技",
+      "企业服务SaaS",
+      "游戏",
+      "电商"
+    ],
+    "top_positions": [
+      "全栈开发工程师",
+      "前端开发工程师",
+      "后端开发工程师",
+      "技术项目经理",
+      "DevOps工程师"
+    ],
+    "top_cities": [
+      "北京",
+      "深圳",
+      "上海",
+      "杭州",
+      "广州"
+    ],
     "top_schools": [
-      { "name": "清华大学", "employment_rate": 98.0, "avg_salary": 26000 },
-      { "name": "北京大学", "employment_rate": 97.5, "avg_salary": 25000 },
-      { "name": "华东师范大学", "employment_rate": 96.0, "avg_salary": 21000 },
-      { "name": "武汉大学", "employment_rate": 95.5, "avg_salary": 20000 },
-      { "name": "电子科技大学", "employment_rate": 96.2, "avg_salary": 22000 }
+      {
+        "name": "清华大学",
+        "employment_rate": 98,
+        "avg_salary": 26000
+      },
+      {
+        "name": "北京大学",
+        "employment_rate": 97.5,
+        "avg_salary": 25000
+      },
+      {
+        "name": "华东师范大学",
+        "employment_rate": 96,
+        "avg_salary": 21000
+      },
+      {
+        "name": "武汉大学",
+        "employment_rate": 95.5,
+        "avg_salary": 20000
+      },
+      {
+        "name": "电子科技大学",
+        "employment_rate": 96.2,
+        "avg_salary": 22000
+      }
     ],
-    "related_majors": ["jisuanji-kexue-yu-jishu", "rengong-zhineng", "shuju-kexue-yu-dashuju", "wangluo-gongcheng"],
+    "related_majors": [
+      "jisuanji-kexue-yu-jishu",
+      "rengong-zhineng",
+      "shuju-kexue-yu-dashuju",
+      "wangluo-gongcheng"
+    ],
     "faq": [
-      { "q": "软件工程比计算机科学更容易学吗？", "a": "软件工程的理论深度略低于计算机科学，但实践强度更高。需要大量写代码和做项目。如果你喜欢'动手做东西'胜过'研究原理'，软件工程可能更适合你。" },
-      { "q": "软件工程未来能转算法岗吗？", "a": "可以，但需要自学补充数学和机器学习基础。软件工程出身的同学在工程实现能力上有优势，缺的是理论深度，提前规划即可弥补。" }
+      {
+        "q": "软件工程比计算机科学更容易学吗？",
+        "a": "软件工程的理论深度略低于计算机科学，但实践强度更高。需要大量写代码和做项目。如果你喜欢'动手做东西'胜过'研究原理'，软件工程可能更适合你。"
+      },
+      {
+        "q": "软件工程未来能转算法岗吗？",
+        "a": "可以，但需要自学补充数学和机器学习基础。软件工程出身的同学在工程实现能力上有优势，缺的是理论深度，提前规划即可弥补。"
+      }
     ],
-    "tags": ["高薪", "好就业", "IT", "编程", "互联网"],
+    "tags": [
+      "高薪",
+      "好就业",
+      "IT",
+      "编程",
+      "互联网"
+    ],
     "gender_ratio": "男7:女3",
-    "recommended_for": ["动手能力强", "喜欢做项目", "团队协作好", "数学中等即可"],
+    "recommended_for": [
+      "动手能力强",
+      "喜欢做项目",
+      "团队协作好",
+      "数学中等即可"
+    ],
     "seo_title": "软件工程专业就业前景与薪资分析（2026最新数据）",
     "seo_description": "软件工程专业2025届毕业生平均起薪12000元/月，就业率94.8%。对比计算机科学，分析软件工程的就业方向、薪资趋势和职业发展路径。"
   },
@@ -107,37 +264,108 @@
     "salary_3year": 28000,
     "salary_5year": 45000,
     "salary_trend": [
-      { "year": 1, "salary": 13000 },
-      { "year": 2, "salary": 18500 },
-      { "year": 3, "salary": 25000 },
-      { "year": 4, "salary": 34000 },
-      { "year": 5, "salary": 42000 }
+      {
+        "year": 1,
+        "salary": 13000
+      },
+      {
+        "year": 2,
+        "salary": 18500
+      },
+      {
+        "year": 3,
+        "salary": 25000
+      },
+      {
+        "year": 4,
+        "salary": 34000
+      },
+      {
+        "year": 5,
+        "salary": 42000
+      }
     ],
     "employment_rate": 93.5,
-    "relevance_rate": 75.0,
-    "satisfaction": 85.0,
+    "relevance_rate": 75,
+    "satisfaction": 85,
     "roi_index": 91,
     "roi_grade": "A",
     "ai_risk_level": "极低",
     "ai_risk_score": 5,
     "ai_risk_description": "AI专业毕业生本身就是AI技术的创造者和推动者，不仅不存在被替代风险，反而处于AI产业爆发的核心位置。但需注意本科阶段所学可能深度不足，建议继续深造。",
-    "top_industries": ["人工智能", "互联网/IT", "自动驾驶", "金融科技", "智能制造"],
-    "top_positions": ["算法工程师", "机器学习工程师", "NLP工程师", "计算机视觉工程师", "AI研究员"],
-    "top_cities": ["北京", "深圳", "上海", "杭州", "苏州"],
+    "top_industries": [
+      "人工智能",
+      "互联网/IT",
+      "自动驾驶",
+      "金融科技",
+      "智能制造"
+    ],
+    "top_positions": [
+      "算法工程师",
+      "机器学习工程师",
+      "NLP工程师",
+      "计算机视觉工程师",
+      "AI研究员"
+    ],
+    "top_cities": [
+      "北京",
+      "深圳",
+      "上海",
+      "杭州",
+      "苏州"
+    ],
     "top_schools": [
-      { "name": "清华大学", "employment_rate": 97.0, "avg_salary": 32000 },
-      { "name": "北京大学", "employment_rate": 96.5, "avg_salary": 30000 },
-      { "name": "浙江大学", "employment_rate": 96.0, "avg_salary": 28000 },
-      { "name": "上海交通大学", "employment_rate": 95.8, "avg_salary": 29000 }
+      {
+        "name": "清华大学",
+        "employment_rate": 97,
+        "avg_salary": 32000
+      },
+      {
+        "name": "北京大学",
+        "employment_rate": 96.5,
+        "avg_salary": 30000
+      },
+      {
+        "name": "浙江大学",
+        "employment_rate": 96,
+        "avg_salary": 28000
+      },
+      {
+        "name": "上海交通大学",
+        "employment_rate": 95.8,
+        "avg_salary": 29000
+      }
     ],
-    "related_majors": ["jisuanji-kexue-yu-jishu", "shuju-kexue-yu-dashuju", "ruanjian-gongcheng", "tongji-xue"],
+    "related_majors": [
+      "jisuanji-kexue-yu-jishu",
+      "shuju-kexue-yu-dashuju",
+      "ruanjian-gongcheng",
+      "tongji-xue"
+    ],
     "faq": [
-      { "q": "人工智能专业必须读研吗？", "a": "强烈建议读研。AI的核心岗位（算法研究员、AI架构师）普遍要求硕士以上学历。本科毕业可以找到AI应用开发相关工作，但核心竞争力不足。985高校AI方向约70%以上的学生选择深造。" },
-      { "q": "人工智能和计算机科学选哪个？", "a": "如果你对AI有明确兴趣且数学很强（高考数学135+），选AI。如果不确定，选计算机科学更灵活——学CS也可以选修AI课程，但学AI转其他CS方向难度更大。" }
+      {
+        "q": "人工智能专业必须读研吗？",
+        "a": "强烈建议读研。AI的核心岗位（算法研究员、AI架构师）普遍要求硕士以上学历。本科毕业可以找到AI应用开发相关工作，但核心竞争力不足。985高校AI方向约70%以上的学生选择深造。"
+      },
+      {
+        "q": "人工智能和计算机科学选哪个？",
+        "a": "如果你对AI有明确兴趣且数学很强（高考数学135+），选AI。如果不确定，选计算机科学更灵活——学CS也可以选修AI课程，但学AI转其他CS方向难度更大。"
+      }
     ],
-    "tags": ["高薪", "前沿", "AI", "深度学习", "数学要求高"],
+    "tags": [
+      "高薪",
+      "前沿",
+      "AI",
+      "深度学习",
+      "数学要求高"
+    ],
     "gender_ratio": "男7:女3",
-    "recommended_for": ["数学成绩优异", "对AI/机器人有浓厚兴趣", "有科研或深造计划", "竞赛背景加分"],
+    "recommended_for": [
+      "数学成绩优异",
+      "对AI/机器人有浓厚兴趣",
+      "有科研或深造计划",
+      "竞赛背景加分"
+    ],
     "seo_title": "人工智能专业就业前景与薪资分析（2026最新数据）",
     "seo_description": "人工智能专业2025届平均起薪15000元/月，5年薪资可达45000元。分析AI专业的就业方向、推荐院校、读研必要性及与计算机科学的差异。"
   },
@@ -153,37 +381,108 @@
     "salary_3year": 20000,
     "salary_5year": 31000,
     "salary_trend": [
-      { "year": 1, "salary": 9500 },
-      { "year": 2, "salary": 13500 },
-      { "year": 3, "salary": 18000 },
-      { "year": 4, "salary": 24000 },
-      { "year": 5, "salary": 29000 }
+      {
+        "year": 1,
+        "salary": 9500
+      },
+      {
+        "year": 2,
+        "salary": 13500
+      },
+      {
+        "year": 3,
+        "salary": 18000
+      },
+      {
+        "year": 4,
+        "salary": 24000
+      },
+      {
+        "year": 5,
+        "salary": 29000
+      }
     ],
     "employment_rate": 93.8,
     "relevance_rate": 76.5,
-    "satisfaction": 81.0,
+    "satisfaction": 81,
     "roi_index": 89,
     "roi_grade": "A",
     "ai_risk_level": "低",
     "ai_risk_score": 18,
     "ai_risk_description": "数据分析的很多基础工作正在被AI工具自动化（如自动生成报表），但深度分析和商业洞察仍需人类判断。未来数据科学家将从'做报表'转向'做决策'，价值不减反增。",
-    "top_industries": ["互联网/IT", "金融", "电商零售", "咨询", "医疗健康"],
-    "top_positions": ["数据分析师", "数据工程师", "商业智能分析师", "数据产品经理", "大数据开发工程师"],
-    "top_cities": ["北京", "上海", "深圳", "杭州", "广州"],
+    "top_industries": [
+      "互联网/IT",
+      "金融",
+      "电商零售",
+      "咨询",
+      "医疗健康"
+    ],
+    "top_positions": [
+      "数据分析师",
+      "数据工程师",
+      "商业智能分析师",
+      "数据产品经理",
+      "大数据开发工程师"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "深圳",
+      "杭州",
+      "广州"
+    ],
     "top_schools": [
-      { "name": "北京大学", "employment_rate": 97.0, "avg_salary": 24000 },
-      { "name": "中国人民大学", "employment_rate": 96.0, "avg_salary": 22000 },
-      { "name": "复旦大学", "employment_rate": 95.5, "avg_salary": 23000 },
-      { "name": "华东师范大学", "employment_rate": 94.5, "avg_salary": 20000 }
+      {
+        "name": "北京大学",
+        "employment_rate": 97,
+        "avg_salary": 24000
+      },
+      {
+        "name": "中国人民大学",
+        "employment_rate": 96,
+        "avg_salary": 22000
+      },
+      {
+        "name": "复旦大学",
+        "employment_rate": 95.5,
+        "avg_salary": 23000
+      },
+      {
+        "name": "华东师范大学",
+        "employment_rate": 94.5,
+        "avg_salary": 20000
+      }
     ],
-    "related_majors": ["jisuanji-kexue-yu-jishu", "tongji-xue", "rengong-zhineng", "xinxi-guanli-yu-xinxi-xitong"],
+    "related_majors": [
+      "jisuanji-kexue-yu-jishu",
+      "tongji-xue",
+      "rengong-zhineng",
+      "xinxi-guanli-yu-xinxi-xitong"
+    ],
     "faq": [
-      { "q": "数据科学和统计学的区别？", "a": "统计学更偏理论和数学推导，数据科学更偏应用和工程实现。统计学毕业生多去传统行业或研究机构，数据科学毕业生更多去互联网和科技公司。两者核心能力重叠度很高。" },
-      { "q": "大数据专业需要很强的编程能力吗？", "a": "需要掌握Python和SQL，但要求低于纯软件工程专业。重点是数据处理和分析思维，而非复杂系统开发。" }
+      {
+        "q": "数据科学和统计学的区别？",
+        "a": "统计学更偏理论和数学推导，数据科学更偏应用和工程实现。统计学毕业生多去传统行业或研究机构，数据科学毕业生更多去互联网和科技公司。两者核心能力重叠度很高。"
+      },
+      {
+        "q": "大数据专业需要很强的编程能力吗？",
+        "a": "需要掌握Python和SQL，但要求低于纯软件工程专业。重点是数据处理和分析思维，而非复杂系统开发。"
+      }
     ],
-    "tags": ["高薪", "数据分析", "大数据", "Python", "AI"],
+    "tags": [
+      "高薪",
+      "数据分析",
+      "大数据",
+      "Python",
+      "AI"
+    ],
     "gender_ratio": "男6:女4",
-    "recommended_for": ["逻辑思维好", "对数据敏感", "喜欢挖掘洞察", "数学中等以上"],
+    "recommended_for": [
+      "逻辑思维好",
+      "对数据敏感",
+      "喜欢挖掘洞察",
+      "数学中等以上"
+    ],
     "seo_title": "数据科学与大数据技术专业就业前景（2026最新数据）",
     "seo_description": "数据科学专业2025届平均起薪11000元/月，就业率93.8%。分析大数据专业的就业方向、薪资趋势、与统计学的区别及AI时代前景。"
   },
@@ -199,39 +498,115 @@
     "salary_3year": 9000,
     "salary_5year": 15000,
     "salary_trend": [
-      { "year": 1, "salary": 5000 },
-      { "year": 2, "salary": 6500 },
-      { "year": 3, "salary": 8500 },
-      { "year": 4, "salary": 11500 },
-      { "year": 5, "salary": 14000 }
+      {
+        "year": 1,
+        "salary": 5000
+      },
+      {
+        "year": 2,
+        "salary": 6500
+      },
+      {
+        "year": 3,
+        "salary": 8500
+      },
+      {
+        "year": 4,
+        "salary": 11500
+      },
+      {
+        "year": 5,
+        "salary": 14000
+      }
     ],
     "employment_rate": 96.8,
-    "relevance_rate": 95.0,
-    "satisfaction": 75.0,
+    "relevance_rate": 95,
+    "satisfaction": 75,
     "roi_index": 72,
     "roi_grade": "B",
     "ai_risk_level": "极低",
     "ai_risk_score": 3,
     "ai_risk_description": "医疗诊断需要复杂的综合判断、医患沟通和实操技能，AI在可预见的未来只能作为辅助诊断工具，无法替代临床医生。医学是AI抗风险能力最强的专业之一。",
-    "top_industries": ["医疗卫生", "医学研究", "公共卫生", "医学教育"],
-    "top_positions": ["临床医生", "住院医师", "主治医师", "医学研究员"],
-    "top_cities": ["北京", "上海", "广州", "成都", "武汉"],
+    "top_industries": [
+      "医疗卫生",
+      "医学研究",
+      "公共卫生",
+      "医学教育"
+    ],
+    "top_positions": [
+      "临床医生",
+      "住院医师",
+      "主治医师",
+      "医学研究员"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "广州",
+      "成都",
+      "武汉"
+    ],
     "top_schools": [
-      { "name": "北京协和医学院", "employment_rate": 99.0, "avg_salary": 18000 },
-      { "name": "北京大学医学部", "employment_rate": 98.5, "avg_salary": 17000 },
-      { "name": "复旦大学上海医学院", "employment_rate": 98.0, "avg_salary": 16000 },
-      { "name": "上海交通大学医学院", "employment_rate": 97.8, "avg_salary": 16500 },
-      { "name": "四川大学华西医学中心", "employment_rate": 97.5, "avg_salary": 15000 }
+      {
+        "name": "北京协和医学院",
+        "employment_rate": 99,
+        "avg_salary": 18000
+      },
+      {
+        "name": "北京大学医学部",
+        "employment_rate": 98.5,
+        "avg_salary": 17000
+      },
+      {
+        "name": "复旦大学上海医学院",
+        "employment_rate": 98,
+        "avg_salary": 16000
+      },
+      {
+        "name": "上海交通大学医学院",
+        "employment_rate": 97.8,
+        "avg_salary": 16500
+      },
+      {
+        "name": "四川大学华西医学中心",
+        "employment_rate": 97.5,
+        "avg_salary": 15000
+      }
     ],
-    "related_majors": ["kouqiang-yixue", "yufang-yixue", "yaoxue", "huli-xue"],
+    "related_majors": [
+      "kouqiang-yixue",
+      "yufang-yixue",
+      "yaoxue",
+      "huli-xue"
+    ],
     "faq": [
-      { "q": "临床医学5年和8年有什么区别？", "a": "5年制是本科，毕业后需规培3年。8年制（本硕博连读）毕业可直接获得博士学位，免去考研考博环节。毕业后同样需要规培，但职称晋升更快。分数允许的情况下，8年制性价比更高。" },
-      { "q": "医生真的越老越吃香吗？", "a": "是的，医生的核心资产是临床经验，随着年龄增长价值递增。但也需要持续学习新知识新技术。30岁左右是收入拐点（主治医师后），40-50岁达到职业巅峰。" },
-      { "q": "家庭条件一般能学医吗？", "a": "5年本科+3年规培期间收入很低（规培月薪3000-5000元），需要家庭有8年左右的经济支持能力。但从40年职业生涯来看回报可观。建议评估家庭能否支撑前8年的低收入期。" }
+      {
+        "q": "临床医学5年和8年有什么区别？",
+        "a": "5年制是本科，毕业后需规培3年。8年制（本硕博连读）毕业可直接获得博士学位，免去考研考博环节。毕业后同样需要规培，但职称晋升更快。分数允许的情况下，8年制性价比更高。"
+      },
+      {
+        "q": "医生真的越老越吃香吗？",
+        "a": "是的，医生的核心资产是临床经验，随着年龄增长价值递增。但也需要持续学习新知识新技术。30岁左右是收入拐点（主治医师后），40-50岁达到职业巅峰。"
+      },
+      {
+        "q": "家庭条件一般能学医吗？",
+        "a": "5年本科+3年规培期间收入很低（规培月薪3000-5000元），需要家庭有8年左右的经济支持能力。但从40年职业生涯来看回报可观。建议评估家庭能否支撑前8年的低收入期。"
+      }
     ],
-    "tags": ["铁饭碗", "稳定", "社会地位高", "周期长", "AI免疫"],
+    "tags": [
+      "铁饭碗",
+      "稳定",
+      "社会地位高",
+      "周期长",
+      "AI免疫"
+    ],
     "gender_ratio": "男4:女6",
-    "recommended_for": ["生物/化学成绩好", "吃苦耐劳", "有责任心", "不急于快速赚钱"],
+    "recommended_for": [
+      "生物/化学成绩好",
+      "吃苦耐劳",
+      "有责任心",
+      "不急于快速赚钱"
+    ],
     "seo_title": "临床医学专业就业前景与薪资分析（2026最新数据）",
     "seo_description": "临床医学专业就业率96.8%，5年薪资14000元/月。解读医学生培养周期、规培政策、不同层次医院收入差异及AI时代的职业安全性。"
   },
@@ -247,38 +622,110 @@
     "salary_3year": 15000,
     "salary_5year": 25000,
     "salary_trend": [
-      { "year": 1, "salary": 7000 },
-      { "year": 2, "salary": 10500 },
-      { "year": 3, "salary": 14000 },
-      { "year": 4, "salary": 19000 },
-      { "year": 5, "salary": 23000 }
+      {
+        "year": 1,
+        "salary": 7000
+      },
+      {
+        "year": 2,
+        "salary": 10500
+      },
+      {
+        "year": 3,
+        "salary": 14000
+      },
+      {
+        "year": 4,
+        "salary": 19000
+      },
+      {
+        "year": 5,
+        "salary": 23000
+      }
     ],
     "employment_rate": 95.5,
-    "relevance_rate": 93.0,
-    "satisfaction": 83.0,
+    "relevance_rate": 93,
+    "satisfaction": 83,
     "roi_index": 82,
     "roi_grade": "A",
     "ai_risk_level": "极低",
     "ai_risk_score": 8,
     "ai_risk_description": "口腔治疗依赖精细的手工操作和患者个体化方案设计，AI可以辅助影像诊断和方案规划，但实际操作完全依赖医生。口腔治疗的强操作属性使其成为医疗领域最难被AI替代的方向之一。",
-    "top_industries": ["医疗卫生", "口腔连锁机构", "私人诊所", "口腔材料/器械"],
-    "top_positions": ["口腔医生", "正畸医生", "种植医生", "口腔诊所合伙人"],
-    "top_cities": ["北京", "上海", "广州", "深圳", "成都"],
+    "top_industries": [
+      "医疗卫生",
+      "口腔连锁机构",
+      "私人诊所",
+      "口腔材料/器械"
+    ],
+    "top_positions": [
+      "口腔医生",
+      "正畸医生",
+      "种植医生",
+      "口腔诊所合伙人"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "广州",
+      "深圳",
+      "成都"
+    ],
     "top_schools": [
-      { "name": "四川大学华西口腔医学院", "employment_rate": 99.0, "avg_salary": 28000 },
-      { "name": "北京大学口腔医学院", "employment_rate": 98.5, "avg_salary": 30000 },
-      { "name": "上海交通大学口腔医学院", "employment_rate": 98.0, "avg_salary": 27000 },
-      { "name": "武汉大学口腔医学院", "employment_rate": 97.5, "avg_salary": 25000 },
-      { "name": "中山大学光华口腔医学院", "employment_rate": 97.0, "avg_salary": 26000 }
+      {
+        "name": "四川大学华西口腔医学院",
+        "employment_rate": 99,
+        "avg_salary": 28000
+      },
+      {
+        "name": "北京大学口腔医学院",
+        "employment_rate": 98.5,
+        "avg_salary": 30000
+      },
+      {
+        "name": "上海交通大学口腔医学院",
+        "employment_rate": 98,
+        "avg_salary": 27000
+      },
+      {
+        "name": "武汉大学口腔医学院",
+        "employment_rate": 97.5,
+        "avg_salary": 25000
+      },
+      {
+        "name": "中山大学光华口腔医学院",
+        "employment_rate": 97,
+        "avg_salary": 26000
+      }
     ],
-    "related_majors": ["linchuang-yixue", "yaoxue", "huli-xue"],
+    "related_majors": [
+      "linchuang-yixue",
+      "yaoxue",
+      "huli-xue"
+    ],
     "faq": [
-      { "q": "口腔医学薪资真的比临床高吗？", "a": "从同资历对比来看，口腔医生独立执业后的收入上线确实更高。公立医院口腔科vs临床科室收入差距不大，但口腔医生的私立就业市场更广阔，顶尖正畸/种植医生年收入可达100万+。" },
-      { "q": "口腔医学好就业吗？", "a": "就业面比临床窄（不能去综合科室），但就业质量好。连锁口腔机构大量扩张，三甲口腔医院竞争激烈但对口腔医生的总需求在增加。如果有创业意愿，口腔是最容易独立开诊所的医学专业。" }
+      {
+        "q": "口腔医学薪资真的比临床高吗？",
+        "a": "从同资历对比来看，口腔医生独立执业后的收入上线确实更高。公立医院口腔科vs临床科室收入差距不大，但口腔医生的私立就业市场更广阔，顶尖正畸/种植医生年收入可达100万+。"
+      },
+      {
+        "q": "口腔医学好就业吗？",
+        "a": "就业面比临床窄（不能去综合科室），但就业质量好。连锁口腔机构大量扩张，三甲口腔医院竞争激烈但对口腔医生的总需求在增加。如果有创业意愿，口腔是最容易独立开诊所的医学专业。"
+      }
     ],
-    "tags": ["好就业", "收入高", "可创业", "AI免疫", "热门"],
+    "tags": [
+      "好就业",
+      "收入高",
+      "可创业",
+      "AI免疫",
+      "热门"
+    ],
     "gender_ratio": "男3:女7",
-    "recommended_for": ["动手能力精细", "审美能力好", "生物/化学成绩好", "沟通能力强"],
+    "recommended_for": [
+      "动手能力精细",
+      "审美能力好",
+      "生物/化学成绩好",
+      "沟通能力强"
+    ],
     "seo_title": "口腔医学专业就业前景与薪资分析（2026最新数据）",
     "seo_description": "口腔医学5年薪资可达25000元/月，就业满意度83%。分析口腔医生的薪资天花板、私立vs公立选择、正畸与种植方向的发展前景。"
   },
@@ -294,38 +741,113 @@
     "salary_3year": 16000,
     "salary_5year": 28000,
     "salary_trend": [
-      { "year": 1, "salary": 7500 },
-      { "year": 2, "salary": 10500 },
-      { "year": 3, "salary": 14500 },
-      { "year": 4, "salary": 20000 },
-      { "year": 5, "salary": 26000 }
+      {
+        "year": 1,
+        "salary": 7500
+      },
+      {
+        "year": 2,
+        "salary": 10500
+      },
+      {
+        "year": 3,
+        "salary": 14500
+      },
+      {
+        "year": 4,
+        "salary": 20000
+      },
+      {
+        "year": 5,
+        "salary": 26000
+      }
     ],
     "employment_rate": 88.5,
-    "relevance_rate": 72.0,
-    "satisfaction": 76.0,
+    "relevance_rate": 72,
+    "satisfaction": 76,
     "roi_index": 78,
     "roi_grade": "B",
     "ai_risk_level": "中",
     "ai_risk_score": 45,
     "ai_risk_description": "量化交易、风控建模等方向已被AI深度渗透，传统信贷审批、基础财务分析等工作在加速自动化。但高端的投资决策、客户关系和结构化产品设计仍需人类判断。金融+编程的复合型人才更抗AI。",
-    "top_industries": ["银行", "证券/基金", "保险", "金融科技", "企业财务"],
-    "top_positions": ["投资银行分析师", "基金经理", "风险管理师", "金融分析师", "财务顾问"],
-    "top_cities": ["上海", "北京", "深圳", "香港", "广州"],
+    "top_industries": [
+      "银行",
+      "证券/基金",
+      "保险",
+      "金融科技",
+      "企业财务"
+    ],
+    "top_positions": [
+      "投资银行分析师",
+      "基金经理",
+      "风险管理师",
+      "金融分析师",
+      "财务顾问"
+    ],
+    "top_cities": [
+      "上海",
+      "北京",
+      "深圳",
+      "香港",
+      "广州"
+    ],
     "top_schools": [
-      { "name": "北京大学光华管理学院", "employment_rate": 96.0, "avg_salary": 32000 },
-      { "name": "清华大学五道口金融学院", "employment_rate": 97.0, "avg_salary": 35000 },
-      { "name": "复旦大学经济学院", "employment_rate": 95.5, "avg_salary": 28000 },
-      { "name": "上海交通大学上海高级金融学院", "employment_rate": 96.0, "avg_salary": 30000 },
-      { "name": "中国人民大学财政金融学院", "employment_rate": 94.0, "avg_salary": 25000 }
+      {
+        "name": "北京大学光华管理学院",
+        "employment_rate": 96,
+        "avg_salary": 32000
+      },
+      {
+        "name": "清华大学五道口金融学院",
+        "employment_rate": 97,
+        "avg_salary": 35000
+      },
+      {
+        "name": "复旦大学经济学院",
+        "employment_rate": 95.5,
+        "avg_salary": 28000
+      },
+      {
+        "name": "上海交通大学上海高级金融学院",
+        "employment_rate": 96,
+        "avg_salary": 30000
+      },
+      {
+        "name": "中国人民大学财政金融学院",
+        "employment_rate": 94,
+        "avg_salary": 25000
+      }
     ],
-    "related_majors": ["kuaiji-xue", "jingji-xue", "jinrong-gongcheng", "guoji-jingji-yu-maoyi"],
+    "related_majors": [
+      "kuaiji-xue",
+      "jingji-xue",
+      "jinrong-gongcheng",
+      "guoji-jingji-yu-maoyi"
+    ],
     "faq": [
-      { "q": "金融学和经济学有什么区别？", "a": "经济学偏理论研究（宏观经济、产业政策），金融学偏实务操作（投资、融资、风险管理）。简单说：经济学是'为什么'，金融学是'怎么做'。就业来看金融学更贴近行业，经济学考公更有利。" },
-      { "q": "非名校学金融有出路吗？", "a": "普通院校金融毕业生进头部券商/基金的难度极大，但可以考虑商业银行、保险、企业财务、互联网金融等方向。考证（CFA/FRM/CPA）可以一定程度弥补学历短板。" }
+      {
+        "q": "金融学和经济学有什么区别？",
+        "a": "经济学偏理论研究（宏观经济、产业政策），金融学偏实务操作（投资、融资、风险管理）。简单说：经济学是'为什么'，金融学是'怎么做'。就业来看金融学更贴近行业，经济学考公更有利。"
+      },
+      {
+        "q": "非名校学金融有出路吗？",
+        "a": "普通院校金融毕业生进头部券商/基金的难度极大，但可以考虑商业银行、保险、企业财务、互联网金融等方向。考证（CFA/FRM/CPA）可以一定程度弥补学历短板。"
+      }
     ],
-    "tags": ["高薪上限高", "两极分化", "行业稳定", "AI冲击", "考证重要"],
+    "tags": [
+      "高薪上限高",
+      "两极分化",
+      "行业稳定",
+      "AI冲击",
+      "考证重要"
+    ],
     "gender_ratio": "男4:女6",
-    "recommended_for": ["数学好", "对商业感兴趣", "抗压能力强", "目标名校"],
+    "recommended_for": [
+      "数学好",
+      "对商业感兴趣",
+      "抗压能力强",
+      "目标名校"
+    ],
     "seo_title": "金融学专业就业前景与薪资分析（2026最新数据）",
     "seo_description": "金融学专业2025届平均起薪8500元/月，名校毕业3-5年后可达28000元。深度解析金融行业分层、头部岗位门槛、证书价值及AI冲击。"
   },
@@ -341,38 +863,113 @@
     "salary_3year": 11000,
     "salary_5year": 18000,
     "salary_trend": [
-      { "year": 1, "salary": 5500 },
-      { "year": 2, "salary": 7500 },
-      { "year": 3, "salary": 10000 },
-      { "year": 4, "salary": 13500 },
-      { "year": 5, "salary": 17000 }
+      {
+        "year": 1,
+        "salary": 5500
+      },
+      {
+        "year": 2,
+        "salary": 7500
+      },
+      {
+        "year": 3,
+        "salary": 10000
+      },
+      {
+        "year": 4,
+        "salary": 13500
+      },
+      {
+        "year": 5,
+        "salary": 17000
+      }
     ],
     "employment_rate": 91.2,
-    "relevance_rate": 85.0,
-    "satisfaction": 72.0,
+    "relevance_rate": 85,
+    "satisfaction": 72,
     "roi_index": 74,
     "roi_grade": "B",
     "ai_risk_level": "高",
     "ai_risk_score": 72,
     "ai_risk_description": "基础的记账、报税、发票处理工作正在被财务软件和AI快速自动化。但高端的财务分析、税务筹划、审计判断、内部控制等需要专业判断的领域仍然稳固。未来会计将从'记录型'转向'分析决策型'。",
-    "top_industries": ["会计师事务所", "企业财务", "银行", "税务/审计", "政府"],
-    "top_positions": ["审计师", "税务顾问", "财务经理", "管理会计师", "财务总监"],
-    "top_cities": ["北京", "上海", "深圳", "广州", "杭州"],
+    "top_industries": [
+      "会计师事务所",
+      "企业财务",
+      "银行",
+      "税务/审计",
+      "政府"
+    ],
+    "top_positions": [
+      "审计师",
+      "税务顾问",
+      "财务经理",
+      "管理会计师",
+      "财务总监"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "深圳",
+      "广州",
+      "杭州"
+    ],
     "top_schools": [
-      { "name": "中央财经大学", "employment_rate": 95.0, "avg_salary": 18000 },
-      { "name": "上海财经大学", "employment_rate": 94.5, "avg_salary": 19000 },
-      { "name": "厦门大学", "employment_rate": 93.0, "avg_salary": 16000 },
-      { "name": "中南财经政法大学", "employment_rate": 92.0, "avg_salary": 14000 },
-      { "name": "东北财经大学", "employment_rate": 91.5, "avg_salary": 13000 }
+      {
+        "name": "中央财经大学",
+        "employment_rate": 95,
+        "avg_salary": 18000
+      },
+      {
+        "name": "上海财经大学",
+        "employment_rate": 94.5,
+        "avg_salary": 19000
+      },
+      {
+        "name": "厦门大学",
+        "employment_rate": 93,
+        "avg_salary": 16000
+      },
+      {
+        "name": "中南财经政法大学",
+        "employment_rate": 92,
+        "avg_salary": 14000
+      },
+      {
+        "name": "东北财经大学",
+        "employment_rate": 91.5,
+        "avg_salary": 13000
+      }
     ],
-    "related_majors": ["jinrong-xue", "shenji-xue", "caiwu-guanli", "shuiwu"],
+    "related_majors": [
+      "jinrong-xue",
+      "shenji-xue",
+      "caiwu-guanli",
+      "shuiwu"
+    ],
     "faq": [
-      { "q": "CPA证书真的那么重要吗？", "a": "是的。CPA是会计行业含金量最高的证书，通过后薪资平均提升30%-50%。四大会计师事务所更是将CPA作为晋升硬指标。建议大学期间开始备考，毕业后2-3年内通过。" },
-      { "q": "会计会被AI取代吗？", "a": "基础核算岗位已经在大幅减少，但管理会计、税务筹划、审计等高阶岗位需求在增加。未来的会计需要懂业务、会分析、能决策，而不是只会记账。" }
+      {
+        "q": "CPA证书真的那么重要吗？",
+        "a": "是的。CPA是会计行业含金量最高的证书，通过后薪资平均提升30%-50%。四大会计师事务所更是将CPA作为晋升硬指标。建议大学期间开始备考，毕业后2-3年内通过。"
+      },
+      {
+        "q": "会计会被AI取代吗？",
+        "a": "基础核算岗位已经在大幅减少，但管理会计、税务筹划、审计等高阶岗位需求在增加。未来的会计需要懂业务、会分析、能决策，而不是只会记账。"
+      }
     ],
-    "tags": ["万金油", "需求稳定", "考证", "AI冲击大", "铁饭碗"],
+    "tags": [
+      "万金油",
+      "需求稳定",
+      "考证",
+      "AI冲击大",
+      "铁饭碗"
+    ],
     "gender_ratio": "男2:女8",
-    "recommended_for": ["细心耐心", "数字敏感", "愿意考证", "数学一般即可"],
+    "recommended_for": [
+      "细心耐心",
+      "数字敏感",
+      "愿意考证",
+      "数学一般即可"
+    ],
     "seo_title": "会计学专业就业前景与薪资分析（2026最新数据）",
     "seo_description": "会计学专业就业率91.2%，5年薪资18000元/月。解析会计行业在AI时代的转型方向、CPA证书价值及会计师事务所职业路径。"
   },
@@ -388,38 +985,113 @@
     "salary_3year": 12000,
     "salary_5year": 22000,
     "salary_trend": [
-      { "year": 1, "salary": 5000 },
-      { "year": 2, "salary": 7500 },
-      { "year": 3, "salary": 11000 },
-      { "year": 4, "salary": 16000 },
-      { "year": 5, "salary": 20000 }
+      {
+        "year": 1,
+        "salary": 5000
+      },
+      {
+        "year": 2,
+        "salary": 7500
+      },
+      {
+        "year": 3,
+        "salary": 11000
+      },
+      {
+        "year": 4,
+        "salary": 16000
+      },
+      {
+        "year": 5,
+        "salary": 20000
+      }
     ],
     "employment_rate": 82.5,
-    "relevance_rate": 68.0,
+    "relevance_rate": 68,
     "satisfaction": 73.5,
     "roi_index": 68,
     "roi_grade": "C",
     "ai_risk_level": "中低",
     "ai_risk_score": 35,
     "ai_risk_description": "法律文书检索、合同审查等基础工作正在被AI法律工具替代。但法律的核心——解释、论证和说服——仍高度依赖人类专业判断。AI是法律人的效率工具而非替代品。",
-    "top_industries": ["律师事务所", "公检法机关", "企业法务", "政府法制部门", "合规咨询"],
-    "top_positions": ["律师", "法官", "检察官", "企业法务总监", "合规官"],
-    "top_cities": ["北京", "上海", "深圳", "广州", "杭州"],
+    "top_industries": [
+      "律师事务所",
+      "公检法机关",
+      "企业法务",
+      "政府法制部门",
+      "合规咨询"
+    ],
+    "top_positions": [
+      "律师",
+      "法官",
+      "检察官",
+      "企业法务总监",
+      "合规官"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "深圳",
+      "广州",
+      "杭州"
+    ],
     "top_schools": [
-      { "name": "中国政法大学", "employment_rate": 90.0, "avg_salary": 22000 },
-      { "name": "北京大学法学院", "employment_rate": 92.0, "avg_salary": 26000 },
-      { "name": "中国人民大学法学院", "employment_rate": 91.0, "avg_salary": 24000 },
-      { "name": "华东政法大学", "employment_rate": 88.0, "avg_salary": 20000 },
-      { "name": "武汉大学法学院", "employment_rate": 87.5, "avg_salary": 18000 }
+      {
+        "name": "中国政法大学",
+        "employment_rate": 90,
+        "avg_salary": 22000
+      },
+      {
+        "name": "北京大学法学院",
+        "employment_rate": 92,
+        "avg_salary": 26000
+      },
+      {
+        "name": "中国人民大学法学院",
+        "employment_rate": 91,
+        "avg_salary": 24000
+      },
+      {
+        "name": "华东政法大学",
+        "employment_rate": 88,
+        "avg_salary": 20000
+      },
+      {
+        "name": "武汉大学法学院",
+        "employment_rate": 87.5,
+        "avg_salary": 18000
+      }
     ],
-    "related_majors": ["zhishi-chanquan", "zhengzhi-xue", "shehui-xue", "xinwen-xue"],
+    "related_majors": [
+      "zhishi-chanquan",
+      "zhengzhi-xue",
+      "shehui-xue",
+      "xinwen-xue"
+    ],
     "faq": [
-      { "q": "法考真的很难吗？", "a": "国家统一法律职业资格考试（法考）通过率约10-15%，需要系统备考6-12个月。名校法学专业的一次通过率显著高于平均水平（30-40%）。没有通过法考的法学毕业生就业选择面大受限制。" },
-      { "q": "法学一定要读研吗？", "a": "越来越有必要。近年来很多法院检察院的招录要求硕士学历，红圈所（顶级律所）几乎只招硕士。法学硕士在考公和律所求职中都有明显优势。" }
+      {
+        "q": "法考真的很难吗？",
+        "a": "国家统一法律职业资格考试（法考）通过率约10-15%，需要系统备考6-12个月。名校法学专业的一次通过率显著高于平均水平（30-40%）。没有通过法考的法学毕业生就业选择面大受限制。"
+      },
+      {
+        "q": "法学一定要读研吗？",
+        "a": "越来越有必要。近年来很多法院检察院的招录要求硕士学历，红圈所（顶级律所）几乎只招硕士。法学硕士在考公和律所求职中都有明显优势。"
+      }
     ],
-    "tags": ["社会地位高", "长期回报好", "竞争激烈", "考证", "公务员可选"],
+    "tags": [
+      "社会地位高",
+      "长期回报好",
+      "竞争激烈",
+      "考证",
+      "公务员可选"
+    ],
     "gender_ratio": "男4:女6",
-    "recommended_for": ["记忆力好", "逻辑表达强", "善于辩论", "对公平正义有追求"],
+    "recommended_for": [
+      "记忆力好",
+      "逻辑表达强",
+      "善于辩论",
+      "对公平正义有追求"
+    ],
     "seo_title": "法学专业就业前景与薪资分析（2026最新数据）",
     "seo_description": "法学专业就业率82.5%，5年薪资可达22000元/月。分析法考通过率、公检法vs律所vs企业法务三条路径的优劣及AI对法律行业的影响。"
   },
@@ -435,38 +1107,113 @@
     "salary_3year": 17000,
     "salary_5year": 26000,
     "salary_trend": [
-      { "year": 1, "salary": 8500 },
-      { "year": 2, "salary": 11500 },
-      { "year": 3, "salary": 15500 },
-      { "year": 4, "salary": 20500 },
-      { "year": 5, "salary": 25000 }
+      {
+        "year": 1,
+        "salary": 8500
+      },
+      {
+        "year": 2,
+        "salary": 11500
+      },
+      {
+        "year": 3,
+        "salary": 15500
+      },
+      {
+        "year": 4,
+        "salary": 20500
+      },
+      {
+        "year": 5,
+        "salary": 25000
+      }
     ],
-    "employment_rate": 93.0,
-    "relevance_rate": 80.0,
-    "satisfaction": 79.0,
+    "employment_rate": 93,
+    "relevance_rate": 80,
+    "satisfaction": 79,
     "roi_index": 86,
     "roi_grade": "A",
     "ai_risk_level": "低",
     "ai_risk_score": 22,
     "ai_risk_description": "电子硬件设计和系统集成需要实物测试和调试，AI在此领域更多作为辅助设计工具。芯片设计和硬件开发的核心环节难以被AI替代。",
-    "top_industries": ["半导体/芯片", "通信设备", "消费电子", "汽车电子", "航空航天"],
-    "top_positions": ["硬件工程师", "嵌入式开发工程师", "FPGA工程师", "射频工程师", "芯片设计工程师"],
-    "top_cities": ["深圳", "上海", "北京", "成都", "西安"],
+    "top_industries": [
+      "半导体/芯片",
+      "通信设备",
+      "消费电子",
+      "汽车电子",
+      "航空航天"
+    ],
+    "top_positions": [
+      "硬件工程师",
+      "嵌入式开发工程师",
+      "FPGA工程师",
+      "射频工程师",
+      "芯片设计工程师"
+    ],
+    "top_cities": [
+      "深圳",
+      "上海",
+      "北京",
+      "成都",
+      "西安"
+    ],
     "top_schools": [
-      { "name": "电子科技大学", "employment_rate": 97.0, "avg_salary": 22000 },
-      { "name": "西安电子科技大学", "employment_rate": 96.0, "avg_salary": 20000 },
-      { "name": "北京邮电大学", "employment_rate": 95.5, "avg_salary": 21000 },
-      { "name": "东南大学", "employment_rate": 95.0, "avg_salary": 19000 },
-      { "name": "浙江大学", "employment_rate": 96.5, "avg_salary": 23000 }
+      {
+        "name": "电子科技大学",
+        "employment_rate": 97,
+        "avg_salary": 22000
+      },
+      {
+        "name": "西安电子科技大学",
+        "employment_rate": 96,
+        "avg_salary": 20000
+      },
+      {
+        "name": "北京邮电大学",
+        "employment_rate": 95.5,
+        "avg_salary": 21000
+      },
+      {
+        "name": "东南大学",
+        "employment_rate": 95,
+        "avg_salary": 19000
+      },
+      {
+        "name": "浙江大学",
+        "employment_rate": 96.5,
+        "avg_salary": 23000
+      }
     ],
-    "related_majors": ["jisuanji-kexue-yu-jishu", "tongxin-gongcheng", "zidonghua", "weidianzi-kexue-yu-gongcheng"],
+    "related_majors": [
+      "jisuanji-kexue-yu-jishu",
+      "tongxin-gongcheng",
+      "zidonghua",
+      "weidianzi-kexue-yu-gongcheng"
+    ],
     "faq": [
-      { "q": "电子信息工程和计算机科学怎么选？", "a": "喜欢软件/算法选计算机，喜欢硬件/电路选电信。电信就业面不如计算机广但竞争也相对小。近年芯片产业受国家重视，硬件工程师薪资涨幅非常可观。如果愿意接受'硬件的学习难度+不输软件的薪资'，电信是个好选择。" },
-      { "q": "本科就业还是读研？", "a": "芯片设计方向强烈建议读研（硕士是入行门槛），嵌入式/硬件测试/电子制造方向本科可就业。读研后薪资提升约40-60%。" }
+      {
+        "q": "电子信息工程和计算机科学怎么选？",
+        "a": "喜欢软件/算法选计算机，喜欢硬件/电路选电信。电信就业面不如计算机广但竞争也相对小。近年芯片产业受国家重视，硬件工程师薪资涨幅非常可观。如果愿意接受'硬件的学习难度+不输软件的薪资'，电信是个好选择。"
+      },
+      {
+        "q": "本科就业还是读研？",
+        "a": "芯片设计方向强烈建议读研（硕士是入行门槛），嵌入式/硬件测试/电子制造方向本科可就业。读研后薪资提升约40-60%。"
+      }
     ],
-    "tags": ["芯片", "硬件", "半导体", "国家战略", "高薪"],
+    "tags": [
+      "芯片",
+      "硬件",
+      "半导体",
+      "国家战略",
+      "高薪"
+    ],
     "gender_ratio": "男8:女2",
-    "recommended_for": ["物理/数学好", "喜欢动手实验", "对硬件感兴趣", "能静下心"],
+    "recommended_for": [
+      "物理/数学好",
+      "喜欢动手实验",
+      "对硬件感兴趣",
+      "能静下心"
+    ],
     "seo_title": "电子信息工程专业就业前景与薪资分析（2026最新数据）",
     "seo_description": "电子信息工程2025届平均起薪9500元/月，就业率93%。解读半导体/芯片产业机遇、电信vs计算机怎么选、读研必要性。"
   },
@@ -482,38 +1229,113 @@
     "salary_3year": 11000,
     "salary_5year": 16000,
     "salary_trend": [
-      { "year": 1, "salary": 6000 },
-      { "year": 2, "salary": 8000 },
-      { "year": 3, "salary": 10000 },
-      { "year": 4, "salary": 12500 },
-      { "year": 5, "salary": 15000 }
+      {
+        "year": 1,
+        "salary": 6000
+      },
+      {
+        "year": 2,
+        "salary": 8000
+      },
+      {
+        "year": 3,
+        "salary": 10000
+      },
+      {
+        "year": 4,
+        "salary": 12500
+      },
+      {
+        "year": 5,
+        "salary": 15000
+      }
     ],
-    "employment_rate": 88.0,
-    "relevance_rate": 82.0,
-    "satisfaction": 62.0,
+    "employment_rate": 88,
+    "relevance_rate": 82,
+    "satisfaction": 62,
     "roi_index": 65,
     "roi_grade": "C",
     "ai_risk_level": "中",
     "ai_risk_score": 40,
     "ai_risk_description": "BIM、参数化设计、AI辅助结构计算等技术正在改变土木行业的工作方式。基础绘图和计算工作可能被AI替代，但项目管理和现场决策依赖经验判断。土木工程正在从劳动密集型向技术密集型转型。",
-    "top_industries": ["建筑/施工", "房地产", "设计院", "市政工程", "工程咨询"],
-    "top_positions": ["结构工程师", "岩土工程师", "项目经理", "BIM工程师", "造价工程师"],
-    "top_cities": ["北京", "上海", "广州", "深圳", "武汉"],
+    "top_industries": [
+      "建筑/施工",
+      "房地产",
+      "设计院",
+      "市政工程",
+      "工程咨询"
+    ],
+    "top_positions": [
+      "结构工程师",
+      "岩土工程师",
+      "项目经理",
+      "BIM工程师",
+      "造价工程师"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "广州",
+      "深圳",
+      "武汉"
+    ],
     "top_schools": [
-      { "name": "同济大学", "employment_rate": 95.0, "avg_salary": 18000 },
-      { "name": "东南大学", "employment_rate": 94.0, "avg_salary": 17000 },
-      { "name": "清华大学", "employment_rate": 93.5, "avg_salary": 20000 },
-      { "name": "哈尔滨工业大学", "employment_rate": 92.0, "avg_salary": 15000 },
-      { "name": "重庆大学", "employment_rate": 91.0, "avg_salary": 14000 }
+      {
+        "name": "同济大学",
+        "employment_rate": 95,
+        "avg_salary": 18000
+      },
+      {
+        "name": "东南大学",
+        "employment_rate": 94,
+        "avg_salary": 17000
+      },
+      {
+        "name": "清华大学",
+        "employment_rate": 93.5,
+        "avg_salary": 20000
+      },
+      {
+        "name": "哈尔滨工业大学",
+        "employment_rate": 92,
+        "avg_salary": 15000
+      },
+      {
+        "name": "重庆大学",
+        "employment_rate": 91,
+        "avg_salary": 14000
+      }
     ],
-    "related_majors": ["jianzhu-xue", "shuili-gongcheng", "gongcheng-guanli", "daolu-qiaoliang"],
+    "related_majors": [
+      "jianzhu-xue",
+      "shuili-gongcheng",
+      "gongcheng-guanli",
+      "daolu-qiaoliang"
+    ],
     "faq": [
-      { "q": "土木工程真的是天坑专业吗？", "a": "相比10年前的黄金期确实降温了，但也没有网传那么悲观。关键是方向选择：传统的工地施工确实辛苦且薪资增长缓慢，但市政工程（地铁/管廊）、海外工程（一带一路）、检测加固等方向仍有较好发展。核心是考取注册工程师执业资格。" },
-      { "q": "土木工程师收入低吗？", "a": "刚毕业确实不算高（尤其和中建等施工单位签派遣合同的），但在设计院或甲方（地产公司）3-5年后拿到执业资格，年薪15-25万是正常水平。海外项目收入高出2-3倍。" }
+      {
+        "q": "土木工程真的是天坑专业吗？",
+        "a": "相比10年前的黄金期确实降温了，但也没有网传那么悲观。关键是方向选择：传统的工地施工确实辛苦且薪资增长缓慢，但市政工程（地铁/管廊）、海外工程（一带一路）、检测加固等方向仍有较好发展。核心是考取注册工程师执业资格。"
+      },
+      {
+        "q": "土木工程师收入低吗？",
+        "a": "刚毕业确实不算高（尤其和中建等施工单位签派遣合同的），但在设计院或甲方（地产公司）3-5年后拿到执业资格，年薪15-25万是正常水平。海外项目收入高出2-3倍。"
+      }
     ],
-    "tags": ["传统工科", "基建", "周期性强", "需要吃苦", "执业资格重要"],
+    "tags": [
+      "传统工科",
+      "基建",
+      "周期性强",
+      "需要吃苦",
+      "执业资格重要"
+    ],
     "gender_ratio": "男9:女1",
-    "recommended_for": ["能吃苦耐劳", "物理/力学好", "接受外派/工地", "有耐心"],
+    "recommended_for": [
+      "能吃苦耐劳",
+      "物理/力学好",
+      "接受外派/工地",
+      "有耐心"
+    ],
     "seo_title": "土木工程专业就业前景与薪资分析（2026最新数据）",
     "seo_description": "土木工程行业深度调整期的就业前景分析。起薪7000元/月，5年16000元。解读设计院vs施工vs甲方三条路径及转型方向。"
   },
@@ -529,38 +1351,113 @@
     "salary_3year": 15000,
     "salary_5year": 23000,
     "salary_trend": [
-      { "year": 1, "salary": 7500 },
-      { "year": 2, "salary": 10500 },
-      { "year": 3, "salary": 14000 },
-      { "year": 4, "salary": 18000 },
-      { "year": 5, "salary": 22000 }
+      {
+        "year": 1,
+        "salary": 7500
+      },
+      {
+        "year": 2,
+        "salary": 10500
+      },
+      {
+        "year": 3,
+        "salary": 14000
+      },
+      {
+        "year": 4,
+        "salary": 18000
+      },
+      {
+        "year": 5,
+        "salary": 22000
+      }
     ],
     "employment_rate": 92.5,
-    "relevance_rate": 78.0,
+    "relevance_rate": 78,
     "satisfaction": 77.5,
     "roi_index": 83,
     "roi_grade": "B",
     "ai_risk_level": "低",
     "ai_risk_score": 25,
     "ai_risk_description": "自动化和AI本质上是互补关系——AI提供'决策大脑'，自动化负责'执行手脚'。智能制造和工业互联网的发展需要大量自动化工程师来落实AI的物理层部署。",
-    "top_industries": ["智能制造", "汽车制造", "电力/能源", "机器人", "航空航天"],
-    "top_positions": ["自动化工程师", "PLC工程师", "控制系统工程师", "机器人工程师", "智能制造工程师"],
-    "top_cities": ["上海", "深圳", "苏州", "北京", "广州"],
+    "top_industries": [
+      "智能制造",
+      "汽车制造",
+      "电力/能源",
+      "机器人",
+      "航空航天"
+    ],
+    "top_positions": [
+      "自动化工程师",
+      "PLC工程师",
+      "控制系统工程师",
+      "机器人工程师",
+      "智能制造工程师"
+    ],
+    "top_cities": [
+      "上海",
+      "深圳",
+      "苏州",
+      "北京",
+      "广州"
+    ],
     "top_schools": [
-      { "name": "清华大学", "employment_rate": 97.0, "avg_salary": 23000 },
-      { "name": "浙江大学", "employment_rate": 96.5, "avg_salary": 21000 },
-      { "name": "上海交通大学", "employment_rate": 96.0, "avg_salary": 22000 },
-      { "name": "哈尔滨工业大学", "employment_rate": 95.0, "avg_salary": 19000 },
-      { "name": "东南大学", "employment_rate": 94.5, "avg_salary": 18000 }
+      {
+        "name": "清华大学",
+        "employment_rate": 97,
+        "avg_salary": 23000
+      },
+      {
+        "name": "浙江大学",
+        "employment_rate": 96.5,
+        "avg_salary": 21000
+      },
+      {
+        "name": "上海交通大学",
+        "employment_rate": 96,
+        "avg_salary": 22000
+      },
+      {
+        "name": "哈尔滨工业大学",
+        "employment_rate": 95,
+        "avg_salary": 19000
+      },
+      {
+        "name": "东南大学",
+        "employment_rate": 94.5,
+        "avg_salary": 18000
+      }
     ],
-    "related_majors": ["dianzi-xinxi-gongcheng", "jisuanji-kexue-yu-jishu", "dianqi-gongcheng", "jiqiren-gongcheng"],
+    "related_majors": [
+      "dianzi-xinxi-gongcheng",
+      "jisuanji-kexue-yu-jishu",
+      "dianqi-gongcheng",
+      "jiqiren-gongcheng"
+    ],
     "faq": [
-      { "q": "自动化和电气工程有什么区别？", "a": "自动化侧重控制理论+弱电（嵌入式/PLC/传感器），电气侧重强电（电力系统/高压/发电）。自动化毕业生更多去制造业和机器人公司，电气更多去电力系统和新能源。" },
-      { "q": "自动化好就业吗？", "a": "就业面确实很广，但'广'也意味着需要自己找准方向。建议大学期间确定细分方向（工业控制/机器人/嵌入式/智能制造），避免'样样通、样样松'。" }
+      {
+        "q": "自动化和电气工程有什么区别？",
+        "a": "自动化侧重控制理论+弱电（嵌入式/PLC/传感器），电气侧重强电（电力系统/高压/发电）。自动化毕业生更多去制造业和机器人公司，电气更多去电力系统和新能源。"
+      },
+      {
+        "q": "自动化好就业吗？",
+        "a": "就业面确实很广，但'广'也意味着需要自己找准方向。建议大学期间确定细分方向（工业控制/机器人/嵌入式/智能制造），避免'样样通、样样松'。"
+      }
     ],
-    "tags": ["就业面广", "制造业", "PLC", "工业控制", "稳定"],
+    "tags": [
+      "就业面广",
+      "制造业",
+      "PLC",
+      "工业控制",
+      "稳定"
+    ],
     "gender_ratio": "男8:女2",
-    "recommended_for": ["物理/数学好", "喜欢动手", "对机器/设备有兴趣", "就业导向"],
+    "recommended_for": [
+      "物理/数学好",
+      "喜欢动手",
+      "对机器/设备有兴趣",
+      "就业导向"
+    ],
     "seo_title": "自动化专业就业前景与薪资分析（2026最新数据）",
     "seo_description": "自动化专业平均起薪8500元/月，5年23000元。分析自动化在智能制造时代的定位、与电气工程的差异、就业方向选择策略。"
   },
@@ -576,38 +1473,113 @@
     "salary_3year": 16500,
     "salary_5year": 25000,
     "salary_trend": [
-      { "year": 1, "salary": 8000 },
-      { "year": 2, "salary": 11000 },
-      { "year": 3, "salary": 15000 },
-      { "year": 4, "salary": 19500 },
-      { "year": 5, "salary": 24000 }
+      {
+        "year": 1,
+        "salary": 8000
+      },
+      {
+        "year": 2,
+        "salary": 11000
+      },
+      {
+        "year": 3,
+        "salary": 15000
+      },
+      {
+        "year": 4,
+        "salary": 19500
+      },
+      {
+        "year": 5,
+        "salary": 24000
+      }
     ],
     "employment_rate": 92.8,
     "relevance_rate": 79.5,
-    "satisfaction": 78.0,
+    "satisfaction": 78,
     "roi_index": 85,
     "roi_grade": "A",
     "ai_risk_level": "低",
     "ai_risk_score": 20,
     "ai_risk_description": "通信网络的物理层和协议层设计需要深厚的领域知识，AI主要应用于网络优化和运维层面而非核心研发。5G/6G标准制定和芯片设计是AI难以替代的高壁垒工作。",
-    "top_industries": ["通信设备", "电信运营商", "互联网/IT", "卫星通信", "军工电子"],
-    "top_positions": ["通信工程师", "射频工程师", "网络架构师", "5G研发工程师", "信号处理工程师"],
-    "top_cities": ["深圳", "北京", "上海", "成都", "西安"],
+    "top_industries": [
+      "通信设备",
+      "电信运营商",
+      "互联网/IT",
+      "卫星通信",
+      "军工电子"
+    ],
+    "top_positions": [
+      "通信工程师",
+      "射频工程师",
+      "网络架构师",
+      "5G研发工程师",
+      "信号处理工程师"
+    ],
+    "top_cities": [
+      "深圳",
+      "北京",
+      "上海",
+      "成都",
+      "西安"
+    ],
     "top_schools": [
-      { "name": "北京邮电大学", "employment_rate": 96.5, "avg_salary": 23000 },
-      { "name": "电子科技大学", "employment_rate": 96.0, "avg_salary": 22000 },
-      { "name": "西安电子科技大学", "employment_rate": 95.5, "avg_salary": 20000 },
-      { "name": "东南大学", "employment_rate": 95.0, "avg_salary": 21000 },
-      { "name": "北京理工大学", "employment_rate": 94.5, "avg_salary": 19000 }
+      {
+        "name": "北京邮电大学",
+        "employment_rate": 96.5,
+        "avg_salary": 23000
+      },
+      {
+        "name": "电子科技大学",
+        "employment_rate": 96,
+        "avg_salary": 22000
+      },
+      {
+        "name": "西安电子科技大学",
+        "employment_rate": 95.5,
+        "avg_salary": 20000
+      },
+      {
+        "name": "东南大学",
+        "employment_rate": 95,
+        "avg_salary": 21000
+      },
+      {
+        "name": "北京理工大学",
+        "employment_rate": 94.5,
+        "avg_salary": 19000
+      }
     ],
-    "related_majors": ["dianzi-xinxi-gongcheng", "jisuanji-kexue-yu-jishu", "wangluo-gongcheng", "guangdian-xinxi"],
+    "related_majors": [
+      "dianzi-xinxi-gongcheng",
+      "jisuanji-kexue-yu-jishu",
+      "wangluo-gongcheng",
+      "guangdian-xinxi"
+    ],
     "faq": [
-      { "q": "通信工程就业面窄吗？", "a": "传统通信设备商和运营商确实是主要去向，但这个'窄'恰恰是壁垒——通信领域的专业知识门槛高，外人难以进入，所以竞争反而比计算机小。而且近年互联网公司对通信背景的人才需求在增加（云网络、数据中心）。" },
-      { "q": "通信工程和电子信息工程哪个好？", "a": "通信工程更专（侧重通信协议、信号处理），电信更广（软硬通吃）。如果你明确想做通信方向选通信，不确定的话电信选择面更宽。" }
+      {
+        "q": "通信工程就业面窄吗？",
+        "a": "传统通信设备商和运营商确实是主要去向，但这个'窄'恰恰是壁垒——通信领域的专业知识门槛高，外人难以进入，所以竞争反而比计算机小。而且近年互联网公司对通信背景的人才需求在增加（云网络、数据中心）。"
+      },
+      {
+        "q": "通信工程和电子信息工程哪个好？",
+        "a": "通信工程更专（侧重通信协议、信号处理），电信更广（软硬通吃）。如果你明确想做通信方向选通信，不确定的话电信选择面更宽。"
+      }
     ],
-    "tags": ["5G", "通信", "华为", "稳定", "国家战略"],
+    "tags": [
+      "5G",
+      "通信",
+      "华为",
+      "稳定",
+      "国家战略"
+    ],
     "gender_ratio": "男7:女3",
-    "recommended_for": ["物理/数学好", "对通信/网络感兴趣", "能接受底层技术", "就业导向"],
+    "recommended_for": [
+      "物理/数学好",
+      "对通信/网络感兴趣",
+      "能接受底层技术",
+      "就业导向"
+    ],
     "seo_title": "通信工程专业就业前景与薪资分析（2026最新数据）",
     "seo_description": "通信工程专业平均起薪9000元/月，5年25000元。分析5G/6G时代通信工程师的机遇、华为等设备商招聘趋势及职业发展路径。"
   },
@@ -623,38 +1595,113 @@
     "salary_3year": 14000,
     "salary_5year": 20000,
     "salary_trend": [
-      { "year": 1, "salary": 7000 },
-      { "year": 2, "salary": 9500 },
-      { "year": 3, "salary": 13000 },
-      { "year": 4, "salary": 16500 },
-      { "year": 5, "salary": 19500 }
+      {
+        "year": 1,
+        "salary": 7000
+      },
+      {
+        "year": 2,
+        "salary": 9500
+      },
+      {
+        "year": 3,
+        "salary": 13000
+      },
+      {
+        "year": 4,
+        "salary": 16500
+      },
+      {
+        "year": 5,
+        "salary": 19500
+      }
     ],
-    "employment_rate": 94.0,
-    "relevance_rate": 84.0,
+    "employment_rate": 94,
+    "relevance_rate": 84,
     "satisfaction": 80.5,
     "roi_index": 81,
     "roi_grade": "B",
     "ai_risk_level": "低",
     "ai_risk_score": 18,
     "ai_risk_description": "电力系统的安全和可靠性要求极高，决策需要综合工程判断和制度规范。AI用于电网调度优化和故障预警，但不参与关键决策。电网运维必须由持证工程师现场操作。",
-    "top_industries": ["电力/电网", "新能源", "电气设备制造", "铁路/地铁", "建筑/工业"],
-    "top_positions": ["电气工程师", "电力系统工程师", "新能源工程师", "变电/配电工程师", "继电保护工程师"],
-    "top_cities": ["北京", "上海", "广州", "南京", "武汉"],
+    "top_industries": [
+      "电力/电网",
+      "新能源",
+      "电气设备制造",
+      "铁路/地铁",
+      "建筑/工业"
+    ],
+    "top_positions": [
+      "电气工程师",
+      "电力系统工程师",
+      "新能源工程师",
+      "变电/配电工程师",
+      "继电保护工程师"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "广州",
+      "南京",
+      "武汉"
+    ],
     "top_schools": [
-      { "name": "清华大学", "employment_rate": 97.5, "avg_salary": 22000 },
-      { "name": "西安交通大学", "employment_rate": 97.0, "avg_salary": 20000 },
-      { "name": "华中科技大学", "employment_rate": 96.5, "avg_salary": 19000 },
-      { "name": "浙江大学", "employment_rate": 96.0, "avg_salary": 21000 },
-      { "name": "华北电力大学", "employment_rate": 98.0, "avg_salary": 18000 }
+      {
+        "name": "清华大学",
+        "employment_rate": 97.5,
+        "avg_salary": 22000
+      },
+      {
+        "name": "西安交通大学",
+        "employment_rate": 97,
+        "avg_salary": 20000
+      },
+      {
+        "name": "华中科技大学",
+        "employment_rate": 96.5,
+        "avg_salary": 19000
+      },
+      {
+        "name": "浙江大学",
+        "employment_rate": 96,
+        "avg_salary": 21000
+      },
+      {
+        "name": "华北电力大学",
+        "employment_rate": 98,
+        "avg_salary": 18000
+      }
     ],
-    "related_majors": ["zidonghua", "dianzi-xinxi-gongcheng", "xinnengyuan-kexue", "tongxin-gongcheng"],
+    "related_majors": [
+      "zidonghua",
+      "dianzi-xinxi-gongcheng",
+      "xinnengyuan-kexue",
+      "tongxin-gongcheng"
+    ],
     "faq": [
-      { "q": "进国家电网需要什么条件？", "a": "电气工程专业对口，通过国家电网统一考试（笔试+面试）。985/211院校毕业生有优势但非绝对。华北电力大学是国家电网的'亲儿子'，录用比例最高。电工类专业是国家电网招聘的最主力专业。" },
-      { "q": "电气工程师收入高吗？", "a": "电网体系内：起薪中上（发达省份12-18万年薪），增长稳定，福利好（六险二金+住房补贴），但天花板有限。新能源企业：薪资弹性更大，顶尖储能/逆变器工程师年薪50万+。" }
+      {
+        "q": "进国家电网需要什么条件？",
+        "a": "电气工程专业对口，通过国家电网统一考试（笔试+面试）。985/211院校毕业生有优势但非绝对。华北电力大学是国家电网的'亲儿子'，录用比例最高。电工类专业是国家电网招聘的最主力专业。"
+      },
+      {
+        "q": "电气工程师收入高吗？",
+        "a": "电网体系内：起薪中上（发达省份12-18万年薪），增长稳定，福利好（六险二金+住房补贴），但天花板有限。新能源企业：薪资弹性更大，顶尖储能/逆变器工程师年薪50万+。"
+      }
     ],
-    "tags": ["国企", "稳定", "国家电网", "新能源", "铁饭碗"],
+    "tags": [
+      "国企",
+      "稳定",
+      "国家电网",
+      "新能源",
+      "铁饭碗"
+    ],
     "gender_ratio": "男8:女2",
-    "recommended_for": ["物理好", "追求稳定", "能接受体制内", "对电力/能源有兴趣"],
+    "recommended_for": [
+      "物理好",
+      "追求稳定",
+      "能接受体制内",
+      "对电力/能源有兴趣"
+    ],
     "seo_title": "电气工程及其自动化专业就业前景与薪资分析（2026最新）",
     "seo_description": "电气工程专业就业率94%，国家电网主力招聘专业。分析进国网的条件、薪资福利、新能源方向机会及与自动化的区别。"
   },
@@ -670,38 +1717,113 @@
     "salary_3year": 12000,
     "salary_5year": 18000,
     "salary_trend": [
-      { "year": 1, "salary": 6000 },
-      { "year": 2, "salary": 8000 },
-      { "year": 3, "salary": 10500 },
-      { "year": 4, "salary": 14000 },
-      { "year": 5, "salary": 17000 }
+      {
+        "year": 1,
+        "salary": 6000
+      },
+      {
+        "year": 2,
+        "salary": 8000
+      },
+      {
+        "year": 3,
+        "salary": 10500
+      },
+      {
+        "year": 4,
+        "salary": 14000
+      },
+      {
+        "year": 5,
+        "salary": 17000
+      }
     ],
     "employment_rate": 90.5,
     "relevance_rate": 81.5,
-    "satisfaction": 68.0,
+    "satisfaction": 68,
     "roi_index": 70,
     "roi_grade": "B",
     "ai_risk_level": "中",
     "ai_risk_score": 42,
     "ai_risk_description": "CAD/CAM/CAE等工具已经高度数字化，AI正在加速机械设计和仿真优化。但物理样机测试、精密装配、工艺决策等环节仍需要人类工程师的经验和判断。机械+AI的交叉方向（智能设计、数字孪生）是未来方向。",
-    "top_industries": ["汽车制造", "航空航天", "装备制造", "医疗器械", "机器人"],
-    "top_positions": ["机械设计工程师", "制造工程师", "质量工程师", "仿真分析工程师", "产品结构工程师"],
-    "top_cities": ["上海", "深圳", "苏州", "广州", "长春"],
+    "top_industries": [
+      "汽车制造",
+      "航空航天",
+      "装备制造",
+      "医疗器械",
+      "机器人"
+    ],
+    "top_positions": [
+      "机械设计工程师",
+      "制造工程师",
+      "质量工程师",
+      "仿真分析工程师",
+      "产品结构工程师"
+    ],
+    "top_cities": [
+      "上海",
+      "深圳",
+      "苏州",
+      "广州",
+      "长春"
+    ],
     "top_schools": [
-      { "name": "清华大学", "employment_rate": 96.0, "avg_salary": 20000 },
-      { "name": "上海交通大学", "employment_rate": 95.5, "avg_salary": 19000 },
-      { "name": "哈尔滨工业大学", "employment_rate": 95.0, "avg_salary": 18000 },
-      { "name": "华中科技大学", "employment_rate": 94.5, "avg_salary": 17000 },
-      { "name": "西安交通大学", "employment_rate": 94.0, "avg_salary": 17500 }
+      {
+        "name": "清华大学",
+        "employment_rate": 96,
+        "avg_salary": 20000
+      },
+      {
+        "name": "上海交通大学",
+        "employment_rate": 95.5,
+        "avg_salary": 19000
+      },
+      {
+        "name": "哈尔滨工业大学",
+        "employment_rate": 95,
+        "avg_salary": 18000
+      },
+      {
+        "name": "华中科技大学",
+        "employment_rate": 94.5,
+        "avg_salary": 17000
+      },
+      {
+        "name": "西安交通大学",
+        "employment_rate": 94,
+        "avg_salary": 17500
+      }
     ],
-    "related_majors": ["zidonghua", "dianqi-gongcheng", "jidian-gongcheng", "gongye-sheji"],
+    "related_majors": [
+      "zidonghua",
+      "dianqi-gongcheng",
+      "jidian-gongcheng",
+      "gongye-sheji"
+    ],
     "faq": [
-      { "q": "机械工程真的不行了吗？", "a": "'纯机械'确实在走下坡路，但机械+电控+编程的复合型人才（如机器人工程师、智能装备工程师）非常抢手。关键是大学期间主动跨学科学习，不要只停留于传统机械知识。" },
-      { "q": "学机械以后能去大厂吗？", "a": "能，但需要转换赛道。华为/大疆/比亚迪等大厂对机械背景的毕业生需求很大——不过他们招的是'机械+嵌入式'或'机械+仿真'方向，纯结构设计岗位不多。建议大学期间辅修控制或编程方向。" }
+      {
+        "q": "机械工程真的不行了吗？",
+        "a": "'纯机械'确实在走下坡路，但机械+电控+编程的复合型人才（如机器人工程师、智能装备工程师）非常抢手。关键是大学期间主动跨学科学习，不要只停留于传统机械知识。"
+      },
+      {
+        "q": "学机械以后能去大厂吗？",
+        "a": "能，但需要转换赛道。华为/大疆/比亚迪等大厂对机械背景的毕业生需求很大——不过他们招的是'机械+嵌入式'或'机械+仿真'方向，纯结构设计岗位不多。建议大学期间辅修控制或编程方向。"
+      }
     ],
-    "tags": ["基础工科", "制造业", "就业面广", "薪资增速慢", "需转型"],
+    "tags": [
+      "基础工科",
+      "制造业",
+      "就业面广",
+      "薪资增速慢",
+      "需转型"
+    ],
     "gender_ratio": "男9:女1",
-    "recommended_for": ["动手能力强", "空间想象力好", "对造物有兴趣", "物理中等以上"],
+    "recommended_for": [
+      "动手能力强",
+      "空间想象力好",
+      "对造物有兴趣",
+      "物理中等以上"
+    ],
     "seo_title": "机械工程专业就业前景与薪资分析（2026最新数据）",
     "seo_description": "机械工程专业就业率90.5%，起薪7000元/月。分析传统机械的转型方向、智能制造新机遇、机械+编程复合人才市场前景。"
   },
@@ -717,38 +1839,113 @@
     "salary_3year": 16000,
     "salary_5year": 25000,
     "salary_trend": [
-      { "year": 1, "salary": 7500 },
-      { "year": 2, "salary": 10500 },
-      { "year": 3, "salary": 14500 },
-      { "year": 4, "salary": 19500 },
-      { "year": 5, "salary": 24000 }
+      {
+        "year": 1,
+        "salary": 7500
+      },
+      {
+        "year": 2,
+        "salary": 10500
+      },
+      {
+        "year": 3,
+        "salary": 14500
+      },
+      {
+        "year": 4,
+        "salary": 19500
+      },
+      {
+        "year": 5,
+        "salary": 24000
+      }
     ],
-    "employment_rate": 90.0,
-    "relevance_rate": 73.0,
-    "satisfaction": 78.0,
+    "employment_rate": 90,
+    "relevance_rate": 73,
+    "satisfaction": 78,
     "roi_index": 82,
     "roi_grade": "B",
     "ai_risk_level": "中",
     "ai_risk_score": 38,
     "ai_risk_description": "AI给统计学带来双重影响：一方面自动化了很多基础统计分析工作，另一方面让统计学知识变得前所未有的重要——理解模型背后的统计原理是做好AI的前提。统计+编程的复合人才在AI时代需求大增。",
-    "top_industries": ["金融/保险", "互联网/IT", "医药", "政府统计", "市场调研"],
-    "top_positions": ["数据分析师", "统计分析师", "精算师", "量化研究员", "生物统计师"],
-    "top_cities": ["北京", "上海", "深圳", "杭州", "广州"],
+    "top_industries": [
+      "金融/保险",
+      "互联网/IT",
+      "医药",
+      "政府统计",
+      "市场调研"
+    ],
+    "top_positions": [
+      "数据分析师",
+      "统计分析师",
+      "精算师",
+      "量化研究员",
+      "生物统计师"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "深圳",
+      "杭州",
+      "广州"
+    ],
     "top_schools": [
-      { "name": "北京大学", "employment_rate": 94.0, "avg_salary": 24000 },
-      { "name": "中国人民大学", "employment_rate": 93.5, "avg_salary": 22000 },
-      { "name": "南开大学", "employment_rate": 92.0, "avg_salary": 20000 },
-      { "name": "华东师范大学", "employment_rate": 91.5, "avg_salary": 19000 },
-      { "name": "厦门大学", "employment_rate": 91.0, "avg_salary": 18000 }
+      {
+        "name": "北京大学",
+        "employment_rate": 94,
+        "avg_salary": 24000
+      },
+      {
+        "name": "中国人民大学",
+        "employment_rate": 93.5,
+        "avg_salary": 22000
+      },
+      {
+        "name": "南开大学",
+        "employment_rate": 92,
+        "avg_salary": 20000
+      },
+      {
+        "name": "华东师范大学",
+        "employment_rate": 91.5,
+        "avg_salary": 19000
+      },
+      {
+        "name": "厦门大学",
+        "employment_rate": 91,
+        "avg_salary": 18000
+      }
     ],
-    "related_majors": ["shuju-kexue-yu-dashuju", "jinrong-xue", "yingyong-shuxue", "jingji-xue"],
+    "related_majors": [
+      "shuju-kexue-yu-dashuju",
+      "jinrong-xue",
+      "yingyong-shuxue",
+      "jingji-xue"
+    ],
     "faq": [
-      { "q": "统计学和数据科学怎么选？", "a": "统计学偏理论功底和数学深度（学得深），数据科学偏工程应用和技术广度（学得宽）。统计学的数学训练更扎实，长期发展后劲更足；数据科学上手更快，短期就业竞争力更强。如果计划读研，统计学是不错的基础学科。" },
-      { "q": "统计学会不会太理论不好找工作？", "a": "纯理论方向确实偏窄，但掌握Python/R编程+机器学习后，统计学毕业生在数据分析/量化金融/生物统计等领域需求很大。关键是不要只学理论不学工具。" }
+      {
+        "q": "统计学和数据科学怎么选？",
+        "a": "统计学偏理论功底和数学深度（学得深），数据科学偏工程应用和技术广度（学得宽）。统计学的数学训练更扎实，长期发展后劲更足；数据科学上手更快，短期就业竞争力更强。如果计划读研，统计学是不错的基础学科。"
+      },
+      {
+        "q": "统计学会不会太理论不好找工作？",
+        "a": "纯理论方向确实偏窄，但掌握Python/R编程+机器学习后，统计学毕业生在数据分析/量化金融/生物统计等领域需求很大。关键是不要只学理论不学工具。"
+      }
     ],
-    "tags": ["数学", "数据", "应用广", "AI基础", "读研友好"],
+    "tags": [
+      "数学",
+      "数据",
+      "应用广",
+      "AI基础",
+      "读研友好"
+    ],
     "gender_ratio": "男4:女6",
-    "recommended_for": ["数学成绩好", "喜欢逻辑推理", "对数据敏感", "计划读研"],
+    "recommended_for": [
+      "数学成绩好",
+      "喜欢逻辑推理",
+      "对数据敏感",
+      "计划读研"
+    ],
     "seo_title": "统计学专业就业前景与薪资分析（2026最新数据）",
     "seo_description": "统计学专业起薪8500元/月，5年25000元。分析统计学在AI时代的定位、与数据科学的差异、金融/互联网/医药行业就业方向。"
   },
@@ -764,38 +1961,113 @@
     "salary_3year": 10000,
     "salary_5year": 16000,
     "salary_trend": [
-      { "year": 1, "salary": 5000 },
-      { "year": 2, "salary": 6500 },
-      { "year": 3, "salary": 9000 },
-      { "year": 4, "salary": 12000 },
-      { "year": 5, "salary": 15000 }
+      {
+        "year": 1,
+        "salary": 5000
+      },
+      {
+        "year": 2,
+        "salary": 6500
+      },
+      {
+        "year": 3,
+        "salary": 9000
+      },
+      {
+        "year": 4,
+        "salary": 12000
+      },
+      {
+        "year": 5,
+        "salary": 15000
+      }
     ],
-    "employment_rate": 86.0,
-    "relevance_rate": 55.0,
-    "satisfaction": 68.0,
+    "employment_rate": 86,
+    "relevance_rate": 55,
+    "satisfaction": 68,
     "roi_index": 60,
     "roi_grade": "C",
     "ai_risk_level": "中高",
     "ai_risk_score": 55,
     "ai_risk_description": "基础的行政管理和流程性工作正在被数字化和AI替代。但战略决策、组织变革、跨文化管理等高层管理工作仍高度依赖人类智慧。工商管理需要向上走（决策层）才能保持价值。",
-    "top_industries": ["各行各业（通用型）", "公务员/事业单位", "咨询", "地产", "快消零售"],
-    "top_positions": ["管理培训生", "人力资源专员", "市场营销", "运营管理", "行政/综合管理"],
-    "top_cities": ["北京", "上海", "深圳", "广州", "杭州"],
+    "top_industries": [
+      "各行各业（通用型）",
+      "公务员/事业单位",
+      "咨询",
+      "地产",
+      "快消零售"
+    ],
+    "top_positions": [
+      "管理培训生",
+      "人力资源专员",
+      "市场营销",
+      "运营管理",
+      "行政/综合管理"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "深圳",
+      "广州",
+      "杭州"
+    ],
     "top_schools": [
-      { "name": "清华大学经管学院", "employment_rate": 95.0, "avg_salary": 24000 },
-      { "name": "北京大学光华管理学院", "employment_rate": 94.5, "avg_salary": 25000 },
-      { "name": "复旦大学管理学院", "employment_rate": 93.0, "avg_salary": 22000 },
-      { "name": "中国人民大学商学院", "employment_rate": 92.5, "avg_salary": 20000 },
-      { "name": "上海交通大学安泰经管学院", "employment_rate": 93.5, "avg_salary": 23000 }
+      {
+        "name": "清华大学经管学院",
+        "employment_rate": 95,
+        "avg_salary": 24000
+      },
+      {
+        "name": "北京大学光华管理学院",
+        "employment_rate": 94.5,
+        "avg_salary": 25000
+      },
+      {
+        "name": "复旦大学管理学院",
+        "employment_rate": 93,
+        "avg_salary": 22000
+      },
+      {
+        "name": "中国人民大学商学院",
+        "employment_rate": 92.5,
+        "avg_salary": 20000
+      },
+      {
+        "name": "上海交通大学安泰经管学院",
+        "employment_rate": 93.5,
+        "avg_salary": 23000
+      }
     ],
-    "related_majors": ["jinrong-xue", "kuaiji-xue", "shichang-yingxiao", "renli-ziyuan"],
+    "related_majors": [
+      "jinrong-xue",
+      "kuaiji-xue",
+      "shichang-yingxiao",
+      "renli-ziyuan"
+    ],
     "faq": [
-      { "q": "工商管理是不是'假大空'专业？", "a": "工商管理本身不是问题，问题是本科阶段学到的东西太泛。名校+辅修其他专业（会计/金融/计算机）+丰富实习经历的工商管理毕业生竞争力很强。普通院校建议搭配CPA/司考/计算机等硬技能提升竞争力。" },
-      { "q": "工商管理考公有优势吗？", "a": "有！国考/省考中有大量'工商管理类'岗位，是考公热门专业之一。如果你目标是考公，工商管理+认真备考行测/申论是不错的组合。" }
+      {
+        "q": "工商管理是不是'假大空'专业？",
+        "a": "工商管理本身不是问题，问题是本科阶段学到的东西太泛。名校+辅修其他专业（会计/金融/计算机）+丰富实习经历的工商管理毕业生竞争力很强。普通院校建议搭配CPA/司考/计算机等硬技能提升竞争力。"
+      },
+      {
+        "q": "工商管理考公有优势吗？",
+        "a": "有！国考/省考中有大量'工商管理类'岗位，是考公热门专业之一。如果你目标是考公，工商管理+认真备考行测/申论是不错的组合。"
+      }
     ],
-    "tags": ["考公", "万金油", "非技术", "门槛低", "名校重要"],
+    "tags": [
+      "考公",
+      "万金油",
+      "非技术",
+      "门槛低",
+      "名校重要"
+    ],
     "gender_ratio": "男4:女6",
-    "recommended_for": ["善于沟通", "组织能力强", "目标考公", "就读名校"],
+    "recommended_for": [
+      "善于沟通",
+      "组织能力强",
+      "目标考公",
+      "就读名校"
+    ],
     "seo_title": "工商管理专业就业前景与薪资分析（2026最新数据）",
     "seo_description": "工商管理专业就业率86%，起薪6000元/月。分析工商管理的'万金油'困境、考公优势、名校与普通院校差距及提升竞争力的策略。"
   },
@@ -811,38 +2083,3926 @@
     "salary_3year": 13000,
     "salary_5year": 22000,
     "salary_trend": [
-      { "year": 1, "salary": 5500 },
-      { "year": 2, "salary": 8000 },
-      { "year": 3, "salary": 11500 },
-      { "year": 4, "salary": 16000 },
-      { "year": 5, "salary": 21000 }
+      {
+        "year": 1,
+        "salary": 5500
+      },
+      {
+        "year": 2,
+        "salary": 8000
+      },
+      {
+        "year": 3,
+        "salary": 11500
+      },
+      {
+        "year": 4,
+        "salary": 16000
+      },
+      {
+        "year": 5,
+        "salary": 21000
+      }
     ],
     "employment_rate": 87.5,
-    "relevance_rate": 60.0,
-    "satisfaction": 71.0,
+    "relevance_rate": 60,
+    "satisfaction": 71,
     "roi_index": 66,
     "roi_grade": "C",
     "ai_risk_level": "中高",
     "ai_risk_score": 58,
     "ai_risk_description": "AI正在改变营销行业：自动生成广告文案、智能推荐、程序化投放等已经广泛使用。但品牌策略、创意策划、消费者情感洞察等高阶工作仍需要人类创造力。未来营销人需要学会驾驭AI工具而非与之竞争。",
-    "top_industries": ["互联网/电商", "快消零售", "汽车", "房地产", "广告/传媒"],
-    "top_positions": ["品牌经理", "数字营销经理", "新媒体运营", "内容营销", "电商运营"],
-    "top_cities": ["上海", "北京", "深圳", "广州", "杭州"],
+    "top_industries": [
+      "互联网/电商",
+      "快消零售",
+      "汽车",
+      "房地产",
+      "广告/传媒"
+    ],
+    "top_positions": [
+      "品牌经理",
+      "数字营销经理",
+      "新媒体运营",
+      "内容营销",
+      "电商运营"
+    ],
+    "top_cities": [
+      "上海",
+      "北京",
+      "深圳",
+      "广州",
+      "杭州"
+    ],
     "top_schools": [
-      { "name": "复旦大学", "employment_rate": 93.0, "avg_salary": 20000 },
-      { "name": "中国人民大学", "employment_rate": 92.0, "avg_salary": 19000 },
-      { "name": "上海财经大学", "employment_rate": 91.0, "avg_salary": 18000 },
-      { "name": "武汉大学", "employment_rate": 90.0, "avg_salary": 17000 }
+      {
+        "name": "复旦大学",
+        "employment_rate": 93,
+        "avg_salary": 20000
+      },
+      {
+        "name": "中国人民大学",
+        "employment_rate": 92,
+        "avg_salary": 19000
+      },
+      {
+        "name": "上海财经大学",
+        "employment_rate": 91,
+        "avg_salary": 18000
+      },
+      {
+        "name": "武汉大学",
+        "employment_rate": 90,
+        "avg_salary": 17000
+      }
     ],
-    "related_majors": ["gongshang-guanli", "guanggao-xue", "dianzi-shangwu", "xinwen-xue"],
+    "related_majors": [
+      "gongshang-guanli",
+      "guanggao-xue",
+      "dianzi-shangwu",
+      "xinwen-xue"
+    ],
     "faq": [
-      { "q": "市场营销需要学吗？不是靠天赋就行？", "a": "传统的'能说会道就能做销售'已经不适用了。现代营销需要数据分析（SQL/Excel）、内容创作（文案/短视频）、用户运营（私域/社群）等硬技能。大学市场营销教育教的是消费者心理学、品牌策略等底层逻辑，这些是'道'而非'术'。" },
-      { "q": "市场营销好找工作吗？", "a": "就业岗位多但竞争也大，因为门槛低（不限专业都可进入）。想在众多竞争者中脱颖而出，大学期间要做的事情：学好数据分析工具+积累新媒体运营经验（做自己的账号）+实习。" }
+      {
+        "q": "市场营销需要学吗？不是靠天赋就行？",
+        "a": "传统的'能说会道就能做销售'已经不适用了。现代营销需要数据分析（SQL/Excel）、内容创作（文案/短视频）、用户运营（私域/社群）等硬技能。大学市场营销教育教的是消费者心理学、品牌策略等底层逻辑，这些是'道'而非'术'。"
+      },
+      {
+        "q": "市场营销好找工作吗？",
+        "a": "就业岗位多但竞争也大，因为门槛低（不限专业都可进入）。想在众多竞争者中脱颖而出，大学期间要做的事情：学好数据分析工具+积累新媒体运营经验（做自己的账号）+实习。"
+      }
     ],
-    "tags": ["非技术", "创意+数据", "就业面广", "薪资弹性大", "竞争激烈"],
+    "tags": [
+      "非技术",
+      "创意+数据",
+      "就业面广",
+      "薪资弹性大",
+      "竞争激烈"
+    ],
     "gender_ratio": "男3:女7",
-    "recommended_for": ["善于沟通", "有创意", "喜欢研究消费心理", "数据分析能力"],
+    "recommended_for": [
+      "善于沟通",
+      "有创意",
+      "喜欢研究消费心理",
+      "数据分析能力"
+    ],
     "seo_title": "市场营销专业就业前景与薪资分析（2026最新数据）",
     "seo_description": "市场营销专业起薪6500元/月，5年22000元。分析数字化时代营销人的技能转型、AI冲击、品牌vs新媒体运营职业路径对比。"
+  },
+  {
+    "id": "neteng",
+    "slug": "wangluo-gongcheng",
+    "name": "网络工程",
+    "category": "工学",
+    "degree": "工学学士",
+    "duration": 4,
+    "description": "网络工程是计算机大类中聚焦网络基础设施设计、部署和运维的专业方向。核心课程包括计算机网络、路由与交换技术、网络安全、网络操作系统、云计算与虚拟化等。毕业生掌握从局域网到广域网、从物理布线到云网络的全栈网络技术。在云计算、5G、物联网和网络安全需求爆发的背景下，网络工程师（尤其是具备云网络和SDN技能的人才）需求持续增长。相比软件开发的激烈竞争，网络工程方向的人才供给相对不足，就业压力较小。",
+    "starting_salary": 8500,
+    "salary_3year": 15000,
+    "salary_5year": 24000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 7500
+      },
+      {
+        "year": 2,
+        "salary": 10500
+      },
+      {
+        "year": 3,
+        "salary": 14000
+      },
+      {
+        "year": 4,
+        "salary": 18500
+      },
+      {
+        "year": 5,
+        "salary": 23000
+      }
+    ],
+    "employment_rate": 93,
+    "relevance_rate": 82,
+    "satisfaction": 77,
+    "roi_index": 84,
+    "roi_grade": "B",
+    "ai_risk_level": "低",
+    "ai_risk_score": 22,
+    "ai_risk_description": "网络基础设施的物理部署和架构设计需要深厚的领域知识。AI主要用于网络运维自动化（AIOps），但网络架构决策、安全策略制定等核心工作仍依赖人类工程师。云网络和SDN等新方向反而增加了对高级网络人才的需求。",
+    "top_industries": [
+      "互联网/IT",
+      "电信运营商",
+      "金融",
+      "政府/事业单位",
+      "云计算"
+    ],
+    "top_positions": [
+      "网络工程师",
+      "网络安全工程师",
+      "云计算工程师",
+      "网络架构师",
+      "系统集成工程师"
+    ],
+    "top_cities": [
+      "北京",
+      "深圳",
+      "上海",
+      "杭州",
+      "成都"
+    ],
+    "top_schools": [
+      {
+        "name": "北京邮电大学",
+        "employment_rate": 96,
+        "avg_salary": 19000
+      },
+      {
+        "name": "电子科技大学",
+        "employment_rate": 95.5,
+        "avg_salary": 18000
+      },
+      {
+        "name": "西安电子科技大学",
+        "employment_rate": 95,
+        "avg_salary": 17500
+      },
+      {
+        "name": "东南大学",
+        "employment_rate": 94.5,
+        "avg_salary": 17000
+      }
+    ],
+    "related_majors": [
+      "jisuanji-kexue-yu-jishu",
+      "xinxi-anquan",
+      "tongxin-gongcheng",
+      "ruanjian-gongcheng"
+    ],
+    "faq": [
+      {
+        "q": "网络工程需要编程吗？",
+        "a": "比软件工程要求低，但Python脚本和自动化运维是必备技能。云网络方向需要一定的编程能力（Python/Go），传统网络运维方向更侧重设备配置和排障。"
+      },
+      {
+        "q": "网络工程师会被AI取代吗？",
+        "a": "基础网络监控正在自动化，但网络架构设计、安全策略制定和应急响应等决策性工作AI难以替代。具备云网络和SDN技能的网络工程师需求不减。"
+      }
+    ],
+    "tags": [
+      "网络",
+      "IT基础设施",
+      "技术壁垒",
+      "稳定",
+      "云计算"
+    ],
+    "gender_ratio": "男8:女2",
+    "recommended_for": [
+      "对计算机网络有兴趣",
+      "物理/数学中等",
+      "喜欢动手配置",
+      "追求稳定工作"
+    ],
+    "seo_title": "网络工程专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "网络工程专业平均起薪8500元/月，5年24000元。分析云网络时代网络工程师的机遇、考证价值（CCIE/HCIE）及职业发展路径。"
+  },
+  {
+    "id": "infosec",
+    "slug": "xinxi-anquan",
+    "name": "信息安全",
+    "category": "工学",
+    "degree": "工学学士",
+    "duration": 4,
+    "description": "信息安全是计算机大类中增长最快的细分方向之一，培养具备网络安全攻防、密码学、数据安全、系统安全等能力的专业人才。课程包括密码学、网络攻防技术、操作系统安全、恶意代码分析、安全审计等。在数据泄露事件频发、国家级网络对抗升级、企业数字化转型加速安全需求的大背景下，信息安全人才的战略价值急剧上升。网络安全人才缺口在国内已达百万级，是典型的'供不应求'高薪专业。",
+    "starting_salary": 11000,
+    "salary_3year": 20000,
+    "salary_5year": 33000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 9500
+      },
+      {
+        "year": 2,
+        "salary": 14000
+      },
+      {
+        "year": 3,
+        "salary": 18500
+      },
+      {
+        "year": 4,
+        "salary": 25000
+      },
+      {
+        "year": 5,
+        "salary": 31000
+      }
+    ],
+    "employment_rate": 95,
+    "relevance_rate": 85,
+    "satisfaction": 82,
+    "roi_index": 90,
+    "roi_grade": "A",
+    "ai_risk_level": "极低",
+    "ai_risk_score": 10,
+    "ai_risk_description": "AI既是网络安全的工具（AI驱动的威胁检测）也是新的攻击面（对抗攻击）。安全攻防的本质是对抗性博弈，需要人类创造力和策略思维。信息安全人才本身就是AI系统的'守门人'。",
+    "top_industries": [
+      "网络安全公司",
+      "互联网/IT",
+      "金融",
+      "政府/军工",
+      "通信"
+    ],
+    "top_positions": [
+      "安全工程师",
+      "渗透测试工程师",
+      "安全架构师",
+      "安全运维工程师",
+      "安全研究员"
+    ],
+    "top_cities": [
+      "北京",
+      "深圳",
+      "上海",
+      "成都",
+      "杭州"
+    ],
+    "top_schools": [
+      {
+        "name": "北京邮电大学",
+        "employment_rate": 97,
+        "avg_salary": 25000
+      },
+      {
+        "name": "电子科技大学",
+        "employment_rate": 96.5,
+        "avg_salary": 24000
+      },
+      {
+        "name": "国防科技大学",
+        "employment_rate": 98,
+        "avg_salary": 26000
+      },
+      {
+        "name": "上海交通大学",
+        "employment_rate": 96,
+        "avg_salary": 25000
+      }
+    ],
+    "related_majors": [
+      "jisuanji-kexue-yu-jishu",
+      "wangluo-gongcheng",
+      "tongxin-gongcheng",
+      "rengong-zhineng"
+    ],
+    "faq": [
+      {
+        "q": "信息安全需要很强的编程能力吗？",
+        "a": "需要，但侧重点不同。安全工程师需要懂Python/Shell做自动化，懂C/C++理解底层漏洞原理。不需要像软件工程那样天天写业务代码，但需要理解代码层面的安全问题。"
+      },
+      {
+        "q": "信息安全就业前景真的那么好吗？",
+        "a": "目前确实是供不应求状态。国内网络安全人才缺口超过100万，且随着数据安全法、个保法等法规落地，企业安全合规需求爆发式增长。但需要注意这是一个需要持续学习的领域——攻击技术每天都在进化。"
+      }
+    ],
+    "tags": [
+      "高薪",
+      "供不应求",
+      "前沿",
+      "技术壁垒高",
+      "AI免疫"
+    ],
+    "gender_ratio": "男8:女2",
+    "recommended_for": [
+      "好奇心强",
+      "喜欢研究攻防",
+      "逻辑思维好",
+      "编程基础扎实"
+    ],
+    "seo_title": "信息安全专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "信息安全专业起薪11000元/月，就业率95%。解读百万人才缺口下的网络安全职业机遇、红蓝队方向及CISP/CISSP证书价值。"
+  },
+  {
+    "id": "iot",
+    "slug": "wulianwang-gongcheng",
+    "name": "物联网工程",
+    "category": "工学",
+    "degree": "工学学士",
+    "duration": 4,
+    "description": "物联网工程是计算机、通信和电子技术的交叉学科，研究如何让物理世界的设备接入互联网并实现智能交互。课程涵盖传感器技术、嵌入式系统、无线通信协议（ZigBee/LoRa/NB-IoT）、云计算、边缘计算等。毕业生能够在智能家居、智慧城市、工业物联网、车联网等领域从事系统设计和开发。物联网是数字经济的基础设施层，在5G普及和边缘AI发展的驱动下，物联网工程师的需求从消费级向工业级快速扩展。",
+    "starting_salary": 8500,
+    "salary_3year": 15000,
+    "salary_5year": 24000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 7500
+      },
+      {
+        "year": 2,
+        "salary": 10500
+      },
+      {
+        "year": 3,
+        "salary": 14000
+      },
+      {
+        "year": 4,
+        "salary": 18500
+      },
+      {
+        "year": 5,
+        "salary": 23000
+      }
+    ],
+    "employment_rate": 91.5,
+    "relevance_rate": 76,
+    "satisfaction": 76,
+    "roi_index": 79,
+    "roi_grade": "B",
+    "ai_risk_level": "低",
+    "ai_risk_score": 20,
+    "ai_risk_description": "物联网设备需要实体部署和硬件调试，AI难以替代物理世界的工作。AI+IoT（AIoT）的融合反而创造了对既懂硬件又懂AI的复合人才的新需求。",
+    "top_industries": [
+      "智能家居",
+      "工业物联网",
+      "车联网",
+      "智慧城市",
+      "智能制造"
+    ],
+    "top_positions": [
+      "物联网开发工程师",
+      "嵌入式工程师",
+      "IoT解决方案架构师",
+      "边缘计算工程师"
+    ],
+    "top_cities": [
+      "深圳",
+      "北京",
+      "上海",
+      "杭州",
+      "成都"
+    ],
+    "top_schools": [
+      {
+        "name": "电子科技大学",
+        "employment_rate": 95,
+        "avg_salary": 18000
+      },
+      {
+        "name": "西安电子科技大学",
+        "employment_rate": 94.5,
+        "avg_salary": 17000
+      },
+      {
+        "name": "东南大学",
+        "employment_rate": 94,
+        "avg_salary": 17500
+      },
+      {
+        "name": "华中科技大学",
+        "employment_rate": 93.5,
+        "avg_salary": 17000
+      }
+    ],
+    "related_majors": [
+      "jisuanji-kexue-yu-jishu",
+      "tongxin-gongcheng",
+      "dianzi-xinxi-gongcheng",
+      "zidonghua"
+    ],
+    "faq": [
+      {
+        "q": "物联网工程和计算机科学有什么区别？",
+        "a": "物联网=计算机（软件）+通信（网络）+电子（硬件）的交叉。课程面广但可能深度不足。如果明确想做纯软件开发，计算机科学更纯粹；如果对软硬结合的全栈产品有兴趣，物联网更合适。"
+      },
+      {
+        "q": "物联网就业面窄吗？",
+        "a": "相比纯计算机科学，物联网的纯互联网公司岗位确实少一些。但制造业、智能硬件、车联网等行业的物联网人才需求在快速增长，属于'蓝海'而非'红海'。"
+      }
+    ],
+    "tags": [
+      "IoT",
+      "软硬结合",
+      "嵌入式",
+      "5G",
+      "智能制造"
+    ],
+    "gender_ratio": "男7:女3",
+    "recommended_for": [
+      "喜欢软硬结合",
+      "动手能力强",
+      "对智能设备有兴趣",
+      "物理好"
+    ],
+    "seo_title": "物联网工程专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "物联网工程专业起薪8500元/月，5年24000元。分析AIoT时代物联网工程师的机遇、软硬结合的职业优势及与计算机科学的差异。"
+  },
+  {
+    "id": "robotics",
+    "slug": "jiqiren-gongcheng",
+    "name": "机器人工程",
+    "category": "工学",
+    "degree": "工学学士",
+    "duration": 4,
+    "description": "机器人工程是机械、电子、控制和AI的高度交叉学科，培养能够设计、开发和部署智能机器人系统的复合型工程人才。课程涵盖机器人学基础、机器人操作系统（ROS）、运动控制、机器视觉、SLAM等。毕业生在工业机器人（智能制造）、服务机器人（物流/医疗/家用）、特种机器人（巡检/救援）等领域就业前景广阔。在国家大力推动智能制造和'机器人+'应用的大背景下，机器人工程师是典型的朝阳行业人才。",
+    "starting_salary": 10000,
+    "salary_3year": 18000,
+    "salary_5year": 28000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 8500
+      },
+      {
+        "year": 2,
+        "salary": 12500
+      },
+      {
+        "year": 3,
+        "salary": 17000
+      },
+      {
+        "year": 4,
+        "salary": 22500
+      },
+      {
+        "year": 5,
+        "salary": 27000
+      }
+    ],
+    "employment_rate": 92,
+    "relevance_rate": 78,
+    "satisfaction": 80,
+    "roi_index": 85,
+    "roi_grade": "A",
+    "ai_risk_level": "极低",
+    "ai_risk_score": 8,
+    "ai_risk_description": "机器人工程师本身就是AI技术的落地者——将AI算法部署到物理世界中。机器人需要物理实体的设计、调试和部署，AI只能辅助而不能替代这一过程。具身智能的发展反而大幅增加了机器人工程人才的需求。",
+    "top_industries": [
+      "智能制造",
+      "物流/仓储",
+      "医疗器械",
+      "新能源汽车",
+      "家用服务机器人"
+    ],
+    "top_positions": [
+      "机器人算法工程师",
+      "机器人系统工程师",
+      "ROS开发工程师",
+      "机器视觉工程师",
+      "运动控制工程师"
+    ],
+    "top_cities": [
+      "深圳",
+      "上海",
+      "北京",
+      "苏州",
+      "杭州"
+    ],
+    "top_schools": [
+      {
+        "name": "哈尔滨工业大学",
+        "employment_rate": 96,
+        "avg_salary": 24000
+      },
+      {
+        "name": "上海交通大学",
+        "employment_rate": 95.5,
+        "avg_salary": 25000
+      },
+      {
+        "name": "北京航空航天大学",
+        "employment_rate": 95,
+        "avg_salary": 23000
+      },
+      {
+        "name": "华中科技大学",
+        "employment_rate": 94.5,
+        "avg_salary": 22000
+      }
+    ],
+    "related_majors": [
+      "zidonghua",
+      "jixie-gongcheng",
+      "dianzi-xinxi-gongcheng",
+      "rengong-zhineng"
+    ],
+    "faq": [
+      {
+        "q": "机器人工程需要学哪些技能？",
+        "a": "三大块：机械（结构设计/CAD）、电子（电路/嵌入式/传感器）、软件（ROS/C++/Python/机器视觉）。本科阶段不可能全精通，建议大二确定主攻方向（感知/控制/机械），深入一个再扩宽。"
+      },
+      {
+        "q": "机器人工程好就业吗？",
+        "a": "行业发展快，但行业体量尚不如互联网。头部机器人公司（大疆、优必选、极智嘉等）招聘竞争激烈但薪资高。建议大学期间参加机器人竞赛（RoboMaster/ROBOCON）积累实践和作品集。"
+      }
+    ],
+    "tags": [
+      "前沿",
+      "交叉学科",
+      "AI+",
+      "智能制造",
+      "竞赛加分"
+    ],
+    "gender_ratio": "男8:女2",
+    "recommended_for": [
+      "物理/数学好",
+      "喜欢动手造物",
+      "对机器人有热情",
+      "竞赛经历加分"
+    ],
+    "seo_title": "机器人工程专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "机器人工程专业起薪10000元/月，5年28000元。分析具身智能时代机器人工程师的机遇、机械/电子/软件三个方向及竞赛价值。"
+  },
+  {
+    "id": "newenergy",
+    "slug": "xinnengyuan-kexue-yu-gongcheng",
+    "name": "新能源科学与工程",
+    "category": "工学",
+    "degree": "工学学士",
+    "duration": 4,
+    "description": "新能源科学与工程是面向光伏、风电、储能、氢能等清洁能源领域的战略性新兴专业。课程涵盖光伏发电技术、风力发电原理、储能技术、电力电子、能源互联网等。在国家'双碳'战略目标驱动下，新能源行业正在经历爆发式增长——2025年中国新能源装机容量已超过煤电，光伏组件产量占全球80%以上。毕业生主要进入光伏/风电/储能企业、电力设计院、新能源汽车公司和能源互联网平台。这是一个政策驱动叠加技术进步的长期确定性强赛道。",
+    "starting_salary": 9000,
+    "salary_3year": 16000,
+    "salary_5year": 25000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 8000
+      },
+      {
+        "year": 2,
+        "salary": 11000
+      },
+      {
+        "year": 3,
+        "salary": 15000
+      },
+      {
+        "year": 4,
+        "salary": 20000
+      },
+      {
+        "year": 5,
+        "salary": 24000
+      }
+    ],
+    "employment_rate": 93.5,
+    "relevance_rate": 80,
+    "satisfaction": 79,
+    "roi_index": 83,
+    "roi_grade": "B",
+    "ai_risk_level": "低",
+    "ai_risk_score": 18,
+    "ai_risk_description": "能源系统的物理特性和安全要求意味着AI只能用于预测和优化，不能替代工程决策。新能源+AI的交叉方向（智能电网调度、风光功率预测）反而需要更多懂得AI的新能源工程师。",
+    "top_industries": [
+      "光伏",
+      "风电",
+      "储能/电池",
+      "新能源汽车",
+      "电力设计院"
+    ],
+    "top_positions": [
+      "新能源工程师",
+      "光伏系统工程师",
+      "储能工程师",
+      "能源管理师",
+      "碳交易分析师"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "深圳",
+      "苏州",
+      "合肥"
+    ],
+    "top_schools": [
+      {
+        "name": "华北电力大学",
+        "employment_rate": 97,
+        "avg_salary": 18000
+      },
+      {
+        "name": "西安交通大学",
+        "employment_rate": 96.5,
+        "avg_salary": 19000
+      },
+      {
+        "name": "华中科技大学",
+        "employment_rate": 96,
+        "avg_salary": 18500
+      },
+      {
+        "name": "清华大学",
+        "employment_rate": 97.5,
+        "avg_salary": 22000
+      }
+    ],
+    "related_majors": [
+      "dianqi-gongcheng",
+      "cailiao-kexue",
+      "huanjing-gongcheng",
+      "huaxue-gongcheng"
+    ],
+    "faq": [
+      {
+        "q": "新能源是不是风口专业？",
+        "a": "是确定性的长期趋势而非短期风口。全球能源转型需要数十年完成，中国更是将新能源作为国家战略。但行业波动性也大——光伏/储能行业有周期性过剩风险，建议选择头部企业就业。"
+      },
+      {
+        "q": "新能源和传统电气工程有什么区别？",
+        "a": "传统电气偏向电网系统（发电-输电-配电），新能源偏向电源侧（光伏/风电/储能）。新能源就业更市场化（民营企业多），传统电气更体制化（国网南网为主）。"
+      }
+    ],
+    "tags": [
+      "双碳",
+      "新能源",
+      "政策红利",
+      "长期赛道",
+      "清洁能源"
+    ],
+    "gender_ratio": "男7:女3",
+    "recommended_for": [
+      "对能源/环保有兴趣",
+      "物理/化学好",
+      "关注政策趋势",
+      "就业导向"
+    ],
+    "seo_title": "新能源科学与工程专业就业前景与薪资分析（2026最新）",
+    "seo_description": "新能源专业起薪9000元/月，就业率93.5%。解读双碳战略下的光伏/储能/风电就业机遇、行业周期性风险及与传统电气的差异。"
+  },
+  {
+    "id": "materials",
+    "slug": "cailiao-kexue-yu-gongcheng",
+    "name": "材料科学与工程",
+    "category": "工学",
+    "degree": "工学学士",
+    "duration": 4,
+    "description": "材料科学与工程是研究材料组成、结构、性能和制备工艺的基础工科，被称为'所有制造业的母亲'。课程涵盖材料科学基础、材料物理性能、材料力学性能、金属材料、无机非金属材料、高分子材料、复合材料等。材料是一切产品的物质基础——从芯片的硅晶圆到飞机发动机的耐热合金，从锂电池的正极材料到人工关节的生物陶瓷。在国家半导体自主化和新能源战略的推动下，半导体材料和新能源材料方向迎来了历史性机遇。但需注意，材料行业读研是主流选择——本科就业面较窄。",
+    "starting_salary": 7000,
+    "salary_3year": 12000,
+    "salary_5year": 18000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 6000
+      },
+      {
+        "year": 2,
+        "salary": 8000
+      },
+      {
+        "year": 3,
+        "salary": 10500
+      },
+      {
+        "year": 4,
+        "salary": 14000
+      },
+      {
+        "year": 5,
+        "salary": 17000
+      }
+    ],
+    "employment_rate": 90,
+    "relevance_rate": 75,
+    "satisfaction": 70,
+    "roi_index": 68,
+    "roi_grade": "C",
+    "ai_risk_level": "中低",
+    "ai_risk_score": 30,
+    "ai_risk_description": "材料研发依赖大量实验验证，AI（材料基因组计划和高通量计算）正在加速材料发现过程。但实验室操作、工艺优化、性能表征等核心环节仍需人类科学家。AI是材料研发的加速器而非替代者。",
+    "top_industries": [
+      "半导体/芯片",
+      "新能源电池",
+      "航空航天",
+      "汽车制造",
+      "生物医用材料"
+    ],
+    "top_positions": [
+      "材料工程师",
+      "工艺工程师",
+      "研发工程师",
+      "质量工程师",
+      "材料测试工程师"
+    ],
+    "top_cities": [
+      "上海",
+      "深圳",
+      "苏州",
+      "北京",
+      "武汉"
+    ],
+    "top_schools": [
+      {
+        "name": "清华大学",
+        "employment_rate": 95,
+        "avg_salary": 20000
+      },
+      {
+        "name": "北京科技大学",
+        "employment_rate": 94,
+        "avg_salary": 15000
+      },
+      {
+        "name": "上海交通大学",
+        "employment_rate": 93.5,
+        "avg_salary": 19000
+      },
+      {
+        "name": "浙江大学",
+        "employment_rate": 93,
+        "avg_salary": 18000
+      },
+      {
+        "name": "中南大学",
+        "employment_rate": 92.5,
+        "avg_salary": 16000
+      }
+    ],
+    "related_majors": [
+      "huaxue-gongcheng",
+      "jixie-gongcheng",
+      "wuli-xue",
+      "huaxue"
+    ],
+    "faq": [
+      {
+        "q": "材料专业是天坑吗？",
+        "a": "传统金属/无机非方向确实薪资偏低且工作环境一般。但半导体材料、新能源材料、生物医用材料等新兴方向正在崛起。关键在于读研选对方向——本科阶段很难接触到前沿，硕士是入行起跳板。"
+      },
+      {
+        "q": "材料必须读研吗？",
+        "a": "是，强烈建议。材料本科就业大多在工厂做工艺/质量检测，起薪和成长性都有限。读研后进入研发岗，薪资提升50%以上，且能接触到更核心的技术。"
+      }
+    ],
+    "tags": [
+      "基础学科",
+      "制造业",
+      "读研必须",
+      "半导体材料热门",
+      "传统方向薪资低"
+    ],
+    "gender_ratio": "男7:女3",
+    "recommended_for": [
+      "物理/化学好",
+      "有耐心做实验",
+      "计划读研",
+      "对材料有兴趣"
+    ],
+    "seo_title": "材料科学与工程专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "材料科学与工程专业起薪7000元/月，就业率90%。分析传统材料vs半导体材料方向差异、读研必要性、实验室vs工厂两种职业路径。"
+  },
+  {
+    "id": "arch",
+    "slug": "jianzhu-xue",
+    "name": "建筑学",
+    "category": "工学",
+    "degree": "建筑学学士",
+    "duration": 5,
+    "description": "建筑学是融合工程技术与人文艺术的综合性学科，培养具备建筑设计、城市规划和空间营造能力的专业人才。5年制课程涵盖建筑设计、建筑历史与理论、建筑结构与构造、建筑物理、城市规划原理等。建筑学的独特之处在于它是工科中最'文艺'的专业——既需要扎实的理工基础（力学/结构），又强调审美和创意（设计表达/空间感知）。在房地产高速增长期结束后，建筑行业正从'增量开发'转向'存量更新'——城市更新、老旧小区改造、历史建筑保护等新方向为建筑师提供了转型空间。",
+    "starting_salary": 7000,
+    "salary_3year": 13000,
+    "salary_5year": 20000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 6000
+      },
+      {
+        "year": 2,
+        "salary": 8500
+      },
+      {
+        "year": 3,
+        "salary": 11500
+      },
+      {
+        "year": 4,
+        "salary": 15500
+      },
+      {
+        "year": 5,
+        "salary": 19000
+      }
+    ],
+    "employment_rate": 85,
+    "relevance_rate": 78,
+    "satisfaction": 72,
+    "roi_index": 65,
+    "roi_grade": "C",
+    "ai_risk_level": "中",
+    "ai_risk_score": 45,
+    "ai_risk_description": "AI在建筑设计中的应用正在加速（参数化设计、AI渲染、BIM自动化），基础的效果图绘制和标准设计可能被替代。但方案创作、空间体验设计和客户沟通等核心环节仍高度依赖建筑师的审美和判断。",
+    "top_industries": [
+      "建筑设计院",
+      "房地产",
+      "城市规划",
+      "室内设计",
+      "文化遗产保护"
+    ],
+    "top_positions": [
+      "建筑师",
+      "城市规划师",
+      "室内设计师",
+      "景观设计师",
+      "BIM工程师"
+    ],
+    "top_cities": [
+      "上海",
+      "北京",
+      "深圳",
+      "广州",
+      "成都"
+    ],
+    "top_schools": [
+      {
+        "name": "清华大学建筑学院",
+        "employment_rate": 94,
+        "avg_salary": 20000
+      },
+      {
+        "name": "同济大学建筑与城市规划学院",
+        "employment_rate": 93.5,
+        "avg_salary": 19000
+      },
+      {
+        "name": "东南大学建筑学院",
+        "employment_rate": 92,
+        "avg_salary": 18000
+      },
+      {
+        "name": "天津大学建筑学院",
+        "employment_rate": 91.5,
+        "avg_salary": 17000
+      },
+      {
+        "name": "华南理工大学建筑学院",
+        "employment_rate": 91,
+        "avg_salary": 17500
+      }
+    ],
+    "related_majors": [
+      "tumu-gongcheng",
+      "chengshi-gui-hua",
+      "fengjing-yuanlin",
+      "gongye-sheji"
+    ],
+    "faq": [
+      {
+        "q": "建筑学现在还值得学吗？",
+        "a": "时代变了——过去20年是建筑师的黄金期，现在行业在下行周期。但对于真正热爱建筑设计的人仍然是值得的。建议关注城市更新、绿色建筑、参数化设计等新方向，避免在传统住宅设计领域内卷。"
+      },
+      {
+        "q": "建筑学5年值不值？",
+        "a": "5年学制确实比其他专业多1年，但建筑学学位在很多国家是受认证的（可考注册建筑师）。如果决定不从事建筑行业，转UI/UX设计、游戏场景设计等方向也有优势——设计思维是通用的。"
+      }
+    ],
+    "tags": [
+      "艺术+工程",
+      "5年制",
+      "行业转型",
+      "设计思维",
+      "加班多"
+    ],
+    "gender_ratio": "男5:女5",
+    "recommended_for": [
+      "审美能力强",
+      "空间想象力好",
+      "有创造力",
+      "物理中等即可"
+    ],
+    "seo_title": "建筑学专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "建筑学专业5年制，起薪7000元/月，5年20000元。分析房地产下行周期中建筑师的转型方向、城市更新新机遇及AI对建筑设计的影响。"
+  },
+  {
+    "id": "enveng",
+    "slug": "huanjing-gongcheng",
+    "name": "环境工程",
+    "category": "工学",
+    "degree": "工学学士",
+    "duration": 4,
+    "description": "环境工程是运用工程手段解决环境污染问题的专业，涵盖水污染控制、大气污染治理、固体废物处理与资源化、环境监测等方向。核心课程包括环境工程原理、水污染控制工程、大气污染控制工程、环境监测、环境影响评价等。在'双碳'目标和美丽中国战略推动下，环保产业正在从'被动治污'转向'绿色发展'——碳交易、ESG咨询、清洁生产等新兴领域为环境工程毕业生打开了新的大门。传统环保岗位（污水处理厂/环保局）薪资偏低但稳定，新兴方向薪资天花板更高。",
+    "starting_salary": 6500,
+    "salary_3year": 10000,
+    "salary_5year": 16000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 5500
+      },
+      {
+        "year": 2,
+        "salary": 7000
+      },
+      {
+        "year": 3,
+        "salary": 9000
+      },
+      {
+        "year": 4,
+        "salary": 12000
+      },
+      {
+        "year": 5,
+        "salary": 15000
+      }
+    ],
+    "employment_rate": 87,
+    "relevance_rate": 70,
+    "satisfaction": 65,
+    "roi_index": 58,
+    "roi_grade": "C",
+    "ai_risk_level": "中低",
+    "ai_risk_score": 28,
+    "ai_risk_description": "环境监测的自动化程度在提高，AI正在改善污染预测和数据分析效率。但污水处理厂运行、环保设施运维、环评报告编制等需要现场操作和专业判断的环节难以被AI替代。",
+    "top_industries": [
+      "环保工程",
+      "水务",
+      "政府/事业单位",
+      "第三方检测",
+      "ESG咨询"
+    ],
+    "top_positions": [
+      "环保工程师",
+      "环评工程师",
+      "水处理工程师",
+      "ESG分析师",
+      "环境监测员"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "南京",
+      "杭州",
+      "广州"
+    ],
+    "top_schools": [
+      {
+        "name": "清华大学",
+        "employment_rate": 93,
+        "avg_salary": 17000
+      },
+      {
+        "name": "同济大学",
+        "employment_rate": 92,
+        "avg_salary": 16000
+      },
+      {
+        "name": "南京大学",
+        "employment_rate": 91,
+        "avg_salary": 15000
+      },
+      {
+        "name": "浙江大学",
+        "employment_rate": 91.5,
+        "avg_salary": 16500
+      }
+    ],
+    "related_majors": [
+      "shuili-gongcheng",
+      "hua-xue-gong-cheng",
+      "xinnengyuan-kexue",
+      "shengwu-kexue"
+    ],
+    "faq": [
+      {
+        "q": "环境工程是天坑专业吗？",
+        "a": "传统方向（污水厂/环保局）确实薪资不高。但碳交易、ESG、清洁生产等新兴方向正在崛起，薪资已经不输传统工科。关键是主动往'双碳'方向靠拢，不要局限于传统治污。"
+      },
+      {
+        "q": "环境工程考公有优势吗？",
+        "a": "有环保局、生态环境局等对口岗位，相关岗位每年都有招聘。但数量不如法学/会计/中文多，竞争也不小。"
+      }
+    ],
+    "tags": [
+      "双碳",
+      "环保",
+      "公务员可选",
+      "传统方向薪资低",
+      "新兴方向有前景"
+    ],
+    "gender_ratio": "男6:女4",
+    "recommended_for": [
+      "对环保有热情",
+      "化学/生物好",
+      "追求稳定",
+      "关注政策"
+    ],
+    "seo_title": "环境工程专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "环境工程专业起薪6500元/月，就业率87%。分析双碳时代环保人的转型机遇、碳交易/ESG新方向及公务员vs企业两种就业路径。"
+  },
+  {
+    "id": "econ",
+    "slug": "jingji-xue",
+    "name": "经济学",
+    "category": "经济学",
+    "degree": "经济学学士",
+    "duration": 4,
+    "description": "经济学是研究资源配置和社会经济运行的学科，被誉为'社会科学的皇冠'。核心课程包括微观经济学、宏观经济学、计量经济学、产业经济学、发展经济学等。经济学培养的是一种系统化的分析思维——从供需分析到成本收益权衡，从政策评估到市场预测。毕业生去向广泛：金融机构（银行/证券）、政府部门（发改委/统计局）、咨询公司、大型企业战略部门等。经济学最大的特点是'厚积薄发'——本科阶段偏理论，但为读研和长期职业发展奠定了扎实的分析基础。名校经济学毕业生的竞争力在所有专业中名列前茅。",
+    "starting_salary": 7500,
+    "salary_3year": 14000,
+    "salary_5year": 24000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 6500
+      },
+      {
+        "year": 2,
+        "salary": 9000
+      },
+      {
+        "year": 3,
+        "salary": 13000
+      },
+      {
+        "year": 4,
+        "salary": 18000
+      },
+      {
+        "year": 5,
+        "salary": 23000
+      }
+    ],
+    "employment_rate": 87,
+    "relevance_rate": 65,
+    "satisfaction": 74,
+    "roi_index": 72,
+    "roi_grade": "B",
+    "ai_risk_level": "中",
+    "ai_risk_score": 40,
+    "ai_risk_description": "基础的经济数据分析和报告撰写正在被AI工具自动化。但经济预测、政策评估、战略判断等需要深层逻辑推理和宏观视野的工作仍依赖人类经济学家的智慧。经济学+编程（Python/计量）的复合人才抗AI能力强。",
+    "top_industries": [
+      "金融",
+      "政府/事业单位",
+      "咨询",
+      "互联网/IT",
+      "学术研究"
+    ],
+    "top_positions": [
+      "经济分析师",
+      "政策研究员",
+      "投行分析师",
+      "咨询顾问",
+      "数据分析师"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "深圳",
+      "广州",
+      "杭州"
+    ],
+    "top_schools": [
+      {
+        "name": "北京大学国家发展研究院",
+        "employment_rate": 95,
+        "avg_salary": 28000
+      },
+      {
+        "name": "复旦大学经济学院",
+        "employment_rate": 94,
+        "avg_salary": 25000
+      },
+      {
+        "name": "中国人民大学经济学院",
+        "employment_rate": 93.5,
+        "avg_salary": 24000
+      },
+      {
+        "name": "上海财经大学",
+        "employment_rate": 92,
+        "avg_salary": 22000
+      },
+      {
+        "name": "南开大学经济学院",
+        "employment_rate": 91.5,
+        "avg_salary": 20000
+      }
+    ],
+    "related_majors": [
+      "jinrong-xue",
+      "tongji-xue",
+      "guoji-jingji-yu-maoyi",
+      "jinrong-gongcheng"
+    ],
+    "faq": [
+      {
+        "q": "经济学和金融学到底选哪个？",
+        "a": "经济学更理论（适合读研/考公/学术），金融学更实务（适合就业/考证）。经济学为长期发展培养分析思维，金融学为短期就业培养实操技能。数学好且计划深造选经济学，想快速就业选金融学。"
+      },
+      {
+        "q": "经济学是不是太理论化不好就业？",
+        "a": "有一个误解：经济学≠纯理论。好的经济学训练非常强调数学和统计方法，这些在数据分析、金融建模、政策评估等领域是硬通货。关键在于不要只学理论，要掌握Python/Stata等工具。"
+      }
+    ],
+    "tags": [
+      "理论扎实",
+      "考公对口",
+      "读研友好",
+      "名校加成",
+      "万金油"
+    ],
+    "gender_ratio": "男4:女6",
+    "recommended_for": [
+      "数学成绩好",
+      "关注社会/政策",
+      "逻辑分析能力强",
+      "计划深造"
+    ],
+    "seo_title": "经济学专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "经济学专业起薪7500元/月，名校毕业生5年可达24000元。分析经济学vs金融学的差异、考公优势、读研必要性及AI时代经济学人的转型。"
+  },
+  {
+    "id": "intrade",
+    "slug": "guoji-jingji-yu-maoyi",
+    "name": "国际经济与贸易",
+    "category": "经济学",
+    "degree": "经济学学士",
+    "duration": 4,
+    "description": "国际经济与贸易是经济学大类中聚焦国际贸易理论和实务的专业方向。课程涵盖国际贸易理论、国际金融、国际商法、外贸函电、跨境电商等。该专业最大的特点是在经济全球化的大背景下，培养具备跨国商业视野和实际操作能力的复合型人才。在跨境电商爆发式增长（Shein/Temu/TikTok电商出海）和RCEP生效的推动下，国贸毕业生在跨境电商运营、海外市场开拓、外贸供应链管理等新兴领域找到了大量就业机会。但需注意，传统外贸跟单/报关岗位正在被数字化系统替代。",
+    "starting_salary": 7000,
+    "salary_3year": 12000,
+    "salary_5year": 20000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 6000
+      },
+      {
+        "year": 2,
+        "salary": 8500
+      },
+      {
+        "year": 3,
+        "salary": 11000
+      },
+      {
+        "year": 4,
+        "salary": 15000
+      },
+      {
+        "year": 5,
+        "salary": 19000
+      }
+    ],
+    "employment_rate": 86.5,
+    "relevance_rate": 62,
+    "satisfaction": 70,
+    "roi_index": 64,
+    "roi_grade": "C",
+    "ai_risk_level": "中高",
+    "ai_risk_score": 50,
+    "ai_risk_description": "基础的报关、跟单、单证处理正在被系统自动化，AI翻译工具降低了对语言能力的要求。但跨境电商运营、海外市场策略、跨文化谈判等需要创造力和人际沟通的工作仍然稳固。",
+    "top_industries": [
+      "跨境电商",
+      "传统外贸",
+      "银行/金融",
+      "物流/供应链",
+      "外资企业"
+    ],
+    "top_positions": [
+      "跨境电商运营",
+      "外贸业务员",
+      "供应链管理",
+      "国际采购",
+      "海外市场经理"
+    ],
+    "top_cities": [
+      "深圳",
+      "上海",
+      "广州",
+      "宁波",
+      "杭州"
+    ],
+    "top_schools": [
+      {
+        "name": "对外经济贸易大学",
+        "employment_rate": 93,
+        "avg_salary": 20000
+      },
+      {
+        "name": "上海对外经贸大学",
+        "employment_rate": 91,
+        "avg_salary": 18000
+      },
+      {
+        "name": "广东外语外贸大学",
+        "employment_rate": 90,
+        "avg_salary": 17000
+      },
+      {
+        "name": "南开大学",
+        "employment_rate": 90.5,
+        "avg_salary": 19000
+      }
+    ],
+    "related_majors": [
+      "jinrong-xue",
+      "jingji-xue",
+      "dianzi-shangwu",
+      "waiyu"
+    ],
+    "faq": [
+      {
+        "q": "国贸专业现在还好就业吗？",
+        "a": "传统外贸在萎缩，但跨境电商在爆发。如果你把'国贸'重新定义为'跨境电商+海外营销'而不是'跟单+报关'，就业前景截然不同。建议大学期间掌握一个跨境电商平台（亚马逊/速卖通/Shopee）的实际操作经验。"
+      },
+      {
+        "q": "英语需要多好？",
+        "a": "基本的商务英语（邮件+会议）是必须的。但不需要翻译级水平——AI翻译工具可以帮大忙。更重要的是跨文化沟通能力和商业敏感度。"
+      }
+    ],
+    "tags": [
+      "跨境电商",
+      "外贸",
+      "英语要求",
+      "就业转型",
+      "深圳/广州主场"
+    ],
+    "gender_ratio": "男3:女7",
+    "recommended_for": [
+      "英语基础好",
+      "沟通能力强",
+      "对国际商业有兴趣",
+      "善于运营"
+    ],
+    "seo_title": "国际经济与贸易专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "国贸专业起薪7000元/月，就业率86.5%。分析跨境电商大爆发中的国贸人机遇、传统外贸vs跨境电商选择及AI对贸易行业的影响。"
+  },
+  {
+    "id": "fineng",
+    "slug": "jinrong-gongcheng",
+    "name": "金融工程",
+    "category": "经济学",
+    "degree": "经济学学士",
+    "duration": 4,
+    "description": "金融工程是金融学、数学和计算机科学的交叉学科，运用数学模型和编程技术解决金融领域的定价、风险管理和投资策略问题。核心课程包括金融衍生品定价、随机过程、金融时间序列分析、金融风险管理、Python/C++量化编程等。金融工程是金融行业中'技术含量'最高的方向之一，毕业生在量化交易、风险管理、金融产品设计等高端岗位有天然优势。但需要注意：金融工程对数学和编程的要求远超普通金融学，国内量化行业对学历要求极高（偏爱985硕士+数学/物理/计算机背景）。",
+    "starting_salary": 13000,
+    "salary_3year": 26000,
+    "salary_5year": 40000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 11000
+      },
+      {
+        "year": 2,
+        "salary": 17000
+      },
+      {
+        "year": 3,
+        "salary": 23000
+      },
+      {
+        "year": 4,
+        "salary": 31000
+      },
+      {
+        "year": 5,
+        "salary": 38000
+      }
+    ],
+    "employment_rate": 91,
+    "relevance_rate": 72,
+    "satisfaction": 80,
+    "roi_index": 88,
+    "roi_grade": "A",
+    "ai_risk_level": "中",
+    "ai_risk_score": 35,
+    "ai_risk_description": "AI在量化交易中的应用已经非常深入（高频交易、智能风控），但交易策略的设计、风险模型的创新和异常情况的处理仍需要金融工程师的专业判断。懂AI的金融工程师是AI时代的'控制者'而非'被替代者'。",
+    "top_industries": [
+      "量化基金",
+      "证券/投行",
+      "银行风险管理部门",
+      "金融科技",
+      "保险精算"
+    ],
+    "top_positions": [
+      "量化研究员",
+      "金融工程师",
+      "风险管理师",
+      "衍生品交易员",
+      "量化开发工程师"
+    ],
+    "top_cities": [
+      "上海",
+      "北京",
+      "深圳",
+      "香港",
+      "杭州"
+    ],
+    "top_schools": [
+      {
+        "name": "北京大学",
+        "employment_rate": 96,
+        "avg_salary": 35000
+      },
+      {
+        "name": "上海交通大学上海高级金融学院",
+        "employment_rate": 95.5,
+        "avg_salary": 34000
+      },
+      {
+        "name": "清华大学",
+        "employment_rate": 96.5,
+        "avg_salary": 36000
+      },
+      {
+        "name": "复旦大学",
+        "employment_rate": 95,
+        "avg_salary": 32000
+      }
+    ],
+    "related_majors": [
+      "jinrong-xue",
+      "tongji-xue",
+      "yingyong-shuxue",
+      "jisuanji-kexue-yu-jishu"
+    ],
+    "faq": [
+      {
+        "q": "金融工程和金融学有什么区别？",
+        "a": "金融学偏文科（理解商业模式/做分析报告），金融工程偏理科（数学建模/编程实现）。前者去投行/研究所/银行，后者去量化/风控/产品设计。数学好的选金工，数学一般的选金融学。"
+      },
+      {
+        "q": "本科金融工程够用吗？",
+        "a": "量化岗位的核心门槛是硕士，本科金工毕业生大多去了银行风控或金融科技公司做开发。如果想做正向量化交易，读一个数学/统计硕士是非常好的路径。"
+      }
+    ],
+    "tags": [
+      "高薪",
+      "数学/编程",
+      "量化",
+      "名校+硕士",
+      "金融科技"
+    ],
+    "gender_ratio": "男6:女4",
+    "recommended_for": [
+      "数学/编程都强",
+      "抗压能力好",
+      "对金融市场有兴趣",
+      "名校背景加分"
+    ],
+    "seo_title": "金融工程专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "金融工程专业起薪13000元/月，5年可达40000元。深度分析量化交易/风控职业路径、金工vs金融的差异、读研必要性及AI时代的量化人才需求。"
+  },
+  {
+    "id": "pharm",
+    "slug": "yao-xue",
+    "name": "药学",
+    "category": "医学",
+    "degree": "理学学士",
+    "duration": 4,
+    "description": "药学是研究药物研发、生产、质控和合理用药的学科，是连接化学、生物学和医学的桥梁。核心课程包括药物化学、药剂学、药理学、药物分析学、天然药物化学等。药学毕业生在制药企业（恒瑞/百济神州等）、CRO（药明康德等）、医院药房、药品监管机构（药监局）等方向就业。在创新药和CXO行业高速发展的背景下，药学人才（尤其是具有研发能力的硕士/博士）需求旺盛。但本科毕业生多从事医药代表或医院药剂师工作，薪资天花板有限。",
+    "starting_salary": 7000,
+    "salary_3year": 12000,
+    "salary_5year": 18000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 6000
+      },
+      {
+        "year": 2,
+        "salary": 8000
+      },
+      {
+        "year": 3,
+        "salary": 10500
+      },
+      {
+        "year": 4,
+        "salary": 14000
+      },
+      {
+        "year": 5,
+        "salary": 17000
+      }
+    ],
+    "employment_rate": 91,
+    "relevance_rate": 80,
+    "satisfaction": 73,
+    "roi_index": 69,
+    "roi_grade": "B",
+    "ai_risk_level": "低",
+    "ai_risk_score": 25,
+    "ai_risk_description": "AI在药物发现（分子筛选、靶点预测）中发挥越来越大的作用，大大加速了新药研发周期。但药物的临床试验、生产质控和临床用药等环节仍有严格的法规要求和手工操作。AI辅助药物研发创造了对'AI+药学'复合人才的新需求。",
+    "top_industries": [
+      "制药/生物医药",
+      "CRO/CDMO",
+      "医院",
+      "药监局",
+      "医药流通"
+    ],
+    "top_positions": [
+      "药物研发科学家",
+      "药剂师",
+      "医药代表",
+      "临床研究助理(CRA)",
+      "药品注册专员"
+    ],
+    "top_cities": [
+      "上海",
+      "北京",
+      "苏州",
+      "南京",
+      "深圳"
+    ],
+    "top_schools": [
+      {
+        "name": "中国药科大学",
+        "employment_rate": 95,
+        "avg_salary": 16000
+      },
+      {
+        "name": "北京大学药学院",
+        "employment_rate": 94.5,
+        "avg_salary": 18000
+      },
+      {
+        "name": "复旦大学药学院",
+        "employment_rate": 94,
+        "avg_salary": 17500
+      },
+      {
+        "name": "四川大学华西药学院",
+        "employment_rate": 93,
+        "avg_salary": 15000
+      },
+      {
+        "name": "沈阳药科大学",
+        "employment_rate": 92.5,
+        "avg_salary": 14000
+      }
+    ],
+    "related_majors": [
+      "linchuang-yixue",
+      "shengwu-kexue",
+      "huaxue",
+      "shengwu-yixue-gongcheng"
+    ],
+    "faq": [
+      {
+        "q": "药学毕业后主要做什么？",
+        "a": "三大方向：①制药企业（研发/生产/销售），薪资梯度：研发>销售>生产；②医院药房（药剂师），稳定但薪资上限低；③CRO公司（临床试验），薪资和成长性不错但工作强度大。建议做研发的必须读研。"
+      },
+      {
+        "q": "药学和临床医学哪个好？",
+        "a": "完全不同的两条路：临床医学→医生（和人打交道），药学→药物研发/生产（和药打交道）。药学不需要规培，早点进入职场；但职业天花板和社会地位不及临床医学。"
+      }
+    ],
+    "tags": [
+      "医药",
+      "稳定",
+      "研发岗需深造",
+      "制药",
+      "AI+药物发现"
+    ],
+    "gender_ratio": "男4:女6",
+    "recommended_for": [
+      "化学/生物好",
+      "对药物有兴趣",
+      "有耐心做实验",
+      "读研意愿"
+    ],
+    "seo_title": "药学专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "药学专业起薪7000元/月，就业率91%。分析制药/CRO/医院三大就业方向、研发岗读研必要性、创新药和CXO行业机遇。"
+  },
+  {
+    "id": "nursing",
+    "slug": "hu-li-xue",
+    "name": "护理学",
+    "category": "医学",
+    "degree": "理学学士",
+    "duration": 4,
+    "description": "护理学是培养临床护理和健康管理专业人才的学科。课程包括基础护理学、内科护理学、外科护理学、妇产科护理学、儿科护理学、急危重症护理学等。在当前老龄化社会背景下，护理人才是医疗体系中最紧缺的一环——全国护士缺口已达百万级。护理学毕业生的最大优势是就业率极高（接近100%），且稳定在体制内（公立医院）。但缺点也很明显：三班倒工作强度大、职业晋升空间有限、社会地位不及医生。近年高端护理方向（ICU专科护士、康复护理、社区护理）和医美/口腔护理等市场化方向为护士提供了更多选择。",
+    "starting_salary": 5500,
+    "salary_3year": 9000,
+    "salary_5year": 13000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 5000
+      },
+      {
+        "year": 2,
+        "salary": 6500
+      },
+      {
+        "year": 3,
+        "salary": 8500
+      },
+      {
+        "year": 4,
+        "salary": 10500
+      },
+      {
+        "year": 5,
+        "salary": 12500
+      }
+    ],
+    "employment_rate": 98,
+    "relevance_rate": 95,
+    "satisfaction": 68,
+    "roi_index": 62,
+    "roi_grade": "C",
+    "ai_risk_level": "极低",
+    "ai_risk_score": 5,
+    "ai_risk_description": "护理工作是医疗AI最难以替代的职业之一——需要大量物理接触、情感支持和即时临床判断。AI可以辅助生命体征监测和用药提醒，但注射、翻身、心理安抚等实操完全依赖护士。老龄化社会只会让护理需求持续增长。",
+    "top_industries": [
+      "公立医院",
+      "社区卫生",
+      "养老机构",
+      "医美",
+      "口腔诊所"
+    ],
+    "top_positions": [
+      "注册护士",
+      "专科护士（ICU/手术室）",
+      "护士长",
+      "医美护士",
+      "护理教育者"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "广州",
+      "成都",
+      "武汉"
+    ],
+    "top_schools": [
+      {
+        "name": "北京协和医学院护理学院",
+        "employment_rate": 99.5,
+        "avg_salary": 15000
+      },
+      {
+        "name": "四川大学华西护理学院",
+        "employment_rate": 99,
+        "avg_salary": 14000
+      },
+      {
+        "name": "北京大学护理学院",
+        "employment_rate": 98.5,
+        "avg_salary": 14500
+      },
+      {
+        "name": "复旦大学护理学院",
+        "employment_rate": 98,
+        "avg_salary": 14000
+      }
+    ],
+    "related_majors": [
+      "linchuang-yixue",
+      "yufang-yixue",
+      "kangfu-zhiliao",
+      "shehui-gongzuo"
+    ],
+    "faq": [
+      {
+        "q": "护理学是不是'伺候人'的？",
+        "a": "这是一个很大的误解。现代护理学需要扎实的医学知识基础和精细的临床操作技能。ICU护士需要会看监护仪数据、会做CRRT/ECMO等高精护理操作。护理是专业性很强的医疗技术岗位，不是简单的'伺候人'。"
+      },
+      {
+        "q": "护士收入低吗？",
+        "a": "公立三甲医院编制内护士的收入并不低（一线城市月薪1-2万+各种福利），且有稳定编制。但私立医院和基层医院确实偏低。专科护士（ICU/手术室/助产士）收入高于普通护士。"
+      }
+    ],
+    "tags": [
+      "铁饭碗",
+      "就业率极高",
+      "三班倒",
+      "社会需求大",
+      "AI免疫"
+    ],
+    "gender_ratio": "男1:女9",
+    "recommended_for": [
+      "有耐心和同情心",
+      "动手能力强",
+      "抗压能力好",
+      "生物好"
+    ],
+    "seo_title": "护理学专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "护理学专业就业率98%，全国护士缺口超百万。分析护士的职业现状、专科护士发展方向、薪资构成及老龄化社会中的护理机遇。"
+  },
+  {
+    "id": "tcm",
+    "slug": "zhong-yi-xue",
+    "name": "中医学",
+    "category": "医学",
+    "degree": "医学学士",
+    "duration": 5,
+    "description": "中医学是中国传统医学的理论和实践体系，培养掌握中医理论（阴阳五行、脏腑经络、辨证论治）和现代医学知识的复合型中医人才。课程包括中医基础理论、中医诊断学、中药学、方剂学、针灸学以及西医基础课程。在国家大力推动中医药传承创新发展的政策红利下，中医行业正在经历复兴——中医院数量持续增加、中医纳入更多医保项目、大健康产业为中医药人才提供了广阔的就业空间。但中医的成才周期长，需要大量的临床实践和经验积累，不如西医岗位标准化程度高。",
+    "starting_salary": 5500,
+    "salary_3year": 8500,
+    "salary_5year": 14000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 4500
+      },
+      {
+        "year": 2,
+        "salary": 6000
+      },
+      {
+        "year": 3,
+        "salary": 8000
+      },
+      {
+        "year": 4,
+        "salary": 10500
+      },
+      {
+        "year": 5,
+        "salary": 13000
+      }
+    ],
+    "employment_rate": 85,
+    "relevance_rate": 78,
+    "satisfaction": 71,
+    "roi_index": 55,
+    "roi_grade": "C",
+    "ai_risk_level": "极低",
+    "ai_risk_score": 10,
+    "ai_risk_description": "中医的'望闻问切'、辨证论治高度依赖医者的主观经验和直觉判断，这些是AI极难模拟的。AI可以辅助舌象分析和方剂推荐，但中医诊疗的本质（个体化、整体观、医患信任）使其成为AI抗风险能力最强的医学专业之一。",
+    "top_industries": [
+      "中医院",
+      "综合医院中医科",
+      "大健康/养生",
+      "中医馆/诊所",
+      "中药企业"
+    ],
+    "top_positions": [
+      "中医师",
+      "针灸师",
+      "中医内科医生",
+      "康复理疗师",
+      "中医养生顾问"
+    ],
+    "top_cities": [
+      "北京",
+      "广州",
+      "上海",
+      "成都",
+      "南京"
+    ],
+    "top_schools": [
+      {
+        "name": "北京中医药大学",
+        "employment_rate": 92,
+        "avg_salary": 15000
+      },
+      {
+        "name": "上海中医药大学",
+        "employment_rate": 91,
+        "avg_salary": 14000
+      },
+      {
+        "name": "广州中医药大学",
+        "employment_rate": 90.5,
+        "avg_salary": 14500
+      },
+      {
+        "name": "成都中医药大学",
+        "employment_rate": 89,
+        "avg_salary": 13000
+      },
+      {
+        "name": "南京中医药大学",
+        "employment_rate": 89.5,
+        "avg_salary": 13500
+      }
+    ],
+    "related_majors": [
+      "linchuang-yixue",
+      "yao-xue",
+      "zhenjiu-tuina",
+      "zhongxiyi-jiehe"
+    ],
+    "faq": [
+      {
+        "q": "中医学西医吗？会被西医看不起吗？",
+        "a": "现代中医学五年制课程中约40%是西医基础课，中西医结合是主流趋势。中医不是'不科学'，而是立足另一种理论体系——用现代科学方法验证中医正成为研究热点（青蒿素就是最好的例子）。"
+      },
+      {
+        "q": "中医院好进吗？",
+        "a": "相比西医院，中医院的编制岗位竞争压力小一些，但优质岗位（三甲中医院）仍然激烈。而且中医不像临床医学必须进医院——中医馆创业、养生健康管理、互联网中医问诊等市场化选择更多。"
+      }
+    ],
+    "tags": [
+      "传统医学",
+      "政策红利",
+      "大健康",
+      "可创业",
+      "西化竞争小"
+    ],
+    "gender_ratio": "男3:女7",
+    "recommended_for": [
+      "对中国传统文化有兴趣",
+      "有同理心",
+      "动手操作（针灸）",
+      "语言表达能力好"
+    ],
+    "seo_title": "中医学专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "中医学专业5年制，起薪5500元/月，就业率85%。分析中医药政策红利、中医馆创业机会、中西医结合趋势及大健康产业机遇。"
+  },
+  {
+    "id": "appmath",
+    "slug": "yingyong-shu-xue",
+    "name": "数学与应用数学",
+    "category": "理学",
+    "degree": "理学学士",
+    "duration": 4,
+    "description": "数学与应用数学是理学中的基础学科，培养具备扎实数学理论功底和实际问题建模能力的专业人才。核心课程包括数学分析、高等代数、概率论、数理统计、常微分方程、数值计算方法等。在AI和数据科学时代，数学专业的价值被重新定义——机器学习算法的本质是数学，量化金融的核心是随机过程，密码学的基础是数论。数学专业毕业生凭借强大的抽象思维能力和学习能力，可以轻松转行到任何技术密集型领域：AI算法、量化金融、数据科学、密码学、运筹优化等。但纯理论方向若不走学术路线，就业面相对狭窄。",
+    "starting_salary": 8500,
+    "salary_3year": 17000,
+    "salary_5year": 28000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 7500
+      },
+      {
+        "year": 2,
+        "salary": 11000
+      },
+      {
+        "year": 3,
+        "salary": 15500
+      },
+      {
+        "year": 4,
+        "salary": 21000
+      },
+      {
+        "year": 5,
+        "salary": 26500
+      }
+    ],
+    "employment_rate": 88.5,
+    "relevance_rate": 60,
+    "satisfaction": 77,
+    "roi_index": 80,
+    "roi_grade": "B",
+    "ai_risk_level": "极低",
+    "ai_risk_score": 12,
+    "ai_risk_description": "数学专业毕业生是AI算法的底层奠基者——理解并改进模型需要深厚的数学功底。虽然AI工具可以自动化基础计算，但在前沿算法研究中，数学思维是不可替代的核心竞争力。",
+    "top_industries": [
+      "AI/机器学习",
+      "量化金融",
+      "互联网/IT",
+      "数据科学",
+      "教育"
+    ],
+    "top_positions": [
+      "算法工程师",
+      "量化研究员",
+      "数据科学家",
+      "密码学研究员",
+      "数学教师"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "深圳",
+      "杭州",
+      "南京"
+    ],
+    "top_schools": [
+      {
+        "name": "北京大学数学科学学院",
+        "employment_rate": 96,
+        "avg_salary": 30000
+      },
+      {
+        "name": "复旦大学数学科学学院",
+        "employment_rate": 95,
+        "avg_salary": 28000
+      },
+      {
+        "name": "中国科学技术大学",
+        "employment_rate": 94.5,
+        "avg_salary": 27000
+      },
+      {
+        "name": "清华大学",
+        "employment_rate": 95.5,
+        "avg_salary": 29000
+      },
+      {
+        "name": "南开大学",
+        "employment_rate": 92,
+        "avg_salary": 22000
+      }
+    ],
+    "related_majors": [
+      "tongji-xue",
+      "jisuanji-kexue-yu-jishu",
+      "jinrong-gongcheng",
+      "wuli-xue"
+    ],
+    "faq": [
+      {
+        "q": "数学专业好就业吗？",
+        "a": "这是一个'厚积薄发'的专业。纯数学理论确实难找对口工作，但数学+编程（Python/机器学习）的组合是高薪热门赛道的敲门砖。数学专业毕业生在AI算法和量化交易领域的竞争力甚至超过计算机和金融专业。"
+      },
+      {
+        "q": "数学专业一定要读研吗？",
+        "a": "如果你想做AI算法或量化金融，硕士是基本盘。如果想做中学教师或数据分析，本科也可以。但数学专业的'最大价值'在读研后才充分释放。建议数学基础好的同学规划读研。"
+      }
+    ],
+    "tags": [
+      "AI基础",
+      "转行利器",
+      "高上限",
+      "读研加成",
+      "思维训练"
+    ],
+    "gender_ratio": "男6:女4",
+    "recommended_for": [
+      "数学成绩优异",
+      "喜欢抽象思维",
+      "计划深造",
+      "对AI/金融有兴趣"
+    ],
+    "seo_title": "数学与应用数学专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "数学专业起薪8500元/月，转AI/量化的5年薪资可达28000元。分析数学在AI时代的核心价值、转行优势、读研重要性及学术vs工业界路线。"
+  },
+  {
+    "id": "psych",
+    "slug": "xinli-xue",
+    "name": "心理学",
+    "category": "理学",
+    "degree": "理学学士",
+    "duration": 4,
+    "description": "心理学是研究人类心理活动和行为的科学，是理学和社会科学的交叉学科。核心课程包括普通心理学、实验心理学、发展心理学、社会心理学、心理测量学、认知心理学等。在大众心理健康意识不断提升和互联网产品对用户研究需求增长的背景下，心理学毕业生的就业空间正在拓宽：传统方向包括学校心理健康教育和心理咨询，新兴方向包括互联网用户研究（UX Research）、游戏策划、人力资源和消费者行为分析。但需注意：成为执业的心理咨询师需要硕士学历+长期临床训练，门槛不低。",
+    "starting_salary": 6500,
+    "salary_3year": 11000,
+    "salary_5year": 18000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 5500
+      },
+      {
+        "year": 2,
+        "salary": 7500
+      },
+      {
+        "year": 3,
+        "salary": 10000
+      },
+      {
+        "year": 4,
+        "salary": 13500
+      },
+      {
+        "year": 5,
+        "salary": 17000
+      }
+    ],
+    "employment_rate": 83,
+    "relevance_rate": 55,
+    "satisfaction": 71,
+    "roi_index": 56,
+    "roi_grade": "C",
+    "ai_risk_level": "低",
+    "ai_risk_score": 28,
+    "ai_risk_description": "AI心理咨询聊天机器人可以处理轻度情绪问题，但深度心理治疗需要的共情、信任关系和复杂判断能力是AI短期难以具备的。用户体验研究和行为分析中的定性洞察仍高度依赖心理学专业训练。",
+    "top_industries": [
+      "教育/学校",
+      "心理咨询",
+      "互联网/IT",
+      "人力资源",
+      "市场调研"
+    ],
+    "top_positions": [
+      "心理咨询师",
+      "用户研究员（UX Researcher）",
+      "HR专员",
+      "游戏用户研究员",
+      "学校心理教师"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "深圳",
+      "广州",
+      "杭州"
+    ],
+    "top_schools": [
+      {
+        "name": "北京师范大学心理学部",
+        "employment_rate": 90,
+        "avg_salary": 18000
+      },
+      {
+        "name": "北京大学心理与认知科学学院",
+        "employment_rate": 91,
+        "avg_salary": 20000
+      },
+      {
+        "name": "华东师范大学",
+        "employment_rate": 89,
+        "avg_salary": 17000
+      },
+      {
+        "name": "华南师范大学",
+        "employment_rate": 88,
+        "avg_salary": 15000
+      },
+      {
+        "name": "浙江大学",
+        "employment_rate": 89.5,
+        "avg_salary": 17500
+      }
+    ],
+    "related_majors": [
+      "shehui-xue",
+      "jiaoyu-xue",
+      "renli-ziyuan",
+      "shengwu-kexue"
+    ],
+    "faq": [
+      {
+        "q": "心理学毕业就是当心理医生吗？",
+        "a": "这是最大的误解。心理医生（精神科医生）需要医学学位。心理学专业毕业生成为心理咨询师需要硕士学历+长期督导训练。多数心理学毕业生去了教育、人力资源、用户研究等领域，而非传统的心理咨询。"
+      },
+      {
+        "q": "心理学就业难吗？",
+        "a": "纯心理学方向确实不轻松。但心理学+数据分析/编程（学Python/SPSS/统计学）的交叉方向——如用户研究、消费者行为分析等——在互联网行业需求不小。建议及早确定细分方向。"
+      }
+    ],
+    "tags": [
+      "文理兼收",
+      "就业多元",
+      "需深造",
+      "互联网新方向",
+      "社会需求增长"
+    ],
+    "gender_ratio": "男2:女8",
+    "recommended_for": [
+      "善于倾听",
+      "对人感兴趣",
+      "逻辑分析能力强",
+      "有同理心"
+    ],
+    "seo_title": "心理学专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "心理学专业起薪6500元/月，就业率83%。分析互联网UX研究/游戏策划等新方向、心理咨询师的成长路径及心理学+数据交叉的价值。"
+  },
+  {
+    "id": "finmgmt",
+    "slug": "caiwu-guanli",
+    "name": "财务管理",
+    "category": "管理学",
+    "degree": "管理学学士",
+    "duration": 4,
+    "description": "财务管理是管理学大类中聚焦企业资金管理和财务决策的专业。与会计学侧重'记录过去'不同，财务管理更侧重'规划未来'——包括投融资决策、资本结构优化、财务分析和预算管理等。核心课程包括财务管理、投资学、财务报表分析、管理会计、税法等。毕业生主要进入企业财务部门、银行、证券、投资公司等。财务管理在企业中的定位正在从'账房先生'升级为'战略合作伙伴'——CFO的角色越来越侧重战略决策支持。同时，CPA/CFA等证书对职业发展至关重要。",
+    "starting_salary": 7000,
+    "salary_3year": 12000,
+    "salary_5year": 20000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 6000
+      },
+      {
+        "year": 2,
+        "salary": 8000
+      },
+      {
+        "year": 3,
+        "salary": 11000
+      },
+      {
+        "year": 4,
+        "salary": 15000
+      },
+      {
+        "year": 5,
+        "salary": 19000
+      }
+    ],
+    "employment_rate": 89,
+    "relevance_rate": 75,
+    "satisfaction": 73,
+    "roi_index": 70,
+    "roi_grade": "B",
+    "ai_risk_level": "中高",
+    "ai_risk_score": 55,
+    "ai_risk_description": "基础的财务核算和报表生成正在被AI/财务软件自动化。但财务分析、投资决策、税务筹划等需要专业判断和战略思维的工作仍然稳固。未来的财务人才需要从'做账'升级为'做决策'。",
+    "top_industries": [
+      "企业财务",
+      "银行/金融",
+      "会计师事务所",
+      "咨询",
+      "政府财税"
+    ],
+    "top_positions": [
+      "财务分析师",
+      "财务经理",
+      "投资分析师",
+      "预算管理",
+      "税务筹划"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "深圳",
+      "广州",
+      "杭州"
+    ],
+    "top_schools": [
+      {
+        "name": "中央财经大学",
+        "employment_rate": 94,
+        "avg_salary": 18000
+      },
+      {
+        "name": "上海财经大学",
+        "employment_rate": 93.5,
+        "avg_salary": 19000
+      },
+      {
+        "name": "厦门大学",
+        "employment_rate": 92,
+        "avg_salary": 17000
+      },
+      {
+        "name": "东北财经大学",
+        "employment_rate": 90.5,
+        "avg_salary": 14000
+      }
+    ],
+    "related_majors": [
+      "kuaiji-xue",
+      "jinrong-xue",
+      "shenji-xue",
+      "gongshang-guanli"
+    ],
+    "faq": [
+      {
+        "q": "财务管理和会计学选哪个？",
+        "a": "会计偏记录/合规（做账/报税/审计），财务管理偏决策/规划（投资/融资/分析）。如果你喜欢规则清晰的'对错'工作选会计，喜欢在不确定中做分析和判断选财务管理。两者职业后期可以互通。"
+      },
+      {
+        "q": "财务管理的就业前景如何？",
+        "a": "中层财务管理需求稳定（每个企业都需要），但入门级岗位竞争激烈。考证（CPA/CMA/CFA）+行业专长（如医疗行业财务、科技行业财务）是提升竞争力的关键。"
+      }
+    ],
+    "tags": [
+      "商科主流",
+      "稳定就业",
+      "考证重要",
+      "企业核心岗",
+      "AI冲击"
+    ],
+    "gender_ratio": "男3:女7",
+    "recommended_for": [
+      "数学中等以上",
+      "对数字和商业敏感",
+      "细心负责",
+      "愿意考证"
+    ],
+    "seo_title": "财务管理专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "财务管理专业起薪7000元/月，5年20000元。分析财务管理vs会计学的差异、CPA证书价值、企业财务vs金融机构两种发展路径。"
+  },
+  {
+    "id": "hrm",
+    "slug": "renli-ziyuan-guanli",
+    "name": "人力资源管理",
+    "category": "管理学",
+    "degree": "管理学学士",
+    "duration": 4,
+    "description": "人力资源管理是研究组织中人力的'选、育、用、留'的管理学科。课程包括组织行为学、人力资源管理、薪酬管理、绩效管理、劳动法与员工关系等。人资毕业生的就业按职能分为招聘、培训、薪酬绩效、员工关系、HRBP等方向。在企业数字化转型和新生代员工（95后/00后）成为职场主力的背景下，人力资源管理正在从传统行政型向数据驱动和战略伙伴型转型。HR数据分析（People Analytics）、组织发展（OD）、雇主品牌建设等新方向对人才的要求更高，薪资也更有竞争力。",
+    "starting_salary": 6000,
+    "salary_3year": 10000,
+    "salary_5year": 17000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 5000
+      },
+      {
+        "year": 2,
+        "salary": 7000
+      },
+      {
+        "year": 3,
+        "salary": 9500
+      },
+      {
+        "year": 4,
+        "salary": 13000
+      },
+      {
+        "year": 5,
+        "salary": 16000
+      }
+    ],
+    "employment_rate": 86.5,
+    "relevance_rate": 70,
+    "satisfaction": 70,
+    "roi_index": 60,
+    "roi_grade": "C",
+    "ai_risk_level": "中",
+    "ai_risk_score": 45,
+    "ai_risk_description": "简历筛选、薪资核算等重复性工作正在被HR SaaS和AI工具自动化。但面试评估、员工关怀、组织文化建设和劳资谈判等需要情感智慧和复杂判断的工作难以被替代。未来HR将更侧重战略和人文层面。",
+    "top_industries": [
+      "各行各业（通用型）",
+      "互联网/IT",
+      "金融",
+      "制造业",
+      "咨询"
+    ],
+    "top_positions": [
+      "招聘专员",
+      "培训经理",
+      "薪酬绩效经理",
+      "HRBP",
+      "组织发展(OD)专家"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "深圳",
+      "广州",
+      "杭州"
+    ],
+    "top_schools": [
+      {
+        "name": "中国人民大学劳动人事学院",
+        "employment_rate": 93,
+        "avg_salary": 18000
+      },
+      {
+        "name": "北京大学光华管理学院",
+        "employment_rate": 92,
+        "avg_salary": 20000
+      },
+      {
+        "name": "上海交通大学",
+        "employment_rate": 91,
+        "avg_salary": 17500
+      },
+      {
+        "name": "南京大学",
+        "employment_rate": 90,
+        "avg_salary": 16000
+      }
+    ],
+    "related_majors": [
+      "gongshang-guanli",
+      "xinli-xue",
+      "shehui-xue",
+      "laodong-guanxi"
+    ],
+    "faq": [
+      {
+        "q": "人力资源管理是不是很没技术含量？",
+        "a": "传统事务型HR确实壁垒不高。但数据驱动HR（People Analytics）、组织发展（OD）、人才管理（TD）等方向要求很高的专业能力。如果你能掌握数据分析+心理学+劳动法，HR的专业壁垒其实不低。"
+      },
+      {
+        "q": "HR好就业吗？",
+        "a": "每个公司都需要HR，岗位总量大。但入门门槛低也意味着竞争激烈。985院校毕业进大厂做HRBP/管培生，薪资和成长性都不错；普通院校可能更多做招聘/行政类工作。"
+      }
+    ],
+    "tags": [
+      "万金油",
+      "门槛低",
+      "转行容易",
+      "数据分析新方向",
+      "女性友好"
+    ],
+    "gender_ratio": "男2:女8",
+    "recommended_for": [
+      "沟通能力强",
+      "善于处理人际关系",
+      "有同理心",
+      "组织协调能力好"
+    ],
+    "seo_title": "人力资源管理专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "人力资源管理专业起薪6000元/月，就业率86.5%。分析HR数字化转型趋势、HRBP/OD等新方向及AI对人力资源管理的影响。"
+  },
+  {
+    "id": "ecom",
+    "slug": "dianzi-shangwu",
+    "name": "电子商务",
+    "category": "管理学",
+    "degree": "管理学学士",
+    "duration": 4,
+    "description": "电子商务是管理学、计算机科学和市场营销的交叉学科，培养具备电商平台运营、数字营销和供应链管理能力的复合型人才。课程包括电子商务概论、网络营销、供应链与物流管理、电商数据分析、电商系统开发等。在直播电商、社交电商和跨境电商三大浪潮推动下，电子商务专业毕业生在电商平台（淘宝/京东/拼多多）、品牌方电商运营、MCN机构和跨境电商企业等方向有大量就业机会。但需注意：电商行业变化极快，学校课程可能滞后于行业实践，自学和实践经验远比课堂知识重要。",
+    "starting_salary": 6500,
+    "salary_3year": 12000,
+    "salary_5year": 20000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 5500
+      },
+      {
+        "year": 2,
+        "salary": 8000
+      },
+      {
+        "year": 3,
+        "salary": 11000
+      },
+      {
+        "year": 4,
+        "salary": 15000
+      },
+      {
+        "year": 5,
+        "salary": 19000
+      }
+    ],
+    "employment_rate": 88,
+    "relevance_rate": 65,
+    "satisfaction": 72,
+    "roi_index": 65,
+    "roi_grade": "C",
+    "ai_risk_level": "中",
+    "ai_risk_score": 48,
+    "ai_risk_description": "AI在电商中的应用已经非常深入：AI客服、智能推荐、自动生成商品描述等。但电商运营的核心——选品策略、营销创意、用户洞察、供应链决策——仍是人类的主导领域。掌握AI工具的电商运营效率更高。",
+    "top_industries": [
+      "电商平台",
+      "品牌电商",
+      "跨境电商",
+      "MCN/直播",
+      "物流/供应链"
+    ],
+    "top_positions": [
+      "电商运营经理",
+      "直播运营",
+      "新媒体运营",
+      "跨境电商运营",
+      "供应链管理"
+    ],
+    "top_cities": [
+      "杭州",
+      "深圳",
+      "广州",
+      "上海",
+      "北京"
+    ],
+    "top_schools": [
+      {
+        "name": "对外经济贸易大学",
+        "employment_rate": 92,
+        "avg_salary": 17000
+      },
+      {
+        "name": "浙江工商大学",
+        "employment_rate": 90,
+        "avg_salary": 15000
+      },
+      {
+        "name": "上海财经大学",
+        "employment_rate": 91,
+        "avg_salary": 18000
+      },
+      {
+        "name": "广东工业大学",
+        "employment_rate": 89,
+        "avg_salary": 14000
+      }
+    ],
+    "related_majors": [
+      "shichang-yingxiao",
+      "wuliu-guanli",
+      "guoji-jingji-yu-maoyi",
+      "gongshang-guanli"
+    ],
+    "faq": [
+      {
+        "q": "电子商务专业的课有用吗？",
+        "a": "实话实说：电商行业变化太快，大学教材可能落后业界3-5年。好学校的电商专业教的底层逻辑（供应链、数据分析、消费者行为）仍然有价值，但实操技能（店铺运营、直播、投流）建议自己开个淘宝店/抖音号学得更快。"
+      },
+      {
+        "q": "电商就业前景怎么样？",
+        "a": "总量大（中国电商GMV超15万亿），但竞争也大（门槛低，任何专业都能做）。想脱颖而出，要么在数据分析方向做深（电商数据分析师），要么在跨境方向做出差异（英语+电商）。"
+      }
+    ],
+    "tags": [
+      "电商",
+      "运营",
+      "互联网",
+      "实践导向",
+      "杭州主场"
+    ],
+    "gender_ratio": "男4:女6",
+    "recommended_for": [
+      "关注商业趋势",
+      "喜欢数据分析",
+      "有创业精神",
+      "自学能力强"
+    ],
+    "seo_title": "电子商务专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "电子商务专业起薪6500元/月，就业率88%。分析直播/社交/跨境电商三大趋势、电商运营vs数据分析职业路线及自学的重要性。"
+  },
+  {
+    "id": "logistics",
+    "slug": "wuliu-guanli",
+    "name": "物流管理",
+    "category": "管理学",
+    "degree": "管理学学士",
+    "duration": 4,
+    "description": "物流管理是研究物资从供应地到接收地的流动与储存过程的管理学科。课程包括物流学、供应链管理、仓储与配送管理、运输管理、物流信息系统等。在电商和即时零售的爆发式增长推动下，物流行业正在从劳动密集型向技术密集型快速升级——自动化仓储（AGV/无人机）、智慧物流平台、冷链物流、跨境物流等新方向对高素质物流管理人才的需求大增。头部物流企业（顺丰/京东物流/菜鸟）的管培生项目薪资和成长性均有竞争力，但一线岗位（仓管/调度）仍然辛苦。",
+    "starting_salary": 6000,
+    "salary_3year": 10000,
+    "salary_5year": 16000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 5000
+      },
+      {
+        "year": 2,
+        "salary": 6500
+      },
+      {
+        "year": 3,
+        "salary": 9000
+      },
+      {
+        "year": 4,
+        "salary": 12000
+      },
+      {
+        "year": 5,
+        "salary": 15000
+      }
+    ],
+    "employment_rate": 89.5,
+    "relevance_rate": 72,
+    "satisfaction": 65,
+    "roi_index": 60,
+    "roi_grade": "C",
+    "ai_risk_level": "中",
+    "ai_risk_score": 42,
+    "ai_risk_description": "AI正在改变物流行业：智能路由优化、AGV调度、需求预测等。但物流管理的核心——供应链策略、供应商关系、应急处理——仍需要人类管理者的决策。物流+数据分析的复合型人才需求在增加。",
+    "top_industries": [
+      "快递/物流",
+      "电商",
+      "制造业",
+      "零售",
+      "跨境贸易"
+    ],
+    "top_positions": [
+      "物流经理",
+      "供应链分析师",
+      "仓储管理",
+      "运输调度",
+      "采购经理"
+    ],
+    "top_cities": [
+      "上海",
+      "深圳",
+      "广州",
+      "北京",
+      "武汉"
+    ],
+    "top_schools": [
+      {
+        "name": "上海海事大学",
+        "employment_rate": 93,
+        "avg_salary": 14000
+      },
+      {
+        "name": "北京物资学院",
+        "employment_rate": 91,
+        "avg_salary": 13000
+      },
+      {
+        "name": "大连海事大学",
+        "employment_rate": 90.5,
+        "avg_salary": 13500
+      },
+      {
+        "name": "浙江大学",
+        "employment_rate": 92,
+        "avg_salary": 17000
+      }
+    ],
+    "related_majors": [
+      "gongshang-guanli",
+      "dianzi-shangwu",
+      "jiaotong-yunshu",
+      "gongye-gongcheng"
+    ],
+    "faq": [
+      {
+        "q": "物流管理是不是就是送快递？",
+        "a": "很大的误解。物流管理是供应链管理科的一部分，涵盖从采购、仓储、运输到配送的完整产业链。快递配送只是其中一环。京东/顺丰/菜鸟的管培生项目是很好的职业起点。"
+      },
+      {
+        "q": "学物流有前途吗？",
+        "a": "中国物流成本占GDP约14%（美国约7%），降本增效空间巨大。智慧物流和供应链优化是国家战略方向，优秀的物流和供应链人才在制造业和零售业的战略价值越来越高。但建议掌握数据分析（SQL/Python）以提升竞争力。"
+      }
+    ],
+    "tags": [
+      "物流/供应链",
+      "电商驱动",
+      "技术升级",
+      "智慧物流",
+      "一线辛苦"
+    ],
+    "gender_ratio": "男5:女5",
+    "recommended_for": [
+      "组织协调能力强",
+      "关注效率提升",
+      "能吃苦",
+      "逻辑思维好"
+    ],
+    "seo_title": "物流管理专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "物流管理专业起薪6000元/月，就业率89.5%。解读智慧物流/供应链数字化升级中的机遇、头部企业管培生项目及数据分析能力的重要性。"
+  },
+  {
+    "id": "chinese",
+    "slug": "hanyuyan-wenxue",
+    "name": "汉语言文学",
+    "category": "文学",
+    "degree": "文学学士",
+    "duration": 4,
+    "description": "汉语言文学是中国最传统的人文学科之一，培养语言表达、文学鉴赏和文本分析的核心能力。课程涵盖中国古代文学、中国现当代文学、语言学概论、现代汉语、写作等。在功利主义视角下，中文系常被低估，但事实上优秀的文字能力是很多高端岗位的底层技能——无论是公务员的公文写作、互联网的内容运营、媒体的深度报道还是一流企业的品牌文案，都需要扎实的语文功底。中文系毕业生的就业面远比想象中广，且公务员考试的行测申论中占有天然优势。",
+    "starting_salary": 5500,
+    "salary_3year": 9500,
+    "salary_5year": 15000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 4800
+      },
+      {
+        "year": 2,
+        "salary": 6500
+      },
+      {
+        "year": 3,
+        "salary": 8500
+      },
+      {
+        "year": 4,
+        "salary": 11000
+      },
+      {
+        "year": 5,
+        "salary": 14000
+      }
+    ],
+    "employment_rate": 83.5,
+    "relevance_rate": 50,
+    "satisfaction": 73,
+    "roi_index": 52,
+    "roi_grade": "C",
+    "ai_risk_level": "高",
+    "ai_risk_score": 65,
+    "ai_risk_description": "AI在文本生成（ChatGPT/文心一言等）方面的能力正在挑战传统的文案和内容写作岗位。但文学创作、深度评论、文化研究和需要人文洞察力的领域仍是AI的薄弱环节。中文系人需要拥抱AI工具，将文字能力升级为'AI辅助创作+人文判断'。",
+    "top_industries": [
+      "教育/学校",
+      "公务员/事业单位",
+      "传媒/出版",
+      "互联网内容运营",
+      "文化/文博"
+    ],
+    "top_positions": [
+      "语文教师",
+      "公务员",
+      "内容运营/编辑",
+      "文案策划",
+      "出版编辑"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "广州",
+      "南京",
+      "成都"
+    ],
+    "top_schools": [
+      {
+        "name": "北京大学中文系",
+        "employment_rate": 92,
+        "avg_salary": 18000
+      },
+      {
+        "name": "北京师范大学",
+        "employment_rate": 91,
+        "avg_salary": 16000
+      },
+      {
+        "name": "复旦大学",
+        "employment_rate": 90.5,
+        "avg_salary": 17000
+      },
+      {
+        "name": "南京大学",
+        "employment_rate": 90,
+        "avg_salary": 15500
+      },
+      {
+        "name": "华东师范大学",
+        "employment_rate": 89,
+        "avg_salary": 15000
+      }
+    ],
+    "related_majors": [
+      "xinwen-xue",
+      "jiaoyu-xue",
+      "lishi-xue",
+      "zhexue"
+    ],
+    "faq": [
+      {
+        "q": "中文系好就业吗？",
+        "a": "中文系不是'技能型'专业，没有明确的'对口岗位'——但这既是劣势也是优势。劣势是入门工资低，优势是选择面广（教师/公务员/编辑/运营/文案）。考上公务员的概率在文科专业中名列前茅。"
+      },
+      {
+        "q": "中文系一定要读研吗？",
+        "a": "如果想进高校/重点中学当老师，读研是必须的。如果考公/去企业，本科足矣。中文系的读研更多是兴趣驱动（深入研究文学）而非就业驱动。"
+      }
+    ],
+    "tags": [
+      "文科基础",
+      "考公优势",
+      "教师路",
+      "AI冲击大",
+      "万金油"
+    ],
+    "gender_ratio": "男2:女8",
+    "recommended_for": [
+      "热爱阅读和写作",
+      "语言表达能力好",
+      "目标考公/教师",
+      "善于思考"
+    ],
+    "seo_title": "汉语言文学专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "汉语言文学专业起薪5500元/月，就业率83.5%。分析中文系的考公优势、教师/公务员/互联网运营三大路径及AI时代文字工作者的转型方向。"
+  },
+  {
+    "id": "english",
+    "slug": "ying-yu",
+    "name": "英语",
+    "category": "文学",
+    "degree": "文学学士",
+    "duration": 4,
+    "description": "英语专业是培养英语语言能力和跨文化交际能力的人文学科。课程包括综合英语、高级英语、英语听说、英美文学、语言学、翻译理论与实践等。在AI翻译工具（如DeepL/ChatGPT）快速进步的背景下，基础的翻译和语言服务工作确实面临挑战。但英语专业的核心价值不在于'会说英语'（这一点AI可以替代），而在于跨文化理解能力、批判性思维和用英语进行深度专业交流的能力。英语+X（英语+法律→涉外律师，英语+贸易→外贸经理，英语+教育→国际学校教师）的复合型人才仍然抢手。",
+    "starting_salary": 6000,
+    "salary_3year": 10000,
+    "salary_5year": 16000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 5000
+      },
+      {
+        "year": 2,
+        "salary": 7000
+      },
+      {
+        "year": 3,
+        "salary": 9500
+      },
+      {
+        "year": 4,
+        "salary": 12500
+      },
+      {
+        "year": 5,
+        "salary": 15500
+      }
+    ],
+    "employment_rate": 82,
+    "relevance_rate": 55,
+    "satisfaction": 72,
+    "roi_index": 54,
+    "roi_grade": "C",
+    "ai_risk_level": "高",
+    "ai_risk_score": 75,
+    "ai_risk_description": "AI翻译质量在过去3年出现了质的飞跃，基础翻译（文件翻译、日常口译）正在快速被替代。但高端翻译（文学作品、法律文件）、跨文化谈判和内容本地化等需要深度文化理解的工作仍是AI的短板。纯语言能力已不足够。",
+    "top_industries": [
+      "教育/培训",
+      "外贸/跨境电商",
+      "翻译/本地化",
+      "旅游/酒店",
+      "外资企业"
+    ],
+    "top_positions": [
+      "英语教师",
+      "外贸经理",
+      "跨境电商运营",
+      "翻译/本地化专员",
+      "涉外商务"
+    ],
+    "top_cities": [
+      "上海",
+      "北京",
+      "深圳",
+      "广州",
+      "杭州"
+    ],
+    "top_schools": [
+      {
+        "name": "北京外国语大学",
+        "employment_rate": 93,
+        "avg_salary": 18000
+      },
+      {
+        "name": "上海外国语大学",
+        "employment_rate": 92.5,
+        "avg_salary": 17500
+      },
+      {
+        "name": "广东外语外贸大学",
+        "employment_rate": 91,
+        "avg_salary": 16000
+      },
+      {
+        "name": "北京大学外国语学院",
+        "employment_rate": 92,
+        "avg_salary": 20000
+      },
+      {
+        "name": "南京大学",
+        "employment_rate": 90,
+        "avg_salary": 17000
+      }
+    ],
+    "related_majors": [
+      "guoji-jingji-yu-maoyi",
+      "hanyuyan-wenxue",
+      "fanyi",
+      "waijiao-waishi"
+    ],
+    "faq": [
+      {
+        "q": "AI会让英语专业消失吗？",
+        "a": "纯英语技能（一般翻译/日常交流）的价值确实在下降。但英语+专业能力的组合（英语+法律/金融/IT）仍然非常有竞争力。英语专业学生的方向应该是'用英语做事'而不是'教英语/翻译英语'。"
+      },
+      {
+        "q": "英语专业考编有出路吗？",
+        "a": "中小学英语教师招聘量较大且稳定，是英语专业毕业生的传统优势方向。一线城市编制竞争激烈，但二三线城市仍有缺口。有教师资格证的竞争力明显增强。"
+      }
+    ],
+    "tags": [
+      "语言",
+      "AI冲击大",
+      "教师路",
+      "复合型才有竞争力",
+      "考编"
+    ],
+    "gender_ratio": "男1:女9",
+    "recommended_for": [
+      "英语基础好",
+      "对跨文化交流有兴趣",
+      "辅修一个专业方向",
+      "计划当老师"
+    ],
+    "seo_title": "英语专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "英语专业起薪6000元/月，就业率82%。深度分析AI翻译对英语专业的冲击、英语+X复合型人才的竞争力及教师/外贸/跨境电商三大路径。"
+  },
+  {
+    "id": "journ",
+    "slug": "xinwen-chuanbo-xue",
+    "name": "新闻传播学",
+    "category": "文学",
+    "degree": "文学学士",
+    "duration": 4,
+    "description": "新闻传播学是研究信息传播规律和媒体运作机制的学科，涵盖新闻学、传播学、广告学、网络与新媒体等方向。核心课程包括新闻学概论、传播学理论、新闻采访与写作、新媒体概论、媒介伦理与法规等。在传统媒体衰落和新媒体崛起的变革时代，新闻传播学毕业生的职业版图正在重构——传统的报社/电视台岗位减少，但短视频内容、自媒体运营、MCN机构、企业公关/品牌等新方向大量涌现。新闻传播学培养的'讲故事能力'和'信息核实能力'在信息过载时代反而更加珍贵。",
+    "starting_salary": 6500,
+    "salary_3year": 11000,
+    "salary_5year": 18000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 5500
+      },
+      {
+        "year": 2,
+        "salary": 7500
+      },
+      {
+        "year": 3,
+        "salary": 10000
+      },
+      {
+        "year": 4,
+        "salary": 14000
+      },
+      {
+        "year": 5,
+        "salary": 17000
+      }
+    ],
+    "employment_rate": 80,
+    "relevance_rate": 55,
+    "satisfaction": 71,
+    "roi_index": 56,
+    "roi_grade": "C",
+    "ai_risk_level": "中",
+    "ai_risk_score": 52,
+    "ai_risk_description": "AI生成新闻稿和短视频内容的能力正在影响媒体行业。但深度调查报道、人物专访、媒介策略等需要原创性判断力的领域仍是人类主导。新闻传播+数据分析（计算传播学）是抗AI的新方向。",
+    "top_industries": [
+      "新媒体/自媒体",
+      "传统媒体",
+      "广告/公关",
+      "互联网",
+      "MCN机构"
+    ],
+    "top_positions": [
+      "新媒体运营",
+      "内容编辑",
+      "记者",
+      "公关专员",
+      "短视频策划"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "长沙",
+      "杭州",
+      "广州"
+    ],
+    "top_schools": [
+      {
+        "name": "中国传媒大学",
+        "employment_rate": 90,
+        "avg_salary": 18000
+      },
+      {
+        "name": "复旦大学新闻学院",
+        "employment_rate": 91,
+        "avg_salary": 19000
+      },
+      {
+        "name": "中国人民大学新闻学院",
+        "employment_rate": 90.5,
+        "avg_salary": 18500
+      },
+      {
+        "name": "武汉大学",
+        "employment_rate": 88,
+        "avg_salary": 15000
+      },
+      {
+        "name": "暨南大学",
+        "employment_rate": 87,
+        "avg_salary": 14000
+      }
+    ],
+    "related_majors": [
+      "wangluo-yu-xinmeiti",
+      "hanyuyan-wenxue",
+      "guanggao-xue",
+      "guangbo-dianshi"
+    ],
+    "faq": [
+      {
+        "q": "新闻学现在还值得学吗？",
+        "a": "传统媒体在衰落是事实，但内容行业在爆发也是事实。新闻学教的'信息获取与核实'、'深度叙事'和'公共表达'能力在短视频时代仍然稀缺。关键是把这些能力从传统的报纸/电视台迁移到新的媒体平台上来。"
+      },
+      {
+        "q": "新闻传播学就业方向有哪些？",
+        "a": "传统：记者/编辑（报社/电视台/门户网站）；新兴：短视频内容策划、MCN运营、企业品牌公关、政务新媒体运营。后者的岗位数量和薪资增速远超前传统方向。"
+      }
+    ],
+    "tags": [
+      "文科热门",
+      "新媒体",
+      "内容行业",
+      "传统媒体衰落",
+      "短视频"
+    ],
+    "gender_ratio": "男3:女7",
+    "recommended_for": [
+      "文字表达能力强",
+      "对社会好奇",
+      "善于沟通",
+      "有一定的视觉审美"
+    ],
+    "seo_title": "新闻传播学专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "新闻传播学专业起薪6500元/月，就业率80%。分析传统媒体衰落中的记者转型、新媒体/短视频/自媒体新机遇及AI对内容行业的影响。"
+  },
+  {
+    "id": "newmedia",
+    "slug": "wangluo-yu-xinmeiti",
+    "name": "网络与新媒体",
+    "category": "文学",
+    "degree": "文学学士",
+    "duration": 4,
+    "description": "网络与新媒体是新闻传播大类中为适应数字时代而生的新兴专业方向，聚焦互联网环境下的内容生产、传播和运营。课程涵盖新媒体概论、社交媒体运营、数据新闻、短视频制作、用户研究、交互设计等。相比传统新闻学，网络与新媒体更强调技术工具（视频剪辑/数据可视化/SEO）和运营思维（流量增长/用户裂变/社群运营）。在短视频、直播电商和AIGC浪潮叠加下，网络与新媒体毕业生在内容策略、新媒体运营、网红经纪等方向就业面很广，是文科专业中近年就业表现较好的方向之一。",
+    "starting_salary": 7000,
+    "salary_3year": 13000,
+    "salary_5year": 21000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 6000
+      },
+      {
+        "year": 2,
+        "salary": 8500
+      },
+      {
+        "year": 3,
+        "salary": 11500
+      },
+      {
+        "year": 4,
+        "salary": 16000
+      },
+      {
+        "year": 5,
+        "salary": 20000
+      }
+    ],
+    "employment_rate": 86,
+    "relevance_rate": 60,
+    "satisfaction": 75,
+    "roi_index": 68,
+    "roi_grade": "C",
+    "ai_risk_level": "中",
+    "ai_risk_score": 48,
+    "ai_risk_description": "AIGC可以生成文案和基础视频内容，但内容策略、热点洞察、用户心理把握和创意策划仍需要人类主导。新媒体运营的未来是'人+AI协同'——AI负责效率，人负责创意和策略。",
+    "top_industries": [
+      "互联网/平台",
+      "MCN/自媒体",
+      "电商",
+      "广告/营销",
+      "企业品牌部门"
+    ],
+    "top_positions": [
+      "新媒体运营总监",
+      "内容策略师",
+      "短视频编导",
+      "社交媒体经理",
+      "增长运营"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "杭州",
+      "深圳",
+      "广州"
+    ],
+    "top_schools": [
+      {
+        "name": "中国传媒大学",
+        "employment_rate": 92,
+        "avg_salary": 18000
+      },
+      {
+        "name": "暨南大学",
+        "employment_rate": 89,
+        "avg_salary": 15000
+      },
+      {
+        "name": "浙江传媒学院",
+        "employment_rate": 90,
+        "avg_salary": 14000
+      },
+      {
+        "name": "复旦大学",
+        "employment_rate": 91,
+        "avg_salary": 19000
+      }
+    ],
+    "related_majors": [
+      "xinwen-chuanbo-xue",
+      "shichang-yingxiao",
+      "shuzi-meiti-jishu",
+      "guanggao-xue"
+    ],
+    "faq": [
+      {
+        "q": "网络与新媒体和新传学有什么区别？",
+        "a": "新传学偏理论（传播学原理/新闻伦理/媒介史），网新偏实操（视频拍摄/社群运营/数据分析）。如果你喜欢'动手做内容'胜过'研究理论'，网新更适合你。网新毕业生上手快，但理论深度可能不如新传。"
+      },
+      {
+        "q": "做新媒体运营有前途吗？",
+        "a": "从16岁到60岁都在刷手机的时代，会做内容的人永远不会失业。新媒体运营的起薪不高，但成长快——1-2年经验的优秀运营跳槽薪资涨幅往往超过30%。关键是做出能证明能力的作品集。"
+      }
+    ],
+    "tags": [
+      "新媒体",
+      "短视频",
+      "内容运营",
+      "文科高增长",
+      "实践导向"
+    ],
+    "gender_ratio": "男3:女7",
+    "recommended_for": [
+      "喜欢做内容",
+      "对热点敏感",
+      "视觉审美不错",
+      "有网感"
+    ],
+    "seo_title": "网络与新媒体专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "网络与新媒体专业起薪7000元/月，5年21000元。解读短视频/AIGC时代的内容运营机遇、新媒体vs传统新闻学的差异及职业成长路径。"
+  },
+  {
+    "id": "iplaw",
+    "slug": "zhishi-chanquan",
+    "name": "知识产权",
+    "category": "法学",
+    "degree": "法学学士",
+    "duration": 4,
+    "description": "知识产权是法学大类中聚焦专利、商标、著作权和商业秘密保护的专业方向。课程涵盖知识产权法、专利法、商标法、著作权法、知识产权管理等，同时需要一定的理工科基础（很多知识产权岗位要求技术理解能力）。在科技创新驱动发展和中美技术竞争的大背景下，知识产权保护已成为国家战略——专利申请量全球第一、知识产权诉讼激增、企业IP战略部门快速扩张。知识产权毕业生在专利代理所、律所知产团队、科技企业IP部门和知识产权局等方向就业前景良好，特别是拥有工科+法学复合背景的双证人才极度稀缺。",
+    "starting_salary": 7500,
+    "salary_3year": 14000,
+    "salary_5year": 24000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 6500
+      },
+      {
+        "year": 2,
+        "salary": 9000
+      },
+      {
+        "year": 3,
+        "salary": 13000
+      },
+      {
+        "year": 4,
+        "salary": 18000
+      },
+      {
+        "year": 5,
+        "salary": 23000
+      }
+    ],
+    "employment_rate": 87.5,
+    "relevance_rate": 72,
+    "satisfaction": 76,
+    "roi_index": 73,
+    "roi_grade": "B",
+    "ai_risk_level": "中低",
+    "ai_risk_score": 30,
+    "ai_risk_description": "AI可以进行专利检索和基础文书撰写，但专利的创造性判断、权利要求的精确界定和诉讼策略制定是高度专业的法律工作。AI是知识产权律师的效率工具，而非替代者。",
+    "top_industries": [
+      "专利代理所",
+      "律师事务所",
+      "科技企业",
+      "知识产权局",
+      "高校/科研机构"
+    ],
+    "top_positions": [
+      "专利代理人",
+      "知识产权律师",
+      "IP经理",
+      "商标代理人",
+      "知识产权顾问"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "深圳",
+      "广州",
+      "杭州"
+    ],
+    "top_schools": [
+      {
+        "name": "中国政法大学",
+        "employment_rate": 92,
+        "avg_salary": 22000
+      },
+      {
+        "name": "华东政法大学",
+        "employment_rate": 90,
+        "avg_salary": 20000
+      },
+      {
+        "name": "中南财经政法大学",
+        "employment_rate": 89,
+        "avg_salary": 18000
+      },
+      {
+        "name": "中国人民大学",
+        "employment_rate": 91,
+        "avg_salary": 23000
+      }
+    ],
+    "related_majors": [
+      "fa-xue",
+      "gongshang-guanli",
+      "jisuanji-kexue-yu-jishu"
+    ],
+    "faq": [
+      {
+        "q": "知识产权专业需要理工科背景吗？",
+        "a": "做纯粹的商标/著作权方向不必须，但做专利代理人是必须的（国家要求专利代理人须有理工科学位）。最值钱的知产人才=工科本科+法硕/专利代理人资格，复合背景的价值极高。"
+      },
+      {
+        "q": "知识产权专业好就业吗？",
+        "a": "属于法学大类中就业表现较好的细分方向。中国已成为全球第一大专利申请国，企业对知识产权的重视程度暴增。但想进头部专利所/红圈所知产团队，名校+法考是基本盘。"
+      }
+    ],
+    "tags": [
+      "法学细分",
+      "复合背景吃香",
+      "专利代理",
+      "科技企业",
+      "蓝海"
+    ],
+    "gender_ratio": "男4:女6",
+    "recommended_for": [
+      "法学基础好",
+      "理工科双学位加分",
+      "细心严谨",
+      "逻辑表达清晰"
+    ],
+    "seo_title": "知识产权专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "知识产权专业起薪7500元/月，5年24000元。分析专利代理人的黄金时代、工科+法学复合背景的价值、AI对知产行业的影响。"
+  },
+  {
+    "id": "digimedia",
+    "slug": "shuzi-meiti-jishu",
+    "name": "数字媒体技术",
+    "category": "工学",
+    "degree": "工学学士",
+    "duration": 4,
+    "description": "数字媒体技术是计算机科学和艺术设计的交叉学科，培养具备编程能力和数字内容创作能力的复合型人才。课程涵盖计算机图形学、游戏引擎（Unity/Unreal）、3D建模、动画技术、交互设计、UI/UX设计等。毕业生在游戏开发（米哈游/腾讯游戏/网易）、影视特效、虚拟现实/增强现实（VR/AR）、交互装置等创意技术领域就业。在元宇宙概念被重新审视和AIGC颠覆内容创作的背景下，数字媒体技术人才的核心价值在于'既懂技术又懂艺术'的桥梁角色。",
+    "starting_salary": 9000,
+    "salary_3year": 16000,
+    "salary_5year": 26000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 8000
+      },
+      {
+        "year": 2,
+        "salary": 11000
+      },
+      {
+        "year": 3,
+        "salary": 15000
+      },
+      {
+        "year": 4,
+        "salary": 20000
+      },
+      {
+        "year": 5,
+        "salary": 25000
+      }
+    ],
+    "employment_rate": 90,
+    "relevance_rate": 75,
+    "satisfaction": 80,
+    "roi_index": 82,
+    "roi_grade": "B",
+    "ai_risk_level": "中",
+    "ai_risk_score": 40,
+    "ai_risk_description": "AIGC正在改变数字内容创作的方式（AI生图/视频/3D模型），基础的素材制作可能被AI替代。但游戏玩法设计、交互体验打磨和创意思考等需要人类创作的工作仍然稳固。未来的数媒人需要成为'AI创作工具的指挥家'。",
+    "top_industries": [
+      "游戏",
+      "影视/动画",
+      "VR/AR",
+      "交互设计",
+      "广告/创意"
+    ],
+    "top_positions": [
+      "游戏开发工程师",
+      "技术美术(TA)",
+      "交互设计师",
+      "VR/AR开发",
+      "视觉特效师"
+    ],
+    "top_cities": [
+      "上海",
+      "深圳",
+      "北京",
+      "杭州",
+      "广州"
+    ],
+    "top_schools": [
+      {
+        "name": "中国传媒大学",
+        "employment_rate": 94,
+        "avg_salary": 20000
+      },
+      {
+        "name": "浙江大学",
+        "employment_rate": 93,
+        "avg_salary": 22000
+      },
+      {
+        "name": "北京电影学院",
+        "employment_rate": 90,
+        "avg_salary": 18000
+      },
+      {
+        "name": "上海交通大学",
+        "employment_rate": 92.5,
+        "avg_salary": 21000
+      }
+    ],
+    "related_majors": [
+      "jisuanji-kexue-yu-jishu",
+      "shijue-chuanda-sheji",
+      "donghua",
+      "ruanjian-gongcheng"
+    ],
+    "faq": [
+      {
+        "q": "数字媒体技术和数字媒体艺术有什么区别？",
+        "a": "技术（工学学位）侧重编程和引擎（Unity/C++/图形学），艺术（艺术学位）侧重美术和设计（PS/3D/动画）。技术方向就业薪资更高，艺术方向创意空间更大。两者在游戏/影视行业中高度协作。"
+      },
+      {
+        "q": "AI绘画/AIGC会让数媒专业贬值吗？",
+        "a": "AI确实替代了一些基础美术工作，但同时让数媒人的效率大幅提升。未来的人才=AI创作工具+创意方向+工程实现的'三位一体'，技术美术（TA）和交互设计师等复合型岗位需求反而在增长。"
+      }
+    ],
+    "tags": [
+      "游戏/影视",
+      "创意+技术",
+      "AIGC",
+      "TA岗位热门",
+      "有趣"
+    ],
+    "gender_ratio": "男6:女4",
+    "recommended_for": [
+      "编程基础好",
+      "有审美能力",
+      "喜欢游戏/动画",
+      "创造力强"
+    ],
+    "seo_title": "数字媒体技术专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "数字媒体技术专业起薪9000元/月，5年26000元。分析游戏/VR行业的数媒人机遇、技术vs艺术方向的差异、AIGC对内容创作的影响。"
+  },
+  {
+    "id": "viscomm",
+    "slug": "shijue-chuanda-sheji",
+    "name": "视觉传达设计",
+    "category": "艺术学",
+    "degree": "艺术学学士",
+    "duration": 4,
+    "description": "视觉传达设计是艺术设计大类中应用最广的专业方向，培养通过视觉元素（图形、文字、色彩、版式）传达信息和塑造品牌的专业人才。课程包括平面设计、品牌设计、包装设计、UI/UX设计、动态图形等。在消费品牌升级和数字化传播的双重驱动下，视觉设计师的就业面从传统的平面广告扩展到互联网UI设计、电商视觉、新媒体视觉、包装设计等领域。优秀设计师的作品集比学历更重要，但行业竞争激烈且初级岗位薪资不高，持续提升审美和掌握前沿设计工具是职业发展的关键。",
+    "starting_salary": 6000,
+    "salary_3year": 11000,
+    "salary_5year": 18000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 5000
+      },
+      {
+        "year": 2,
+        "salary": 7000
+      },
+      {
+        "year": 3,
+        "salary": 9500
+      },
+      {
+        "year": 4,
+        "salary": 13500
+      },
+      {
+        "year": 5,
+        "salary": 17000
+      }
+    ],
+    "employment_rate": 82,
+    "relevance_rate": 65,
+    "satisfaction": 74,
+    "roi_index": 58,
+    "roi_grade": "C",
+    "ai_risk_level": "高",
+    "ai_risk_score": 68,
+    "ai_risk_description": "AI设计工具（Midjourney/Canva AI等）已能生成高质量的视觉素材，基础的LOGO设计和海报排版正在被AI大幅提效。但品牌策略、设计思维和高端创意概念仍是人类的优势领域。设计师的未来角色从'执行者'转向'创意总监+AI指挥'。",
+    "top_industries": [
+      "互联网/IT",
+      "广告/品牌",
+      "电商",
+      "出版/印刷",
+      "影视/游戏"
+    ],
+    "top_positions": [
+      "UI/UX设计师",
+      "品牌设计师",
+      "平面设计师",
+      "电商视觉设计",
+      "插画师"
+    ],
+    "top_cities": [
+      "上海",
+      "北京",
+      "深圳",
+      "杭州",
+      "广州"
+    ],
+    "top_schools": [
+      {
+        "name": "中央美术学院",
+        "employment_rate": 88,
+        "avg_salary": 18000
+      },
+      {
+        "name": "清华大学美术学院",
+        "employment_rate": 90,
+        "avg_salary": 20000
+      },
+      {
+        "name": "中国美术学院",
+        "employment_rate": 87,
+        "avg_salary": 17000
+      },
+      {
+        "name": "江南大学",
+        "employment_rate": 86,
+        "avg_salary": 15000
+      },
+      {
+        "name": "广州美术学院",
+        "employment_rate": 85,
+        "avg_salary": 16000
+      }
+    ],
+    "related_majors": [
+      "shuzi-meiti-jishu",
+      "shuzi-meiti-yishu",
+      "gongye-sheji",
+      "huanjing-sheji"
+    ],
+    "faq": [
+      {
+        "q": "AI会让设计师失业吗？",
+        "a": "会让'只会套模板'的设计师失业，但会成就'会用AI工具做创意'的设计师。AI把基础设计的门槛降到极低，这意味着设计的上限将更高——谁能做出更好的创意和策略，谁就能胜出。"
+      },
+      {
+        "q": "学设计一定要美院吗？",
+        "a": "美院的优势是审美氛围和人脉资源（同学/老师/校友网络），但不是必须的。设计行业更看重作品集——一个优秀的Behance/Dribbble作品集比名校学位证更有说服力。"
+      }
+    ],
+    "tags": [
+      "艺术",
+      "AI冲击大",
+      "作品集重要",
+      "UI/UX",
+      "创意行业"
+    ],
+    "gender_ratio": "男3:女7",
+    "recommended_for": [
+      "审美能力强",
+      "有创造力",
+      "动手快",
+      "关注设计趋势"
+    ],
+    "seo_title": "视觉传达设计专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "视觉传达设计专业起薪6000元/月，5年18000元。分析AI时代设计师的转型路径、UI/UXvs平面设计的薪资差异及作品集的就业权重。"
+  },
+  {
+    "id": "vet",
+    "slug": "dongwu-yixue",
+    "name": "动物医学",
+    "category": "农学",
+    "degree": "农学学士",
+    "duration": 5,
+    "description": "动物医学（兽医）是医学在动物领域的延伸，培养动物疾病诊疗、疫病防控和公共卫生安全的专业人才。课程涵盖动物解剖学、兽医病理学、兽医内科学、兽医外科学、兽医传染病学等。在宠物经济爆发式增长（中国宠物市场规模超3000亿）的推动下，宠物医疗行业面临严重的兽医人才短缺——全国注册执业兽医仅约15万人，无法满足快速增长的宠物诊疗需求。宠物医院的兽医收入不输于人医入门水平，且独立创业门槛更低。除宠物诊疗外，畜牧兽医、检验检疫、实验动物等方向也稳定招人。",
+    "starting_salary": 6500,
+    "salary_3year": 12000,
+    "salary_5year": 18000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 5500
+      },
+      {
+        "year": 2,
+        "salary": 8000
+      },
+      {
+        "year": 3,
+        "salary": 10500
+      },
+      {
+        "year": 4,
+        "salary": 14000
+      },
+      {
+        "year": 5,
+        "salary": 17000
+      }
+    ],
+    "employment_rate": 93,
+    "relevance_rate": 85,
+    "satisfaction": 82,
+    "roi_index": 71,
+    "roi_grade": "B",
+    "ai_risk_level": "极低",
+    "ai_risk_score": 8,
+    "ai_risk_description": "兽医需要面对不会说话的'患者'，诊断依赖大量的体格检查和经验判断。AI可以辅助影像分析（X光/B超），但体格检查、手术操作和与宠物主人的沟通完全依赖兽医的专业能力。宠物医疗是AI替代难度最高的行业之一。",
+    "top_industries": [
+      "宠物医院",
+      "养殖/畜牧",
+      "检验检疫",
+      "动保/兽药企业",
+      "科研机构"
+    ],
+    "top_positions": [
+      "宠物医生",
+      "畜牧兽医",
+      "检验检疫员",
+      "兽药研发",
+      "动物营养师"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "深圳",
+      "广州",
+      "成都"
+    ],
+    "top_schools": [
+      {
+        "name": "中国农业大学",
+        "employment_rate": 97,
+        "avg_salary": 17000
+      },
+      {
+        "name": "南京农业大学",
+        "employment_rate": 95,
+        "avg_salary": 15000
+      },
+      {
+        "name": "华中农业大学",
+        "employment_rate": 94.5,
+        "avg_salary": 14500
+      },
+      {
+        "name": "华南农业大学",
+        "employment_rate": 94,
+        "avg_salary": 14000
+      },
+      {
+        "name": "西北农林科技大学",
+        "employment_rate": 93,
+        "avg_salary": 13500
+      }
+    ],
+    "related_majors": [
+      "shengwu-kexue",
+      "linchuang-yixue",
+      "yao-xue",
+      "shipin-kexue"
+    ],
+    "faq": [
+      {
+        "q": "兽医和医生哪个前景好？",
+        "a": "人医社会地位高但竞争激烈+强制规培+就业地域限制，兽医灵活度高（可开宠物医院）+人才缺口大+不受公立医院体系限制。从投资回报周期看，兽医10年内可能更划算；从职业天花板看，人医更高。"
+      },
+      {
+        "q": "动物医学就业市场大吗？",
+        "a": "宠物医疗市场年增速超20%，一线城市宠物医生月薪1.5-3万，且有增量空间。但畜牧兽医方向的条件相对艰苦（在养殖场工作）。选宠物还是选畜牧，薪资和生活方式差异很大。"
+      }
+    ],
+    "tags": [
+      "宠物经济",
+      "人才缺口大",
+      "可创业",
+      "AI免疫",
+      "越老越吃香"
+    ],
+    "gender_ratio": "男3:女7",
+    "recommended_for": [
+      "喜欢动物",
+      "动手能力强",
+      "有同理心",
+      "不介意加班/急诊"
+    ],
+    "seo_title": "动物医学专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "动物医学专业5年制，起薪6500元/月，就业率93%。分析宠物经济爆发中的兽医机遇、宠物医生vs畜牧兽医的选择及执业兽医资格证价值。"
+  },
+  {
+    "id": "biomedeng",
+    "slug": "shengwu-yixue-gongcheng",
+    "name": "生物医学工程",
+    "category": "工学",
+    "degree": "工学学士",
+    "duration": 4,
+    "description": "生物医学工程是工程学与医学的交叉学科，运用工程原理解决医学问题——设计医疗设备、开发生物材料、构建医学影像系统和人工器官。课程涵盖生物力学、医学影像处理、生物材料、医学仪器、生物传感器等。在国家推动高端医疗设备国产化（CT/MRI/手术机器人）的大战略下，国内医疗器械龙头企业（迈瑞/联影/微创等）对生物医学工程人才需求旺盛。该专业的一大特点是：即使不做传统的医疗器械研发，也可以转行到AI医疗、医疗数据分析、医疗投资等热门交叉领域。",
+    "starting_salary": 8500,
+    "salary_3year": 15000,
+    "salary_5year": 24000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 7500
+      },
+      {
+        "year": 2,
+        "salary": 10500
+      },
+      {
+        "year": 3,
+        "salary": 14000
+      },
+      {
+        "year": 4,
+        "salary": 18500
+      },
+      {
+        "year": 5,
+        "salary": 23000
+      }
+    ],
+    "employment_rate": 91.5,
+    "relevance_rate": 73,
+    "satisfaction": 77,
+    "roi_index": 78,
+    "roi_grade": "B",
+    "ai_risk_level": "低",
+    "ai_risk_score": 18,
+    "ai_risk_description": "AI在医学影像诊断中的应用发展迅速，但医疗器械的硬件设计、临床验证和法规合规仍需要工程师实操。AI医疗本身创造了对'懂AI的医工交叉人才'的大量新需求。",
+    "top_industries": [
+      "医疗器械",
+      "AI医疗",
+      "医院设备科",
+      "医疗投资",
+      "科研机构"
+    ],
+    "top_positions": [
+      "医疗器械研发工程师",
+      "医学影像算法工程师",
+      "临床工程师",
+      "医疗产品经理",
+      "合规/注册工程师"
+    ],
+    "top_cities": [
+      "深圳",
+      "上海",
+      "北京",
+      "苏州",
+      "杭州"
+    ],
+    "top_schools": [
+      {
+        "name": "浙江大学",
+        "employment_rate": 95,
+        "avg_salary": 21000
+      },
+      {
+        "name": "上海交通大学",
+        "employment_rate": 94.5,
+        "avg_salary": 22000
+      },
+      {
+        "name": "华中科技大学",
+        "employment_rate": 93.5,
+        "avg_salary": 19000
+      },
+      {
+        "name": "东南大学",
+        "employment_rate": 93,
+        "avg_salary": 18500
+      },
+      {
+        "name": "清华大学",
+        "employment_rate": 95.5,
+        "avg_salary": 23000
+      }
+    ],
+    "related_majors": [
+      "linchuang-yixue",
+      "dianzi-xinxi-gongcheng",
+      "shengwu-kexue",
+      "jisuanji-kexue-yu-jishu"
+    ],
+    "faq": [
+      {
+        "q": "生物医学工程和生物工程有什么区别？",
+        "a": "生物医学工程侧重'用工程解决医学问题'（做医疗器械/医学影像），生物工程侧重'用工程改造生物'（做发酵/基因工程）。前者就业更贴近医疗行业，薪资更高；后者更偏基础研究。"
+      },
+      {
+        "q": "生医工就业前景如何？",
+        "a": "得益于国产医疗器械替代+AI医疗风口，就业前景是工科中较好的。龙头企业（迈瑞/联影/华大）校招竞争激烈，但硕士以上学历更有竞争力。建议读研选医学影像/AI医疗热门方向。"
+      }
+    ],
+    "tags": [
+      "医工交叉",
+      "医疗器械",
+      "国产替代",
+      "AI医疗",
+      "读研加分"
+    ],
+    "gender_ratio": "男6:女4",
+    "recommended_for": [
+      "生物/物理好",
+      "对医疗有兴趣",
+      "理工基础扎实",
+      "接受读研"
+    ],
+    "seo_title": "生物医学工程专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "生物医学工程专业起薪8500元/月，5年24000元。分析国产医疗器械崛起的机遇、医工交叉vs纯工程的差异及AI医疗方向前景。"
+  },
+  {
+    "id": "transport",
+    "slug": "jiaotong-yunshu",
+    "name": "交通运输",
+    "category": "工学",
+    "degree": "工学学士",
+    "duration": 4,
+    "description": "交通运输是研究综合交通系统规划、设计、运营和管理的工科专业。课程涵盖交通工程学、交通运输规划、交通管理与控制、智能交通系统等。在中国高铁网络全球领先、城市轨道交通持续扩张和智慧交通技术（车路协同/自动驾驶）加速落地的背景下，交通运输工程师的需求保持稳定增长。毕业生主要进入铁路系统（国铁/地铁）、交通规划设计院、智能交通企业和政府交通管理部门。虽然不如计算机/金融那样高薪，但交通系统属于国家基建的刚需，就业稳定性极强。",
+    "starting_salary": 7000,
+    "salary_3year": 11000,
+    "salary_5year": 17000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 6000
+      },
+      {
+        "year": 2,
+        "salary": 7500
+      },
+      {
+        "year": 3,
+        "salary": 10000
+      },
+      {
+        "year": 4,
+        "salary": 13000
+      },
+      {
+        "year": 5,
+        "salary": 16000
+      }
+    ],
+    "employment_rate": 91,
+    "relevance_rate": 80,
+    "satisfaction": 72,
+    "roi_index": 64,
+    "roi_grade": "C",
+    "ai_risk_level": "中低",
+    "ai_risk_score": 32,
+    "ai_risk_description": "智慧交通/车路协同的发展需要更多懂AI的交通工程师，而非更少。AI用于交通流量预测和信号优化，但交通系统的规划设计（涉及社会/经济/环境多因素）和应急管理仍需要人类专业判断。",
+    "top_industries": [
+      "铁路/地铁",
+      "交通规划设计院",
+      "智能交通",
+      "物流/供应链",
+      "政府交通部门"
+    ],
+    "top_positions": [
+      "交通规划工程师",
+      "轨道交通工程师",
+      "智能交通工程师",
+      "交通运营管理",
+      "物流规划师"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "广州",
+      "武汉",
+      "成都"
+    ],
+    "top_schools": [
+      {
+        "name": "北京交通大学",
+        "employment_rate": 96,
+        "avg_salary": 16000
+      },
+      {
+        "name": "西南交通大学",
+        "employment_rate": 95.5,
+        "avg_salary": 15500
+      },
+      {
+        "name": "同济大学",
+        "employment_rate": 95,
+        "avg_salary": 17000
+      },
+      {
+        "name": "东南大学",
+        "employment_rate": 94,
+        "avg_salary": 16500
+      },
+      {
+        "name": "长安大学",
+        "employment_rate": 93.5,
+        "avg_salary": 14000
+      }
+    ],
+    "related_majors": [
+      "tumu-gongcheng",
+      "wuliu-guanli",
+      "zidonghua",
+      "cehui-gongcheng"
+    ],
+    "faq": [
+      {
+        "q": "交通运输就业怎么样？",
+        "a": "就业率稳定（91%），进铁路/地铁等国企事业单位的比例高，工作稳定。但薪资增速偏慢，不高不低。如果你看重稳定+编制，交通是个不错的选择。如果你想要高薪快节奏，可能不太适合。"
+      },
+      {
+        "q": "交通工程和交通运输有区别吗？",
+        "a": "交通工程偏硬件设计（道路/信号/路面），交通运输偏运营管理（调度/规划/系统优化）。就业都在大交通领域，工程更偏技术，运输更偏管理。"
+      }
+    ],
+    "tags": [
+      "国企/事业单位",
+      "稳定",
+      "基建",
+      "铁路/地铁",
+      "智慧交通"
+    ],
+    "gender_ratio": "男7:女3",
+    "recommended_for": [
+      "物理/数学中等以上",
+      "追求稳定",
+      "对交通系统有兴趣",
+      "能接受体制内"
+    ],
+    "seo_title": "交通运输专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "交通运输专业起薪7000元/月，就业率91%。分析铁路/地铁/智能交通三大就业方向、国企事业单位的优势及智慧交通带来的新机遇。"
+  },
+  {
+    "id": "physics",
+    "slug": "wu-li-xue",
+    "name": "物理学",
+    "category": "理学",
+    "degree": "理学学士",
+    "duration": 4,
+    "description": "物理学是自然科学中最基础的学科，研究物质的基本结构、相互作用和运动规律。核心课程包括理论力学、量子力学、电动力学、热力学与统计物理、固体物理等。物理学的核心价值不在于本科毕业找对口工作，而在于培养的数学建模能力和物理思维是所有工程学科的基础。物理系毕业生拥有极强的转行能力——从半导体工艺工程师到量化交易员，从AI算法研究员到专利代理人，物理思维的训练让你在复杂系统建模和第一性原理思考上有天然优势。但纯物理学术路线确实需要博士学历和强烈的科研热情。",
+    "starting_salary": 8000,
+    "salary_3year": 15000,
+    "salary_5year": 25000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 7000
+      },
+      {
+        "year": 2,
+        "salary": 10000
+      },
+      {
+        "year": 3,
+        "salary": 13500
+      },
+      {
+        "year": 4,
+        "salary": 18500
+      },
+      {
+        "year": 5,
+        "salary": 24000
+      }
+    ],
+    "employment_rate": 86,
+    "relevance_rate": 45,
+    "satisfaction": 76,
+    "roi_index": 72,
+    "roi_grade": "B",
+    "ai_risk_level": "极低",
+    "ai_risk_score": 10,
+    "ai_risk_description": "物理学家本身就是AI/量子计算/新材料/新能源等前沿领域的核心创造者。物理思维在理解AI底层原理（优化理论/概率模型/信息论）方面具有天然优势。物理系毕业生在AI行业中是公认的'潜力股'。",
+    "top_industries": [
+      "半导体/芯片",
+      "AI/机器学习",
+      "量化金融",
+      "科研/教育",
+      "光电/新能源"
+    ],
+    "top_positions": [
+      "半导体工艺工程师",
+      "算法工程师",
+      "量化研究员",
+      "数据科学家",
+      "物理教师"
+    ],
+    "top_cities": [
+      "北京",
+      "上海",
+      "深圳",
+      "合肥",
+      "杭州"
+    ],
+    "top_schools": [
+      {
+        "name": "北京大学",
+        "employment_rate": 94,
+        "avg_salary": 28000
+      },
+      {
+        "name": "中国科学技术大学",
+        "employment_rate": 93.5,
+        "avg_salary": 26000
+      },
+      {
+        "name": "清华大学",
+        "employment_rate": 94.5,
+        "avg_salary": 27000
+      },
+      {
+        "name": "南京大学",
+        "employment_rate": 92,
+        "avg_salary": 23000
+      },
+      {
+        "name": "复旦大学",
+        "employment_rate": 92.5,
+        "avg_salary": 24000
+      }
+    ],
+    "related_majors": [
+      "yingyong-shuxue",
+      "cailiao-kexue",
+      "dianzi-xinxi-gongcheng",
+      "guangdian-xinxi"
+    ],
+    "faq": [
+      {
+        "q": "学物理不当科学家是不是就废了？",
+        "a": "完全不是。物理系毕业生的核心竞争力是建模和解决复杂问题的能力，这在AI/量化/半导体等高新技术行业非常吃香。很多顶尖量化交易员和AI研究员的本科就是物理专业。但前提是你也要学编程（Python），不能只学理论。"
+      },
+      {
+        "q": "物理学和数学选哪个？",
+        "a": "数学更抽象（纯逻辑），物理更接地气（有现实对象可思考）。数学基础好的同学两者都可以选。如果对理解自然世界有好奇心选物理，如果喜欢纯逻辑推导选数学。就业转行能力两者相当。"
+      }
+    ],
+    "tags": [
+      "基础学科",
+      "转行能力强",
+      "AI/量化",
+      "读研必须",
+      "思维训练最硬核"
+    ],
+    "gender_ratio": "男7:女3",
+    "recommended_for": [
+      "物理/数学成绩优异",
+      "喜欢深入思考",
+      "计划深造",
+      "有科研好奇心"
+    ],
+    "seo_title": "物理学专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "物理学专业起薪8000元/月，5年25000元。分析物理系毕业生的'隐藏实力'、转行AI/量化/半导体的天然优势及学术vs工业界路径。"
+  },
+  {
+    "id": "survey",
+    "slug": "ce-hui-gong-cheng",
+    "name": "测绘工程",
+    "category": "工学",
+    "degree": "工学学士",
+    "duration": 4,
+    "description": "测绘工程是研究地球空间信息获取、处理、分析和应用的工程学科。传统测绘依靠全站仪和GPS，现代测绘已全面升级到卫星遥感、无人机航测、激光雷达（LiDAR）、三维激光扫描等高科技手段。课程涵盖测量学、遥感原理与应用、地理信息系统（GIS）、卫星导航定位等。在国家空间基础设施建设（北斗系统全球组网完成）和数字经济（高精地图/自动驾驶/数字孪生城市）的驱动下，测绘从传统的基础行业正在升级为空间信息产业。毕业生可进入测绘局/勘察设计院/高精地图公司/无人机企业等。",
+    "starting_salary": 7000,
+    "salary_3year": 11000,
+    "salary_5year": 17000,
+    "salary_trend": [
+      {
+        "year": 1,
+        "salary": 6000
+      },
+      {
+        "year": 2,
+        "salary": 7800
+      },
+      {
+        "year": 3,
+        "salary": 10000
+      },
+      {
+        "year": 4,
+        "salary": 13000
+      },
+      {
+        "year": 5,
+        "salary": 16000
+      }
+    ],
+    "employment_rate": 92,
+    "relevance_rate": 78,
+    "satisfaction": 66,
+    "roi_index": 62,
+    "roi_grade": "C",
+    "ai_risk_level": "中低",
+    "ai_risk_score": 28,
+    "ai_risk_description": "AI在遥感影像识别和点云处理中的应用大大提升了数据处理效率。但外业数据采集仍需要人工操作精密仪器，测绘数据的精度验证和工程判断也需要专业经验。测绘人有了AI工具加持，效率提升而非被替代。",
+    "top_industries": [
+      "测绘/勘察",
+      "高精地图/自动驾驶",
+      "国土资源",
+      "城市规划",
+      "无人机"
+    ],
+    "top_positions": [
+      "测绘工程师",
+      "GIS开发工程师",
+      "遥感分析师",
+      "高精地图工程师",
+      "无人机飞手"
+    ],
+    "top_cities": [
+      "武汉",
+      "北京",
+      "深圳",
+      "上海",
+      "西安"
+    ],
+    "top_schools": [
+      {
+        "name": "武汉大学测绘学院",
+        "employment_rate": 97,
+        "avg_salary": 17000
+      },
+      {
+        "name": "同济大学",
+        "employment_rate": 95,
+        "avg_salary": 16500
+      },
+      {
+        "name": "中国矿业大学",
+        "employment_rate": 94,
+        "avg_salary": 14000
+      },
+      {
+        "name": "解放军信息工程大学",
+        "employment_rate": 96,
+        "avg_salary": 16000
+      }
+    ],
+    "related_majors": [
+      "tumu-gongcheng",
+      "dili-xinxi-kexue",
+      "chengshi-gui-hua",
+      "yaogan-kexue"
+    ],
+    "faq": [
+      {
+        "q": "测绘工程是不是很辛苦？",
+        "a": "传统外业测绘确实需要跑工地、爬山涉水，工作条件艰苦。但现代测绘越来越多转向无人机航测、激光扫描等智能化方式。如果你想往GIS开发/遥感数据分析方向发展，基本上是坐办公室写代码，不辛苦。"
+      },
+      {
+        "q": "测绘工程就业稳定吗？",
+        "a": "很稳定。测绘是工程建设的前置环节——不测绘就没法设计和施工，属于基建刚需。国土资源调查、不动产登记、智慧城市建设等长期任务保证了测绘工程师的持续需求。"
+      }
+    ],
+    "tags": [
+      "传统工科",
+      "基建刚需",
+      "外业辛苦",
+      "GIS新方向",
+      "空间信息"
+    ],
+    "gender_ratio": "男8:女2",
+    "recommended_for": [
+      "物理/地理好",
+      "能接受户外工作",
+      "追求稳定",
+      "对地图/空间有兴趣"
+    ],
+    "seo_title": "测绘工程专业就业前景与薪资分析（2026最新数据）",
+    "seo_description": "测绘工程专业起薪7000元/月，就业率92%。分析测绘行业的智能化转型、无人机/GIS开发/高精地图新方向、外业vs内业的职业差异。"
   }
 ]
