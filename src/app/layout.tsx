@@ -31,6 +31,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="zh-CN">
       <head>
         <link rel="icon" href="/favicon.ico" />
+        {/* eslint-disable-next-line @next/next/no-css-tags */}
+        <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
