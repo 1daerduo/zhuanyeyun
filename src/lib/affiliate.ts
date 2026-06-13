@@ -123,26 +123,25 @@ const affiliateData: AffiliateRecommendation[] = [
   },
   {
     majorSlug: 'kouchuang-yixue',
-    intro: '口腔医学学习与临床必备（推广链接待补充）',
+    intro: '口腔医学学习与临床必备——多多进宝推广',
     products: [
-      { name: '口腔颌面外科学（第8版）', platform: 'jd', itemId: '', price: '¥89', tag: '教材必备', desc: '口腔专业核心教材' },
-      { name: '口腔正畸学（第7版）', platform: 'jd', itemId: '', price: '¥78', tag: '正畸方向', desc: '正畸入门必读教材' },
+      { name: '人卫版口腔医学教材（十三五规划）', platform: 'pdd', itemId: 'https://p.pinduoduo.com/vSqqIhYu?sc=EFAC', price: '¥46.75', tag: '教材必备', desc: '全国高等学校口腔医学教材，各科目任选' },
     ],
   },
   {
     majorSlug: 'jinrongxue',
-    intro: '金融专业考证与实务进阶（推广链接待补充）',
+    intro: '金融专业考证与实务进阶——多多进宝推广',
     products: [
-      { name: 'CFA一级官方教材（2026版）', platform: 'jd', itemId: '', price: '¥680', tag: '金融第一考', desc: 'CFA协会官方指定教材' },
-      { name: '证券从业资格考试教材', platform: 'jd', itemId: '', price: '¥89', tag: '从业必考', desc: '证券从业考试官方教材' },
+      { name: '2026银行从业资格考试教材+真题题库', platform: 'pdd', itemId: 'https://p.pinduoduo.com/Qpdq02iC?sc=EFAC', price: '¥8.80', tag: '从业必考', desc: '初级银行从业教材+历年真题+必刷题库' },
+      { name: 'CFA一级官方教材（2026版）', platform: 'jd', itemId: '', price: '¥680', tag: '金融第一考', desc: 'CFA协会官方指定教材（推广链接待补充）' },
     ],
   },
   {
     majorSlug: 'kuaijixue',
-    intro: '会计专业考证与实务必备（推广链接待补充）',
+    intro: '会计专业考证与实务必备——多多进宝推广',
     products: [
-      { name: 'CPA注册会计师官方教材（全6册）', platform: 'jd', itemId: '', price: '¥328', tag: 'CPA必备', desc: '中注协官方教材，CPA考试指定' },
-      { name: '初级会计实务+经济法基础', platform: 'jd', itemId: '', price: '¥89', tag: '入门双证', desc: '初级会计职称考试教材' },
+      { name: 'CPA2026注会奇兵制胜1（会计税法经济法）', platform: 'pdd', itemId: 'https://p.pinduoduo.com/AYdqST5q?sc=EFAC', price: '¥40.00', tag: 'CPA必备', desc: '之了官方教材，含精讲网课+题库' },
+      { name: '初级会计备考2027（马勇教材+试卷）', platform: 'pdd', itemId: 'https://p.pinduoduo.com/rmTqyv2D?sc=EFAC', price: '¥12.80', tag: '入门双证', desc: '赠精讲网课，实务+经济法全覆盖' },
     ],
   },
   {
@@ -159,9 +158,9 @@ const affiliateData: AffiliateRecommendation[] = [
   },
   {
     majorSlug: 'falv-xue',
-    intro: '法学专业考证与实务（推广链接待补充）',
+    intro: '法学专业考证与实务——多多进宝推广',
     products: [
-      { name: '国家统一法律职业资格考试辅导用书', platform: 'jd', itemId: '', price: '¥198', tag: '法考必备', desc: '法考官方指定教材' },
+      { name: '2026法考真题试卷（十年真题+解析+视频）', platform: 'pdd', itemId: 'https://p.pinduoduo.com/ySeqSkHs?sc=EFAC', price: '¥19.80', tag: '法考必备', desc: '章节习题+必刷题库+视频讲解全覆盖' },
     ],
   },
 ];
