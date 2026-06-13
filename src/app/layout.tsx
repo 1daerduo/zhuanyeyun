@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -49,6 +50,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 'query-input': 'required name=search_term',
               },
             }),
+          }}
+        />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-GDVGWM0L8G"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-GDVGWM0L8G');
+            `,
           }}
         />
       </head>
