@@ -18,32 +18,42 @@ export interface AffiliateRecommendation {
 }
 
 // ====== PID 配置 ======
-// 在 CF Pages 环境变量中设置，或在 .env.local 中设置：
-//   JD_UNION_ID=你的京东联盟ID
-//   TB_PID=mm_你的淘宝PID
-//   PDD_PID=你的多多进宝PID
-// 未配置时组件正常展示，只不带联盟跟踪参数
+// 默认 PID（老板的联盟账号），未配置环境变量时自动使用
+// 淘宝联盟 PID 格式：mm_站点ID_推广者ID_推广位ID
+// 多多进宝 PID 格式：推广者ID_推广位ID
+
+const DEFAULT_PIDS = {
+  jd: '',                       // 京东联盟：在 union.jd.com 获取
+  tb: 'mm_119638500_19524471_72688686',  // 淘宝联盟 PID
+  pdd: '44488933_316432727',         // 多多进宝 PID
+};
 
 function getJdLink(itemId: string): string {
-  const unionId = process.env.JD_UNION_ID || '';
+  const unionId = process.env.JD_UNION_ID || DEFAULT_PIDS.jd;
   if (unionId) {
-    return `https://union-click.jd.com/jdc?e=&p=JF8BAPYJK1olXDYCVV9cDEIQAmgBH1klGVlaCgFtUQ5SQi0DBUVNGFJeSwUIFxlJX3EIGloUXwQDUF1cC0sQAF8PGVsXVA8LUVZUDE4IWipURmsXXAcAVm5fCUoVBGYOHF8TVQYKUl5YOAlxBF9fDVgRBGcDVF5dD3sVAm4JHFkVWgYLU1pcZUsUBRdWHFIVVgICESt1GkMVNw1ISBlEGwRWU15UC05VVW5dHDUUVgICUitfCBsSCW5cOAlxBF9fDVgRBGcDVF5dD3sVAm4JHFkVWgYLU1pcZUsUBRdWHFIVVgICESt1GkMVNw1ISBlEGwRWU15UC05VVW5dHDUUVgICUitfCBsSC184`;
+    // 京东联盟链接格式：https://union-click.jd.com/jdc?e=&p=...
+    // itemId 传入商品ID，unionId 传入联盟ID
+    return `https://union-click.jd.com/jdc?e=&p=JF8CARsJK1olXDYCVV9cDEUaAmoCH1JSSQVFdVxrUxsrVA9SQi0DBUVNGFJeSwUIFxlJX3EIGloUXwQDUF1cC0sQAF8PGVsXVA8LUVYLVQ4IWipURmsXXAcAVm5fCUoVBGYOHF8TVgYKUl5YOAlxBF9fDVgRBGcDVF5dD3sVAm4JHFkVWgYLU1pcZUsUBRdWHFIVVgICESt1GkMVNw1ISBlEGwRWU15UC05VVW5dHDUUVgICUitfCBsSCW5cOAlxBF9fDVgRBGcDVF5dD3sVAm4JHFkVWgYLU1pcZUsUBRdWHFIVVgICESt1GkMVNw1ISBlEGwRWU15UC05VVW5dHDUUVgICUitfCBsSC184&u=https%3A%2F%2Fitem.jd.com%2F${itemId}.html`;
   }
   return `https://item.jd.com/${itemId}.html`;
 }
 
 function getTbLink(itemId: string): string {
-  const pid = process.env.TB_PID || '';
+  const pid = process.env.TB_PID || DEFAULT_PIDS.tb;
   if (pid) {
-    return `https://s.click.taobao.com/t?e=m%3D2%26s%3D${itemId}%26union_lens%3DlensId&pid=${pid}`;
+    // 淘宝联盟短链格式：https://s.click.taobao.com/t?pid=PID&itemId=ITEMID
+    // itemId 是商品ID（数字），pid 是三段式 PID
+    return `https://s.click.taobao.com/t?pid=${pid}&itemId=${itemId}&target_type=4&oOrp=1`;
   }
   return `https://item.taobao.com/item.htm?id=${itemId}`;
 }
 
 function getPddLink(itemId: string): string {
-  const pid = process.env.PDD_PID || '';
+  const pid = process.env.PDD_PID || DEFAULT_PIDS.pdd;
   if (pid) {
-    return `https://p.pinduoduo.com/${itemId}?pid=${pid}`;
+    // 多多进宝推广链接格式
+    // goods_id 是商品ID，pdd_duoi 是推广位ID（两段式）
+    return `https://mobile.yangkeduo.com/goods.html?goods_id=${itemId}&pdd_duoi=${pid}`;
   }
   return `https://mobile.yangkeduo.com/goods.html?goods_id=${itemId}`;
 }
