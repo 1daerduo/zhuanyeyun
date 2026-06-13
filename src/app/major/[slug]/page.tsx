@@ -2,8 +2,10 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getAllSlugs, getMajorBySlug, getRelatedMajors } from '@/lib/majors';
+import { getAffiliateForMajor } from '@/lib/affiliate';
 import { generateFAQSchema, generateBreadcrumbSchema } from '@/lib/seo';
 import SalaryChart from '@/components/SalaryChart';
+import AffiliateCard from '@/components/AffiliateCard';
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -34,6 +36,7 @@ export default function MajorPage({ params }: { params: { slug: string } }) {
   if (!major) notFound();
 
   const related = getRelatedMajors(params.slug);
+  const affiliate = getAffiliateForMajor(params.slug);
   const roiColor: Record<string, string> = {
     A: 'bg-green-500', B: 'bg-blue-500', C: 'bg-yellow-500', D: 'bg-orange-500', E: 'bg-red-500',
   };
@@ -217,6 +220,11 @@ export default function MajorPage({ params }: { params: { slug: string } }) {
               </details>
             ))}
           </div>
+
+          {/* Affiliate Recommendations */}
+          {affiliate && (
+            <AffiliateCard intro={affiliate.intro} products={affiliate.products} />
+          )}
 
           {/* SEO Schema */}
           <script
