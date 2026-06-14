@@ -6,6 +6,7 @@ import { getAffiliateForMajor } from '@/lib/affiliate';
 import { generateFAQSchema, generateBreadcrumbSchema } from '@/lib/seo';
 import SalaryChart from '@/components/SalaryChart';
 import AffiliateCard from '@/components/AffiliateCard';
+import CTABanner from '@/components/CTABanner';
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -329,6 +330,8 @@ export default function MajorPage({ params }: { params: { slug: string } }) {
           )}
         </aside>
       </div>
+
+      <CTABanner variant="full" />
     </div>
   );
 }

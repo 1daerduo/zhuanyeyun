@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/ranking/ai-safe/`, priority: 0.9 },
     { url: `${BASE_URL}/ranking/roi/`, priority: 0.8 },
     { url: `${BASE_URL}/ranking/manyidu/`, priority: 0.7 },
+    { url: `${BASE_URL}/buy/`, priority: 0.7 },
     { url: `${BASE_URL}/privacy/`, priority: 0.3 },
     { url: `${BASE_URL}/terms/`, priority: 0.3 },
   ];

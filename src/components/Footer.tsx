@@ -48,6 +48,7 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-gray-900 mb-3">关于本站</h4>
             <ul className="space-y-2">
+              <li><Link href="/buy" className="text-sm text-gray-500 hover:text-blue-600">📘 完整报考指南</Link></li>
               <li><Link href="/privacy" className="text-sm text-gray-500 hover:text-blue-600">隐私政策</Link></li>
               <li><Link href="/terms" className="text-sm text-gray-500 hover:text-blue-600">使用条款</Link></li>
             </ul>

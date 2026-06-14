@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { getAllMajors } from '@/lib/majors';
 import type { Major } from '@/lib/types';
+import CTABanner from '@/components/CTABanner';
 
 export function generateStaticParams() {
   return [
@@ -400,6 +401,8 @@ export default function RankingPage({ params }: { params: { category: string } }
             </tbody>
           </table>
         </div>
+
+        <CTABanner variant="full" />
       </div>
     );
   }
@@ -440,6 +443,8 @@ export default function RankingPage({ params }: { params: { category: string } }
             </Link>
           ))}
         </div>
+
+        <CTABanner variant="full" />
       </div>
     );
   }
