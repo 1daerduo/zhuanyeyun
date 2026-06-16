@@ -194,7 +194,7 @@ export default function BuyPage() {
             <span className="bg-white px-2 py-1 rounded border">收PDF</span>
           </div>
           <p className="text-sm font-semibold text-gray-900">
-            微信号：<span className="text-blue-600 text-lg">【请替换为你的微信号】</span>
+            微信号：<span className="text-blue-600 text-lg">swgk44</span>
           </p>
           <p className="text-xs text-gray-400 mt-2">
             加好友请备注「完整版」
