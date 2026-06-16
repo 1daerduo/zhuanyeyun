@@ -13,10 +13,10 @@ export default function CTABanner({ variant = 'compact' }: Props) {
         <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
           <div className="flex-1 text-center sm:text-left">
             <h3 className="text-lg sm:text-xl font-bold mb-1">
-              想要189个专业的完整数据？
+              想要244个专业的完整数据？
             </h3>
             <p className="text-blue-100 text-sm">
-              涵盖薪资趋势、AI风险评估、院校推荐，PDF随身查阅
+              涵盖薪资趋势、AI风险评估、院校推荐，关注公众号免费领试读
             </p>
           </div>
           <Link
@@ -39,10 +39,10 @@ export default function CTABanner({ variant = 'compact' }: Props) {
         <span className="text-2xl shrink-0">📘</span>
         <div className="min-w-0 flex-1">
           <h4 className="text-sm font-semibold text-gray-900 group-hover:text-orange-700">
-            《2026专业报考完整指南》· 189个专业数据
+            《2026专业报考完整指南》· 244个专业数据
           </h4>
           <p className="text-xs text-gray-500 mt-0.5">
-            薪资趋势 · AI风险评估 · 院校推荐 · 免费试读
+            薪资趋势 · AI风险评估 · 院校推荐 · 关注公众号免费试读
           </p>
         </div>
         <span className="text-xs font-medium text-orange-600 bg-white px-2 py-1 rounded shrink-0">
