@@ -43,8 +43,8 @@ export function searchMajors(query: string): Major[] {
     (m) =>
       m.name.toLowerCase().includes(q) ||
       m.category.toLowerCase().includes(q) ||
-      m.tags.some((t) => t.toLowerCase().includes(q)) ||
-      m.top_industries.some((t) => t.toLowerCase().includes(q))
+      (m.tags || []).some((t) => t.toLowerCase().includes(q)) ||
+      (m.top_industries || []).some((t) => t.toLowerCase().includes(q))
   );
 }
 

@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   return {
     title: major.seo_title,
     description: major.seo_description,
-    keywords: `${major.name}专业,${major.name}就业前景,${major.name}薪资,${major.name}就业率,${major.tags.join(',')}`,
+    keywords: `${major.name}专业,${major.name}就业前景,${major.name}薪资,${major.name}就业率,${(major.tags || []).join(',')}`,
     alternates: { canonical: `https://zhuanyeyun.com/major/${major.slug}/` },
     openGraph: {
       title: major.seo_title,
@@ -153,7 +153,7 @@ export default function MajorPage({ params }: { params: { slug: string } }) {
             <div className="bg-white border border-gray-200 rounded-xl p-5">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">主要就业行业</h3>
               <ul className="space-y-2">
-                {major.top_industries.map((ind) => (
+                {(major.top_industries || []).map((ind) => (
                   <li key={ind} className="flex items-center gap-2 text-sm text-gray-700">
                     <span className="w-2 h-2 rounded-full bg-blue-500 shrink-0" />
                     {ind}
@@ -164,7 +164,7 @@ export default function MajorPage({ params }: { params: { slug: string } }) {
             <div className="bg-white border border-gray-200 rounded-xl p-5">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">常见就业岗位</h3>
               <ul className="space-y-2">
-                {major.top_positions.map((pos) => (
+                {(major.top_positions || []).map((pos) => (
                   <li key={pos} className="flex items-center gap-2 text-sm text-gray-700">
                     <span className="w-2 h-2 rounded-full bg-green-500 shrink-0" />
                     {pos}
@@ -178,7 +178,7 @@ export default function MajorPage({ params }: { params: { slug: string } }) {
           <div className="bg-white border border-gray-200 rounded-xl p-5 mb-8">
             <h3 className="text-lg font-semibold text-gray-900 mb-3">就业热门城市</h3>
             <div className="flex flex-wrap gap-2">
-              {major.top_cities.map((city, idx) => (
+              {(major.top_cities || []).map((city, idx) => (
                 <span key={city} className="text-sm bg-blue-50 text-blue-700 px-3 py-1.5 rounded-full border border-blue-100">
                   {idx === 0 && '🥇 '}{idx === 1 && '🥈 '}{idx === 2 && '🥉 '}{city}
                 </span>
@@ -198,7 +198,7 @@ export default function MajorPage({ params }: { params: { slug: string } }) {
                 </tr>
               </thead>
               <tbody>
-                {major.top_schools.map((s) => (
+                {(major.top_schools || []).map((s) => (
                   <tr key={s.name} className="border-b border-gray-100">
                     <td className="py-3 text-gray-900 font-medium">{s.name}</td>
                     <td className="py-3 text-center text-green-600 font-medium">{s.employment_rate}%</td>
@@ -212,7 +212,7 @@ export default function MajorPage({ params }: { params: { slug: string } }) {
           {/* FAQ */}
           <h2 className="text-xl font-bold text-gray-900 mb-4">常见问题</h2>
           <div className="space-y-4 mb-8">
-            {major.faq.map((item) => (
+            {(major.faq || []).map((item) => (
               <details key={item.q} className="bg-white border border-gray-200 rounded-xl group">
                 <summary className="px-5 py-4 cursor-pointer font-medium text-gray-900 hover:text-blue-600 transition-colors">
                   {item.q}
@@ -291,7 +291,7 @@ export default function MajorPage({ params }: { params: { slug: string } }) {
             <div className="mt-5 pt-4 border-t border-gray-100">
               <h4 className="text-sm font-semibold text-gray-900 mb-2">适合人群</h4>
               <ul className="space-y-1.5">
-                {major.recommended_for.map((r) => (
+                {(major.recommended_for || []).map((r) => (
                   <li key={r} className="text-xs text-gray-600 flex items-center gap-1.5">
                     <span className="text-blue-500">✓</span> {r}
                   </li>
