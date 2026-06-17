@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="zh-CN">
       <head>
-        <meta name="baidu-site-verification" content="codeva-p83S4KGcvm" />
+        <meta name="baidu-site-verification" content="codeva-9S9CBA9Men" />
         <link rel="icon" href="/favicon.ico" />
         {/* eslint-disable-next-line @next/next/no-css-tags */}
         <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
