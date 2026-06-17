@@ -25,7 +25,7 @@ const FAQ_ITEMS = [
   },
   {
     q: '数据和网站上的有区别吗？',
-    a: '有。网站展示的是每个专业的概要信息，PDF里的完整版多了：5年薪资趋势图、20+对口院校名单及分数线、10个常见问题深度解答、专业对比矩阵。',
+    a: '有。网站展示的是每个专业的概要信息，PDF里的完整版多了：5年薪资趋势图、20+对口院校名单及就业数据、10个常见问题深度解答、专业对比矩阵。',
   },
   {
     q: '后续会不会更新？',
@@ -57,7 +57,7 @@ const TIERS = [
     features: [
       '全部244个专业的完整数据',
       '每个专业5年薪资趋势图',
-      '20+对口院校及分数线',
+      '20+对口院校及就业数据',
       'AI替代风险评估（全网独家）',
       '专业对比矩阵（一键比3个）',
       'PDF格式，手机随时查看',
@@ -166,7 +166,7 @@ export default function BuyPage() {
             />
           </div>
           <p className="text-sm text-gray-500 mb-1">
-            公众号：<strong className="text-gray-900">AI应用铺子</strong>
+            公众号：<strong className="text-gray-900">AGI前哨站</strong>
           </p>
           <p className="text-xs text-gray-400">
             关注后自动推送试读版 + AI工具推荐

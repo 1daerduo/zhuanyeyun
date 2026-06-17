@@ -2,8 +2,8 @@
 
 ## 公众号信息
 - 公众号名称：AGI前哨站（以实际为准）
-- 公众号ID：gh_d17ec7243fa6
-- AppID：wx52e179c4b4abdca3
+- 公众号ID：gh_xxxxxxxxxxxx（请在公众号后台查看）
+- AppID：wx_xxxxxxxxxxxxxx（请在公众号后台 → 设置 → 基本配置 查看）
 
 ## 1. 关注自动回复（新用户关注时自动推送）
 
