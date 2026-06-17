@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans SC','Microsoft YaHei','PingFang SC','SimHei',sans-serif;color:#1a1a2e;background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+
+.cover{width:210mm;height:297mm;background:linear-gradient(135deg,#0d3b8c 0%,#1e5fd9 40%,#3b82f6 100%);display:flex;flex-direction:column;justify-content:center;padding:60px;position:relative}
+.cover::before,.cover::after{content:'';position:absolute;left:0;right:0;height:2px;background:rgba(255,255,255,0.12)}
+.cover::before{top:42%}.cover::after{top:68%}
+.cover .badge{display:inline-block;background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.9);padding:6px 18px;border-radius:20px;font-size:12px;font-weight:500;letter-spacing:2px;margin-bottom:28px;width:fit-content}
+.cover h1{font-size:44px;font-weight:900;color:#fff;line-height:1.15;margin-bottom:14px;letter-spacing:2px}
+.cover .sub{font-size:22px;font-weight:300;color:rgba(255,255,255,0.85);margin-bottom:36px;letter-spacing:3px}
+.cover .feat{display:flex;flex-direction:column;gap:12px;margin-bottom:50px}
+.cover .feat span{font-size:14px;color:rgba(255,255,255,0.7);font-weight:300}
+.cover .ds{font-size:10px;color:rgba(255,255,255,0.35);margin-top:auto;line-height:1.6}
+.cover .ctab{display:flex;gap:20px;margin-top:18px}
+.cover .ctab span{font-size:11px;color:rgba(255,255,255,0.75);font-weight:500}
+.cover .ctab span:last-child{color:rgba(255,255,255,0.45);font-weight:400}
+
+.toc{width:210mm;height:297mm;padding:40px 48px;background:#fff;page-break-after:always}
+.toc h2{font-size:20px;font-weight:700;color:#1a1a2e;margin-bottom:24px;letter-spacing:2px}
+.tl{list-style:none;display:flex;flex-direction:column}
+.tl li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dotted #e0e0e0;font-size:12.5px;color:#5f6368}
+.tl li.toc-cta{font-weight:700;color:#1e5fd9;border-bottom:2px solid #1e5fd9}
+.tl li .pn{color:#b0b0b0;font-size:10.5px}
+
+.guide{width:210mm;height:297mm;padding:42px 48px;background:#fff;page-break-after:always}
+.guide h2{font-size:22px;font-weight:700;color:#1a1a2e;margin-bottom:24px;letter-spacing:2px}
+.gc{background:#f8f9fb;border-radius:8px;padding:14px 18px;margin-bottom:12px;border-left:3px solid #1e5fd9}
+.gc h3{font-size:12px;font-weight:700;color:#1a1a2e;margin-bottom:5px}
+.gc p{font-size:11px;color:#5f6368;line-height:1.65}
+
+/* ── 水印 ── */
+.wm{position:relative;overflow:hidden}
+.wm::after{content:attr(data-wm);position:absolute;top:45%;left:-10%;width:130%;font-size:64px;font-weight:900;color:rgba(0,0,0,0.035);white-space:nowrap;pointer-events:none;z-index:0;transform:rotate(-28deg);letter-spacing:18px;text-align:center}
+.wm-dark::after{color:rgba(255,255,255,0.06)}
+
+.mp{width:210mm;min-height:297mm;padding:26px 42px 18px;background:#fff;page-break-after:always}
+.mh{display:flex;align-items:center;gap:8px;padding:8px 12px;background:linear-gradient(90deg,#e8f0fe 0%,#f8f9fb 100%);border-radius:6px;margin-bottom:12px;flex-wrap:wrap}
+.mn{font-size:13px;font-weight:900;color:#1e5fd9;min-width:26px}
+.mname{font-size:17px;font-weight:700;color:#1a1a2e}
+.mcat{font-size:10px;color:#9aa0a6;margin-left:auto}
+.roi-badge{display:inline-block;padding:2px 8px;border-radius:3px;font-size:10px;font-weight:700;color:#fff}
+.roi-a{background:#0d904f}.roi-b{background:#1e5fd9}.roi-c{background:#e67e22}
+
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:10px}
+.kpi{background:#f8f9fb;border-radius:6px;padding:9px 12px;border:1px solid #e8eaed}
+.kl{font-size:8.5px;color:#9aa0a6;font-weight:500;letter-spacing:0.5px;margin-bottom:2px}
+.kv{font-size:20px;font-weight:900}.c-blue{color:#1e5fd9}.c-dark{color:#1a1a2e}.c-orange{color:#f4511e}.c-gray{color:#5f6368}
+
+.dual{display:flex;gap:14px;margin-bottom:10px}
+.dual-l{flex:0 0 200px;background:#f8f9fb;border-radius:6px;padding:10px 14px}
+.dual-r{flex:1;background:#f8f9fb;border-radius:6px;padding:10px 14px;overflow:hidden}
+.sec-title{font-size:11px;font-weight:700;color:#1a1a2e;margin-bottom:6px}
+.desc{font-size:10px;color:#5f6368;line-height:1.6}
+
+.salary-chart{width:100%}
+.chart-title{font-size:10px;font-weight:700;color:#1a1a2e;margin-bottom:6px;text-align:center}
+.bars{display:flex;align-items:flex-end;justify-content:space-around;height:80px;gap:10px}
+.bar-col{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;flex:1}
+.bar-fill{width:100%;max-width:32px;border-radius:3px 3px 0 0;min-height:6px}
+.bar-v{font-size:8px;font-weight:700;color:#1a1a2e;margin-top:3px}
+.bar-y{font-size:7px;color:#9aa0a6;margin-top:1px}
+
+.info-row{display:flex;align-items:baseline;padding:4px 0;gap:6px;flex-wrap:wrap}
+.ilabel{font-size:10px;font-weight:700;color:#1a1a2e;white-space:nowrap;min-width:fit-content}
+.ival{font-size:10px;color:#5f6368;line-height:1.55}
+.stars{color:#f4a100;font-size:12px;letter-spacing:2px}
+.note-tip{font-size:8px;color:#b0b0b0;margin-left:4px}
+.ai-warn{background:#fff8e1;border-radius:4px;padding:5px 8px;margin:3px 0}
+
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px 16px;margin:4px 0}
+
+.decision-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:8px 0}
+.dcard{background:#f0f4ff;border-radius:6px;padding:7px 10px}
+.dd{font-size:10px;font-weight:700;color:#1a1a2e;display:block;margin-bottom:2px}
+.dv{font-size:9.5px;color:#5f6368;line-height:1.5}
+
+.faq-section{margin-top:8px;border-top:1px solid #e8eaed;padding-top:8px}
+.faq-item{margin-bottom:6px}
+.faq-q{font-size:10px;font-weight:700;color:#1a1a2e;margin-bottom:2px}
+.faq-a{font-size:9.5px;color:#5f6368;line-height:1.55}
+
+.pf{display:flex;justify-content:space-between;align-items:center;padding-top:10px;margin-top:10px;border-top:1px solid #e8eaed}
+.pf span{font-size:8px;color:#b0b0b0}
+
+.cta-page{width:210mm;height:297mm;padding:50px 48px;background:#f8f9fb}
+.cta-page h2{font-size:24px;font-weight:900;color:#1a1a2e;margin-bottom:8px}
+.ctaprice{font-size:18px;color:#5f6368;margin-bottom:24px}
+.ctaprice strong{color:#1e5fd9;font-size:28px}
+.fl{list-style:none;margin-bottom:32px}
+.fl li{font-size:12.5px;color:#1a1a2e;padding:6px 0 6px 18px;position:relative}
+.fl li::before{content:'✓';position:absolute;left:0;color:#0d904f;font-weight:900;font-size:11px}
+.buy{background:#fff;border-radius:12px;padding:22px 28px;border:2px solid #1e5fd9;max-width:380px}
+.buy h3{font-size:15px;font-weight:700;color:#1a1a2e;margin-bottom:12px}
+.buy .wx{font-size:18px;font-weight:500;color:#1a1a2e;margin-bottom:6px}
+.buy .wx strong{color:#1e5fd9;font-weight:900;font-size:20px}
+.buy p{font-size:12px;color:#5f6368;line-height:1.6}
+.buy .note{margin-top:10px;font-size:11px;color:#b0b0b0}
+.fn{margin-top:36px;font-size:10px;color:#b0b0b0}
+
+@page{size:A4;margin:0}
+@media print{body{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style></head>
+<body>
+
+<div class="cover wm wm-dark" data-wm="AGI前哨站 · 免费试读版">
+  <div class="badge">2026 最新版 · 19 页</div>
+  <h1>专业报考指南</h1>
+  <div class="sub">免费试读版</div>
+  <div class="feat">
+    <span>✅ 15 个热门专业 · 30 项核心指标</span>
+    <span>✅ 薪资走势 · 适合人群 · 考研/考公建议</span>
+    <span>✅ 头部雇主 · 就业城市 · 院校推荐</span>
+    <span>✅ 完整版含全部 244 个专业</span>
+  </div>
+  <div class="ds">数据来源：教育部公开数据 · 招聘平台大数据 · AI 风险分析模型</div>
+  <div class="ctab"><span>公众号「AGI前哨站」免费领取</span><span>完整版 ¥49 · 微信 swgk44</span></div>
+</div>
+
+<div class="toc wm" data-wm="AGI前哨站 · 免费试读版">
+  <h2>目&emsp;录</h2>
+  <ul class="tl">
+    <li style="font-weight:500;color:#1a1a2e"><span>如何使用这份指南</span><span class="pn">3</span></li>
+    <li><span>计算机科学与技术</span><span class="pn">4</span></li><li><span>软件工程</span><span class="pn">5</span></li><li><span>人工智能</span><span class="pn">6</span></li><li><span>数据科学与大数据技术</span><span class="pn">7</span></li><li><span>临床医学</span><span class="pn">8</span></li><li><span>口腔医学</span><span class="pn">9</span></li><li><span>金融学</span><span class="pn">10</span></li><li><span>会计学</span><span class="pn">11</span></li><li><span>法学</span><span class="pn">12</span></li><li><span>电子商务</span><span class="pn">13</span></li><li><span>心理学</span><span class="pn">14</span></li><li><span>电气工程及其自动化</span><span class="pn">15</span></li><li><span>护理学</span><span class="pn">16</span></li><li><span>英语</span><span class="pn">17</span></li><li><span>通信工程</span><span class="pn">18</span></li>
+    <li class="toc-cta"><span>获取完整版（244个专业）</span><span class="pn">19</span></li>
+  </ul>
+</div>
+
+<div class="guide wm" data-wm="AGI前哨站 · 免费试读版">
+  <h2>如何使用这份指南</h2>
+  <div class="gc"><h3>💰 薪资数据怎么看？</h3><p>「起薪」是毕业第一年典型月薪；「3年薪资」反映成长速度；「5年涨幅」体现行业红利。柱状图展示5年增长曲线，涨幅越陡行业越好。注意：高起薪≠高天花板！</p></div>
+  <div class="gc"><h3>🤖 AI 风险评估怎么看？</h3><p>每个专业标注「低/中/高」三级AI替代风险。低风险专业毕业生是AI的创造者和使用者；中风险需要与AI协作；高风险需提前规划差异化竞争力。</p></div>
+  <div class="gc"><h3>🎓 考研/考公/转专业怎么用？</h3><p>三个决策维度帮您评估退路：「考研必要性」告诉你这个专业是否必须读研；「考公适合度」标出对口公务员岗位多不多；「转专业难度」评估万一不适应的Plan B。</p></div>
+  <div class="gc"><h3>⭐ 课程硬核度是什么？</h3><p>1-5星评分，代表该专业的学习压力和难度。5星=学霸专属（如临床医学），3星=中等偏上，1-2星=课业压力相对较轻。结合孩子各科成绩参考。</p></div>
+</div>
+
+<div class="mp wm" data-wm="AGI前哨站 · 免费试读版">
+    <div class="mh">
+      <span class="mn">#1</span>
+      <span class="mname">计算机科学与技术</span>
+      <span class="mcat">工学 · 工学学士 · 4年</span>
+      <span class="roi-badge roi-a">ROI A</span>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kl">起薪</div><div class="kv c-blue">12.5K</div></div>
+      <div class="kpi"><div class="kl">3年薪资</div><div class="kv c-dark">22.0K</div></div>
+      <div class="kpi"><div class="kl">5年涨幅</div><div class="kv" style="color:#0d904f">+180%</div></div>
+      <div class="kpi"><div class="kl">就业率</div><div class="kv c-orange">95.2%</div></div>
+      <div class="kpi"><div class="kl">对口率</div><div class="kv c-gray">78.5%</div></div>
+      <div class="kpi"><div class="kl">满意度</div><div class="kv c-gray">8.2 /10</div></div>
+      <div class="kpi"><div class="kl">AI风险</div><div class="kv" style="color:#0d904f">低</div></div>
+      <div class="kpi"><div class="kl">男女比</div><div class="kv c-gray" style="font-size:19px">男7:女3</div></div>
+    </div>
+
+    <div class="dual">
+      <div class="dual-l"><div class="salary-chart"><div class="chart-title">📊 五年薪资走势</div><div class="bars"><div class="bar-col"><div class="bar-fill" style="height:32.8125%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">10.5K</span><span class="bar-y">Y1</span></div><div class="bar-col"><div class="bar-fill" style="height:45.3125%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">14.5K</span><span class="bar-y">Y2</span></div><div class="bar-col"><div class="bar-fill" style="height:60.9375%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">19.5K</span><span class="bar-y">Y3</span></div><div class="bar-col"><div class="bar-fill" style="height:81.25%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">26.0K</span><span class="bar-y">Y4</span></div><div class="bar-col"><div class="bar-fill" style="height:100%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">32.0K</span><span class="bar-y">Y5</span></div></div></div></div>
+      <div class="dual-r">
+        <div class="sec-title">📝 专业概述</div>
+        <p class="desc">计算机科学与技术是研究计算机的设计与制造、信息的获取与处理以及计算机软件与理论的一门学科。作为信息技术的核心基础，该专业涵盖了从底层硬件到上层应用的完整知识体系，包括计算机体系结构、操作系统、算法与数据结构、编程语言、人工智能、数据库系统、计算机网络等核心领域。毕业生具备扎实的数学基础和编程能力，能够从事软件开发、系统架构、AI算法、网络安全等工作。在数字经济和人工智能快速发展的大背景下，计算机科…</p>
+      </div>
+    </div>
+
+    <div class="info-row"><span class="ilabel">✅ 适合人群</span><span class="ival">数学/物理成绩好 · 喜欢逻辑推理 · 对新技术敏感 · 自主学习能力强</span></div>
+    <div class="info-row"><span class="ilabel">📚 课程硬核度</span><span class="ival stars">★★★★☆</span></div>
+
+    <div class="info-grid">
+      <div class="info-row"><span class="ilabel">💼 热门岗位</span><span class="ival">软件开发工程师 · 算法工程师 · 系统架构师 · 数据分析师</span></div>
+      <div class="info-row"><span class="ilabel">🏢 核心行业</span><span class="ival">互联网/IT · 金融科技 · 人工智能</span></div>
+      <div class="info-row"><span class="ilabel">🏙️ 就业城市</span><span class="ival">北京 · 深圳 · 上海 · 杭州 · 成都</span></div>
+      <div class="info-row"><span class="ilabel">🎯 头部雇主</span><span class="ival">华为 · 腾讯 · 阿里巴巴 · 字节跳动</span></div>
+    </div>
+
+    <div class="info-row">
+      <span class="ilabel">🏫 对口院校</span>
+      <span class="ival">清华大学 · 北京大学 · 浙江大学 · 上海交通大学 · 北京航空航天大学</span>
+      <span class="note-tip">（各省投档线差异大，分数线请自查）</span>
+    </div>
+
+    <div class="decision-row">
+      <div class="dcard"><span class="dd">🎓 考研</span><span class="dv">本科可就业，但读研后起薪和天花板都更高</span></div>
+      <div class="dcard"><span class="dd">🏛️ 考公</span><span class="dv">有对口（信息化岗、网信办、公安技术岗）</span></div>
+      <div class="dcard"><span class="dd">🔄 转专业</span><span class="dv">容易，计算机类课程在线资源丰富，转入门槛低</span></div>
+    </div>
+
+    <div class="info-row ai-warn"><span class="ilabel">⚠️ AI风险</span><span class="ival">计算机专业毕业生是AI工具的创造者而非被替代者。虽然基础编程工作可能被AI辅助，但系统架构设计、复杂问题求解、跨领域创新等核心能力仍不可替代。该专业毕业生掌握AI底层技术，在AI时代反而需求更大。</span></div>
+
+    <div class="info-row"><span class="ilabel">🔗 相关专业</span><span class="ival">软件工程 · 人工智能 · 数据科学与大数据技术 · 网络工程 · 信息安全</span></div>
+
+    <div class="faq-section"><div class="sec-title">❓ 核心问答</div><div class="faq-item"><p class="faq-q">Q: 计算机科学与技术和软件工程有什么区别？</p><p class="faq-a">A: 计算机科学偏重理论和底层（算法、操作系统、体系结构），软件工程偏重工程实践（项目管理、软件开发流程）。CS毕业生选择面更宽，软件工程毕业生上手更快。从就业来看两者高度重叠，但算法岗和大厂核心研发岗更偏爱CS背景。</p></div><div class="faq-item"><p class="faq-q">Q: 学计算机必须数学很好吗？</p><p class="faq-a">A: 计算机核心课程（算法、数据结构、离散数学、机器学习）确实需要一定的数学基础，但不需要数学竞赛级别的天赋。高考数学120分以上基本可以胜任。更重要的是逻辑思维能力和持续学习的意愿。</p></div></div>
+
+    <div class="pf"><span>标签：高薪 · 好就业 · IT · 编程 · 互联网</span><span>专业就业通 · 免费试读版 · 第 4 页</span></div>
+  </div>
+<div class="mp wm" data-wm="AGI前哨站 · 免费试读版">
+    <div class="mh">
+      <span class="mn">#2</span>
+      <span class="mname">软件工程</span>
+      <span class="mcat">工学 · 工学学士 · 4年</span>
+      <span class="roi-badge roi-a">ROI A</span>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kl">起薪</div><div class="kv c-blue">12.0K</div></div>
+      <div class="kpi"><div class="kl">3年薪资</div><div class="kv c-dark">21.0K</div></div>
+      <div class="kpi"><div class="kl">5年涨幅</div><div class="kv" style="color:#0d904f">+175%</div></div>
+      <div class="kpi"><div class="kl">就业率</div><div class="kv c-orange">94.8%</div></div>
+      <div class="kpi"><div class="kl">对口率</div><div class="kv c-gray">80.2%</div></div>
+      <div class="kpi"><div class="kl">满意度</div><div class="kv c-gray">8.0 /10</div></div>
+      <div class="kpi"><div class="kl">AI风险</div><div class="kv" style="color:#0d904f">低</div></div>
+      <div class="kpi"><div class="kl">男女比</div><div class="kv c-gray" style="font-size:19px">男7:女3</div></div>
+    </div>
+
+    <div class="dual">
+      <div class="dual-l"><div class="salary-chart"><div class="chart-title">📊 五年薪资走势</div><div class="bars"><div class="bar-col"><div class="bar-fill" style="height:33.33333333333333%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">10.0K</span><span class="bar-y">Y1</span></div><div class="bar-col"><div class="bar-fill" style="height:46.666666666666664%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">14.0K</span><span class="bar-y">Y2</span></div><div class="bar-col"><div class="bar-fill" style="height:61.66666666666667%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">18.5K</span><span class="bar-y">Y3</span></div><div class="bar-col"><div class="bar-fill" style="height:83.33333333333334%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">25.0K</span><span class="bar-y">Y4</span></div><div class="bar-col"><div class="bar-fill" style="height:100%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">30.0K</span><span class="bar-y">Y5</span></div></div></div></div>
+      <div class="dual-r">
+        <div class="sec-title">📝 专业概述</div>
+        <p class="desc">软件工程专业聚焦于大规模软件系统的开发、维护和管理，强调工程化的方法论和团队协作能力。与计算机科学相比，软件工程更注重实践应用，课程包括软件需求分析、软件设计模式、软件测试与质量保证、软件项目管理、DevOps等。毕业生具备完整的软件开发生命周期管理能力，能够胜任软件开发工程师、测试工程师、技术项目经理等岗位。在互联网和数字化转型浪潮中，软件工程人才需求持续旺盛，培养的工程化思维也便于毕业生快速成…</p>
+      </div>
+    </div>
+
+    <div class="info-row"><span class="ilabel">✅ 适合人群</span><span class="ival">动手能力强 · 喜欢做项目 · 团队协作好 · 数学中等即可</span></div>
+    <div class="info-row"><span class="ilabel">📚 课程硬核度</span><span class="ival stars">★★★★☆</span></div>
+
+    <div class="info-grid">
+      <div class="info-row"><span class="ilabel">💼 热门岗位</span><span class="ival">全栈开发工程师 · 前端开发工程师 · 后端开发工程师 · 技术项目经理</span></div>
+      <div class="info-row"><span class="ilabel">🏢 核心行业</span><span class="ival">互联网/IT · 金融科技 · 企业服务SaaS</span></div>
+      <div class="info-row"><span class="ilabel">🏙️ 就业城市</span><span class="ival">北京 · 深圳 · 上海 · 杭州 · 广州</span></div>
+      <div class="info-row"><span class="ilabel">🎯 头部雇主</span><span class="ival">华为 · 腾讯 · 阿里巴巴 · 字节跳动</span></div>
+    </div>
+
+    <div class="info-row">
+      <span class="ilabel">🏫 对口院校</span>
+      <span class="ival">清华大学 · 北京大学 · 华东师范大学 · 武汉大学 · 电子科技大学</span>
+      <span class="note-tip">（各省投档线差异大，分数线请自查）</span>
+    </div>
+
+    <div class="decision-row">
+      <div class="dcard"><span class="dd">🎓 考研</span><span class="dv">本科可就业，但读研后起薪和天花板都更高</span></div>
+      <div class="dcard"><span class="dd">🏛️ 考公</span><span class="dv">有对口（信息化岗、网信办、公安技术岗）</span></div>
+      <div class="dcard"><span class="dd">🔄 转专业</span><span class="dv">容易，计算机类课程在线资源丰富，转入门槛低</span></div>
+    </div>
+
+    <div class="info-row ai-warn"><span class="ilabel">⚠️ AI风险</span><span class="ival">软件工程强调工程管理和团队协作，AI工具可以提升编码效率但无法替代需求理解、架构决策和项目管理。软件工程师在使用AI辅助开发后生产力大幅提高，需求不减反增。</span></div>
+
+    <div class="info-row"><span class="ilabel">🔗 相关专业</span><span class="ival">计算机科学与技术 · 人工智能 · 数据科学与大数据技术 · 网络工程</span></div>
+
+    <div class="faq-section"><div class="sec-title">❓ 核心问答</div><div class="faq-item"><p class="faq-q">Q: 软件工程比计算机科学更容易学吗？</p><p class="faq-a">A: 软件工程的理论深度略低于计算机科学，但实践强度更高。需要大量写代码和做项目。如果你喜欢'动手做东西'胜过'研究原理'，软件工程可能更适合你。</p></div><div class="faq-item"><p class="faq-q">Q: 软件工程未来能转算法岗吗？</p><p class="faq-a">A: 可以，但需要自学补充数学和机器学习基础。软件工程出身的同学在工程实现能力上有优势，缺的是理论深度，提前规划即可弥补。</p></div></div>
+
+    <div class="pf"><span>标签：高薪 · 好就业 · IT · 编程 · 互联网</span><span>专业就业通 · 免费试读版 · 第 5 页</span></div>
+  </div>
+<div class="mp wm" data-wm="AGI前哨站 · 免费试读版">
+    <div class="mh">
+      <span class="mn">#3</span>
+      <span class="mname">人工智能</span>
+      <span class="mcat">工学 · 工学学士 · 4年</span>
+      <span class="roi-badge roi-a">ROI A</span>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kl">起薪</div><div class="kv c-blue">15.0K</div></div>
+      <div class="kpi"><div class="kl">3年薪资</div><div class="kv c-dark">28.0K</div></div>
+      <div class="kpi"><div class="kl">5年涨幅</div><div class="kv" style="color:#0d904f">+200%</div></div>
+      <div class="kpi"><div class="kl">就业率</div><div class="kv c-orange">93.5%</div></div>
+      <div class="kpi"><div class="kl">对口率</div><div class="kv c-gray">75.0%</div></div>
+      <div class="kpi"><div class="kl">满意度</div><div class="kv c-gray">8.5 /10</div></div>
+      <div class="kpi"><div class="kl">AI风险</div><div class="kv" style="color:#d93025">极低</div></div>
+      <div class="kpi"><div class="kl">男女比</div><div class="kv c-gray" style="font-size:19px">男7:女3</div></div>
+    </div>
+
+    <div class="dual">
+      <div class="dual-l"><div class="salary-chart"><div class="chart-title">📊 五年薪资走势</div><div class="bars"><div class="bar-col"><div class="bar-fill" style="height:30.952380952380953%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">13.0K</span><span class="bar-y">Y1</span></div><div class="bar-col"><div class="bar-fill" style="height:44.047619047619044%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">18.5K</span><span class="bar-y">Y2</span></div><div class="bar-col"><div class="bar-fill" style="height:59.523809523809526%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">25.0K</span><span class="bar-y">Y3</span></div><div class="bar-col"><div class="bar-fill" style="height:80.95238095238095%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">34.0K</span><span class="bar-y">Y4</span></div><div class="bar-col"><div class="bar-fill" style="height:100%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">42.0K</span><span class="bar-y">Y5</span></div></div></div></div>
+      <div class="dual-r">
+        <div class="sec-title">📝 专业概述</div>
+        <p class="desc">人工智能专业是近年新增的热门专业，系统培养学生在机器学习、深度学习、自然语言处理、计算机视觉、机器人学等领域的能力。课程涵盖数学基础（高等数学、线性代数、概率统计）、编程能力（Python、C++）和AI核心算法。作为第四次工业革命的核心驱动力，人工智能正在重塑所有行业，人才需求处于爆发式增长阶段。但需要注意的是，人工智能对数学基础和科研能力要求极高，本科就业面目前相对集中于算法工程师岗位，建议有…</p>
+      </div>
+    </div>
+
+    <div class="info-row"><span class="ilabel">✅ 适合人群</span><span class="ival">数学成绩优异 · 对AI/机器人有浓厚兴趣 · 有科研或深造计划 · 竞赛背景加分</span></div>
+    <div class="info-row"><span class="ilabel">📚 课程硬核度</span><span class="ival stars">★★★★☆</span></div>
+
+    <div class="info-grid">
+      <div class="info-row"><span class="ilabel">💼 热门岗位</span><span class="ival">算法工程师 · 机器学习工程师 · NLP工程师 · 计算机视觉工程师</span></div>
+      <div class="info-row"><span class="ilabel">🏢 核心行业</span><span class="ival">人工智能 · 互联网/IT · 自动驾驶</span></div>
+      <div class="info-row"><span class="ilabel">🏙️ 就业城市</span><span class="ival">北京 · 深圳 · 上海 · 杭州 · 苏州</span></div>
+      <div class="info-row"><span class="ilabel">🎯 头部雇主</span><span class="ival">华为 · 腾讯 · 阿里巴巴 · 字节跳动</span></div>
+    </div>
+
+    <div class="info-row">
+      <span class="ilabel">🏫 对口院校</span>
+      <span class="ival">清华大学 · 北京大学 · 浙江大学 · 上海交通大学</span>
+      <span class="note-tip">（各省投档线差异大，分数线请自查）</span>
+    </div>
+
+    <div class="decision-row">
+      <div class="dcard"><span class="dd">🎓 考研</span><span class="dv">本科可就业，但读研后起薪和天花板都更高</span></div>
+      <div class="dcard"><span class="dd">🏛️ 考公</span><span class="dv">少数对口岗位，以三不限为主</span></div>
+      <div class="dcard"><span class="dd">🔄 转专业</span><span class="dv">容易，计算机类课程在线资源丰富，转入门槛低</span></div>
+    </div>
+
+    <div class="info-row ai-warn"><span class="ilabel">⚠️ AI风险</span><span class="ival">AI专业毕业生本身就是AI技术的创造者和推动者，不仅不存在被替代风险，反而处于AI产业爆发的核心位置。但需注意本科阶段所学可能深度不足，建议继续深造。</span></div>
+
+    <div class="info-row"><span class="ilabel">🔗 相关专业</span><span class="ival">计算机科学与技术 · 数据科学与大数据技术 · 软件工程 · 统计学</span></div>
+
+    <div class="faq-section"><div class="sec-title">❓ 核心问答</div><div class="faq-item"><p class="faq-q">Q: 人工智能专业必须读研吗？</p><p class="faq-a">A: 强烈建议读研。AI的核心岗位（算法研究员、AI架构师）普遍要求硕士以上学历。本科毕业可以找到AI应用开发相关工作，但核心竞争力不足。985高校AI方向约70%以上的学生选择深造。</p></div><div class="faq-item"><p class="faq-q">Q: 人工智能和计算机科学选哪个？</p><p class="faq-a">A: 如果你对AI有明确兴趣且数学很强（高考数学135+），选AI。如果不确定，选计算机科学更灵活——学CS也可以选修AI课程，但学AI转其他CS方向难度更大。</p></div></div>
+
+    <div class="pf"><span>标签：高薪 · 前沿 · AI · 深度学习 · 数学要求高</span><span>专业就业通 · 免费试读版 · 第 6 页</span></div>
+  </div>
+<div class="mp wm" data-wm="AGI前哨站 · 免费试读版">
+    <div class="mh">
+      <span class="mn">#4</span>
+      <span class="mname">数据科学与大数据技术</span>
+      <span class="mcat">工学 · 工学学士 · 4年</span>
+      <span class="roi-badge roi-a">ROI A</span>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kl">起薪</div><div class="kv c-blue">11.0K</div></div>
+      <div class="kpi"><div class="kl">3年薪资</div><div class="kv c-dark">20.0K</div></div>
+      <div class="kpi"><div class="kl">5年涨幅</div><div class="kv" style="color:#0d904f">+182%</div></div>
+      <div class="kpi"><div class="kl">就业率</div><div class="kv c-orange">93.8%</div></div>
+      <div class="kpi"><div class="kl">对口率</div><div class="kv c-gray">76.5%</div></div>
+      <div class="kpi"><div class="kl">满意度</div><div class="kv c-gray">8.1 /10</div></div>
+      <div class="kpi"><div class="kl">AI风险</div><div class="kv" style="color:#0d904f">低</div></div>
+      <div class="kpi"><div class="kl">男女比</div><div class="kv c-gray" style="font-size:19px">男6:女4</div></div>
+    </div>
+
+    <div class="dual">
+      <div class="dual-l"><div class="salary-chart"><div class="chart-title">📊 五年薪资走势</div><div class="bars"><div class="bar-col"><div class="bar-fill" style="height:32.758620689655174%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">9.5K</span><span class="bar-y">Y1</span></div><div class="bar-col"><div class="bar-fill" style="height:46.55172413793103%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">13.5K</span><span class="bar-y">Y2</span></div><div class="bar-col"><div class="bar-fill" style="height:62.06896551724138%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">18.0K</span><span class="bar-y">Y3</span></div><div class="bar-col"><div class="bar-fill" style="height:82.75862068965517%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">24.0K</span><span class="bar-y">Y4</span></div><div class="bar-col"><div class="bar-fill" style="height:100%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">29.0K</span><span class="bar-y">Y5</span></div></div></div></div>
+      <div class="dual-r">
+        <div class="sec-title">📝 专业概述</div>
+        <p class="desc">数据科学与大数据技术专业培养具备数据采集、处理、分析和可视化能力的复合型人才。核心课程包括统计学、机器学习、数据挖掘、数据库系统、大数据平台（Hadoop/Spark）等。毕业生能够在互联网、金融、零售、医疗等任何有数据积累的行业从事数据分析师、数据工程师、商业智能分析师等工作。在数据驱动的商业时代，几乎所有企业都需要数据分析能力，就业面极广。该专业对数学和编程都有一定要求，但比纯AI专业门槛稍低…</p>
+      </div>
+    </div>
+
+    <div class="info-row"><span class="ilabel">✅ 适合人群</span><span class="ival">逻辑思维好 · 对数据敏感 · 喜欢挖掘洞察 · 数学中等以上</span></div>
+    <div class="info-row"><span class="ilabel">📚 课程硬核度</span><span class="ival stars">★★★★☆</span></div>
+
+    <div class="info-grid">
+      <div class="info-row"><span class="ilabel">💼 热门岗位</span><span class="ival">数据分析师 · 数据工程师 · 商业智能分析师 · 数据产品经理</span></div>
+      <div class="info-row"><span class="ilabel">🏢 核心行业</span><span class="ival">互联网/IT · 金融 · 电商零售</span></div>
+      <div class="info-row"><span class="ilabel">🏙️ 就业城市</span><span class="ival">北京 · 上海 · 深圳 · 杭州 · 广州</span></div>
+      <div class="info-row"><span class="ilabel">🎯 头部雇主</span><span class="ival">华为 · 腾讯 · 阿里巴巴 · 字节跳动</span></div>
+    </div>
+
+    <div class="info-row">
+      <span class="ilabel">🏫 对口院校</span>
+      <span class="ival">北京大学 · 中国人民大学 · 复旦大学 · 华东师范大学</span>
+      <span class="note-tip">（各省投档线差异大，分数线请自查）</span>
+    </div>
+
+    <div class="decision-row">
+      <div class="dcard"><span class="dd">🎓 考研</span><span class="dv">本科可就业，但读研后起薪和天花板都更高</span></div>
+      <div class="dcard"><span class="dd">🏛️ 考公</span><span class="dv">有对口（信息化岗、网信办、公安技术岗）</span></div>
+      <div class="dcard"><span class="dd">🔄 转专业</span><span class="dv">容易，计算机类课程在线资源丰富，转入门槛低</span></div>
+    </div>
+
+    <div class="info-row ai-warn"><span class="ilabel">⚠️ AI风险</span><span class="ival">数据分析的很多基础工作正在被AI工具自动化（如自动生成报表），但深度分析和商业洞察仍需人类判断。未来数据科学家将从'做报表'转向'做决策'，价值不减反增。</span></div>
+
+    <div class="info-row"><span class="ilabel">🔗 相关专业</span><span class="ival">计算机科学与技术 · 统计学 · 人工智能 · 信息管理与信息系统</span></div>
+
+    <div class="faq-section"><div class="sec-title">❓ 核心问答</div><div class="faq-item"><p class="faq-q">Q: 数据科学和统计学的区别？</p><p class="faq-a">A: 统计学更偏理论和数学推导，数据科学更偏应用和工程实现。统计学毕业生多去传统行业或研究机构，数据科学毕业生更多去互联网和科技公司。两者核心能力重叠度很高。</p></div><div class="faq-item"><p class="faq-q">Q: 大数据专业需要很强的编程能力吗？</p><p class="faq-a">A: 需要掌握Python和SQL，但要求低于纯软件工程专业。重点是数据处理和分析思维，而非复杂系统开发。</p></div></div>
+
+    <div class="pf"><span>标签：高薪 · 数据分析 · 大数据 · Python · AI</span><span>专业就业通 · 免费试读版 · 第 7 页</span></div>
+  </div>
+<div class="mp wm" data-wm="AGI前哨站 · 免费试读版">
+    <div class="mh">
+      <span class="mn">#5</span>
+      <span class="mname">临床医学</span>
+      <span class="mcat">医学 · 医学学士 · 5年</span>
+      <span class="roi-badge roi-b">ROI B</span>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kl">起薪</div><div class="kv c-blue">6.0K</div></div>
+      <div class="kpi"><div class="kl">3年薪资</div><div class="kv c-dark">9.0K</div></div>
+      <div class="kpi"><div class="kl">5年涨幅</div><div class="kv" style="color:#0d904f">+150%</div></div>
+      <div class="kpi"><div class="kl">就业率</div><div class="kv c-orange">96.8%</div></div>
+      <div class="kpi"><div class="kl">对口率</div><div class="kv c-gray">95.0%</div></div>
+      <div class="kpi"><div class="kl">满意度</div><div class="kv c-gray">7.5 /10</div></div>
+      <div class="kpi"><div class="kl">AI风险</div><div class="kv" style="color:#d93025">极低</div></div>
+      <div class="kpi"><div class="kl">男女比</div><div class="kv c-gray" style="font-size:19px">男4:女6</div></div>
+    </div>
+
+    <div class="dual">
+      <div class="dual-l"><div class="salary-chart"><div class="chart-title">📊 五年薪资走势</div><div class="bars"><div class="bar-col"><div class="bar-fill" style="height:35.714285714285715%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">5.0K</span><span class="bar-y">Y1</span></div><div class="bar-col"><div class="bar-fill" style="height:46.42857142857143%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">6.5K</span><span class="bar-y">Y2</span></div><div class="bar-col"><div class="bar-fill" style="height:60.71428571428571%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">8.5K</span><span class="bar-y">Y3</span></div><div class="bar-col"><div class="bar-fill" style="height:82.14285714285714%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">11.5K</span><span class="bar-y">Y4</span></div><div class="bar-col"><div class="bar-fill" style="height:100%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">14.0K</span><span class="bar-y">Y5</span></div></div></div></div>
+      <div class="dual-r">
+        <div class="sec-title">📝 专业概述</div>
+        <p class="desc">临床医学是医学领域的核心专业，培养具备基础医学和临床医学系统知识的专业医学人才。学制5年本科+3年规培或专硕，是典型的长周期高回报专业。课程涵盖人体解剖学、病理学、药理学、内科学、外科学等。毕业生主要进入各级医院从事临床医疗工作。在人口老龄化和医疗需求持续增长的大背景下，医生的职业稳定性和社会地位在各行业中名列前茅。但需要注意：医学学习强度极高、培养周期长（至少8年才能独立执业）、工作压力大，不适…</p>
+      </div>
+    </div>
+
+    <div class="info-row"><span class="ilabel">✅ 适合人群</span><span class="ival">生物/化学成绩好 · 吃苦耐劳 · 有责任心 · 不急于快速赚钱</span></div>
+    <div class="info-row"><span class="ilabel">📚 课程硬核度</span><span class="ival stars">★★★★★</span></div>
+
+    <div class="info-grid">
+      <div class="info-row"><span class="ilabel">💼 热门岗位</span><span class="ival">临床医生 · 住院医师 · 主治医师 · 医学研究员</span></div>
+      <div class="info-row"><span class="ilabel">🏢 核心行业</span><span class="ival">医疗卫生 · 医学研究 · 公共卫生</span></div>
+      <div class="info-row"><span class="ilabel">🏙️ 就业城市</span><span class="ival">北京 · 上海 · 广州 · 成都 · 武汉</span></div>
+      <div class="info-row"><span class="ilabel">🎯 头部雇主</span><span class="ival">各省三甲医院 · 北京协和医院 · 四川大学华西医院 · 复旦大学附属医院</span></div>
+    </div>
+
+    <div class="info-row">
+      <span class="ilabel">🏫 对口院校</span>
+      <span class="ival">北京协和医学院 · 北京大学医学部 · 复旦大学上海医学院 · 上海交通大学医学院 · 四川大学华西医学中心</span>
+      <span class="note-tip">（各省投档线差异大，分数线请自查）</span>
+    </div>
+
+    <div class="decision-row">
+      <div class="dcard"><span class="dd">🎓 考研</span><span class="dv">通常需要读研/读博，本科就业面很窄</span></div>
+      <div class="dcard"><span class="dd">🏛️ 考公</span><span class="dv">医院/卫健委体系为主，公务员岗位较少但事业编较多</span></div>
+      <div class="dcard"><span class="dd">🔄 转专业</span><span class="dv">很难，医学课程体系封闭，学分互认困难</span></div>
+    </div>
+
+    <div class="info-row ai-warn"><span class="ilabel">⚠️ AI风险</span><span class="ival">医疗诊断需要复杂的综合判断、医患沟通和实操技能，AI在可预见的未来只能作为辅助诊断工具，无法替代临床医生。医学是AI抗风险能力最强的专业之一。</span></div>
+
+    <div class="info-row"><span class="ilabel">🔗 相关专业</span><span class="ival">口腔医学 · 预防医学 · yaoxue · huli-xue</span></div>
+
+    <div class="faq-section"><div class="sec-title">❓ 核心问答</div><div class="faq-item"><p class="faq-q">Q: 临床医学5年和8年有什么区别？</p><p class="faq-a">A: 5年制是本科，毕业后需规培3年。8年制（本硕博连读）毕业可直接获得博士学位，免去考研考博环节。毕业后同样需要规培，但职称晋升更快。分数允许的情况下，8年制性价比更高。</p></div><div class="faq-item"><p class="faq-q">Q: 医生真的越老越吃香吗？</p><p class="faq-a">A: 是的，医生的核心资产是临床经验，随着年龄增长价值递增。但也需要持续学习新知识新技术。30岁左右是收入拐点（主治医师后），40-50岁达到职业巅峰。</p></div></div>
+
+    <div class="pf"><span>标签：铁饭碗 · 稳定 · 社会地位高 · 周期长 · AI免疫</span><span>专业就业通 · 免费试读版 · 第 8 页</span></div>
+  </div>
+<div class="mp wm" data-wm="AGI前哨站 · 免费试读版">
+    <div class="mh">
+      <span class="mn">#6</span>
+      <span class="mname">口腔医学</span>
+      <span class="mcat">医学 · 医学学士 · 5年</span>
+      <span class="roi-badge roi-a">ROI A</span>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kl">起薪</div><div class="kv c-blue">8.0K</div></div>
+      <div class="kpi"><div class="kl">3年薪资</div><div class="kv c-dark">15.0K</div></div>
+      <div class="kpi"><div class="kl">5年涨幅</div><div class="kv" style="color:#0d904f">+213%</div></div>
+      <div class="kpi"><div class="kl">就业率</div><div class="kv c-orange">95.5%</div></div>
+      <div class="kpi"><div class="kl">对口率</div><div class="kv c-gray">93.0%</div></div>
+      <div class="kpi"><div class="kl">满意度</div><div class="kv c-gray">8.3 /10</div></div>
+      <div class="kpi"><div class="kl">AI风险</div><div class="kv" style="color:#d93025">极低</div></div>
+      <div class="kpi"><div class="kl">男女比</div><div class="kv c-gray" style="font-size:19px">男3:女7</div></div>
+    </div>
+
+    <div class="dual">
+      <div class="dual-l"><div class="salary-chart"><div class="chart-title">📊 五年薪资走势</div><div class="bars"><div class="bar-col"><div class="bar-fill" style="height:30.434782608695656%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">7.0K</span><span class="bar-y">Y1</span></div><div class="bar-col"><div class="bar-fill" style="height:45.65217391304348%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">10.5K</span><span class="bar-y">Y2</span></div><div class="bar-col"><div class="bar-fill" style="height:60.86956521739131%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">14.0K</span><span class="bar-y">Y3</span></div><div class="bar-col"><div class="bar-fill" style="height:82.6086956521739%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">19.0K</span><span class="bar-y">Y4</span></div><div class="bar-col"><div class="bar-fill" style="height:100%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">23.0K</span><span class="bar-y">Y5</span></div></div></div></div>
+      <div class="dual-r">
+        <div class="sec-title">📝 专业概述</div>
+        <p class="desc">口腔医学是医学中性价比最高的细分领域之一。相比临床医学，口腔医学的执业方式更灵活（可以开私人诊所），夜班和急诊较少，工作强度相对可控。课程涵盖口腔解剖生理学、口腔内科学、口腔颌面外科学、口腔修复学、口腔正畸学等。毕业生可在综合医院口腔科、口腔专科医院、私人连锁口腔诊所或自主创业执业。在消费升级和颜值经济推动下，正畸、种植等高端口腔服务需求快速增长，口腔医生的收入天花板远高于同等资历的临床医生。</p>
+      </div>
+    </div>
+
+    <div class="info-row"><span class="ilabel">✅ 适合人群</span><span class="ival">动手能力精细 · 审美能力好 · 生物/化学成绩好 · 沟通能力强</span></div>
+    <div class="info-row"><span class="ilabel">📚 课程硬核度</span><span class="ival stars">★★★★★</span></div>
+
+    <div class="info-grid">
+      <div class="info-row"><span class="ilabel">💼 热门岗位</span><span class="ival">口腔医生 · 正畸医生 · 种植医生 · 口腔诊所合伙人</span></div>
+      <div class="info-row"><span class="ilabel">🏢 核心行业</span><span class="ival">医疗卫生 · 口腔连锁机构 · 私人诊所</span></div>
+      <div class="info-row"><span class="ilabel">🏙️ 就业城市</span><span class="ival">北京 · 上海 · 广州 · 深圳 · 成都</span></div>
+      <div class="info-row"><span class="ilabel">🎯 头部雇主</span><span class="ival">各口腔专科医院 · 连锁口腔诊所 · 瑞尔齿科 · 通策医疗</span></div>
+    </div>
+
+    <div class="info-row">
+      <span class="ilabel">🏫 对口院校</span>
+      <span class="ival">四川大学华西口腔医学院 · 北京大学口腔医学院 · 上海交通大学口腔医学院 · 武汉大学口腔医学院 · 中山大学光华口腔医学院</span>
+      <span class="note-tip">（各省投档线差异大，分数线请自查）</span>
+    </div>
+
+    <div class="decision-row">
+      <div class="dcard"><span class="dd">🎓 考研</span><span class="dv">通常需要读研/读博，本科就业面很窄</span></div>
+      <div class="dcard"><span class="dd">🏛️ 考公</span><span class="dv">医院/卫健委体系为主，公务员岗位较少但事业编较多</span></div>
+      <div class="dcard"><span class="dd">🔄 转专业</span><span class="dv">很难，医学课程体系封闭，学分互认困难</span></div>
+    </div>
+
+    <div class="info-row ai-warn"><span class="ilabel">⚠️ AI风险</span><span class="ival">口腔治疗依赖精细的手工操作和患者个体化方案设计，AI可以辅助影像诊断和方案规划，但实际操作完全依赖医生。口腔治疗的强操作属性使其成为医疗领域最难被AI替代的方向之一。</span></div>
+
+    <div class="info-row"><span class="ilabel">🔗 相关专业</span><span class="ival">临床医学 · yaoxue · huli-xue</span></div>
+
+    <div class="faq-section"><div class="sec-title">❓ 核心问答</div><div class="faq-item"><p class="faq-q">Q: 口腔医学薪资真的比临床高吗？</p><p class="faq-a">A: 从同资历对比来看，口腔医生独立执业后的收入上线确实更高。公立医院口腔科vs临床科室收入差距不大，但口腔医生的私立就业市场更广阔，顶尖正畸/种植医生年收入可达100万+。</p></div><div class="faq-item"><p class="faq-q">Q: 口腔医学好就业吗？</p><p class="faq-a">A: 就业面比临床窄（不能去综合科室），但就业质量好。连锁口腔机构大量扩张，三甲口腔医院竞争激烈但对口腔医生的总需求在增加。如果有创业意愿，口腔是最容易独立开诊所的医学专业。</p></div></div>
+
+    <div class="pf"><span>标签：好就业 · 收入高 · 可创业 · AI免疫 · 热门</span><span>专业就业通 · 免费试读版 · 第 9 页</span></div>
+  </div>
+<div class="mp wm" data-wm="AGI前哨站 · 免费试读版">
+    <div class="mh">
+      <span class="mn">#7</span>
+      <span class="mname">金融学</span>
+      <span class="mcat">经济学 · 经济学学士 · 4年</span>
+      <span class="roi-badge roi-b">ROI B</span>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kl">起薪</div><div class="kv c-blue">8.5K</div></div>
+      <div class="kpi"><div class="kl">3年薪资</div><div class="kv c-dark">16.0K</div></div>
+      <div class="kpi"><div class="kl">5年涨幅</div><div class="kv" style="color:#0d904f">+229%</div></div>
+      <div class="kpi"><div class="kl">就业率</div><div class="kv c-orange">88.5%</div></div>
+      <div class="kpi"><div class="kl">对口率</div><div class="kv c-gray">72.0%</div></div>
+      <div class="kpi"><div class="kl">满意度</div><div class="kv c-gray">7.6 /10</div></div>
+      <div class="kpi"><div class="kl">AI风险</div><div class="kv" style="color:#e67e22">中</div></div>
+      <div class="kpi"><div class="kl">男女比</div><div class="kv c-gray" style="font-size:19px">男4:女6</div></div>
+    </div>
+
+    <div class="dual">
+      <div class="dual-l"><div class="salary-chart"><div class="chart-title">📊 五年薪资走势</div><div class="bars"><div class="bar-col"><div class="bar-fill" style="height:28.846153846153843%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">7.5K</span><span class="bar-y">Y1</span></div><div class="bar-col"><div class="bar-fill" style="height:40.38461538461539%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">10.5K</span><span class="bar-y">Y2</span></div><div class="bar-col"><div class="bar-fill" style="height:55.769230769230774%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">14.5K</span><span class="bar-y">Y3</span></div><div class="bar-col"><div class="bar-fill" style="height:76.92307692307693%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">20.0K</span><span class="bar-y">Y4</span></div><div class="bar-col"><div class="bar-fill" style="height:100%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">26.0K</span><span class="bar-y">Y5</span></div></div></div></div>
+      <div class="dual-r">
+        <div class="sec-title">📝 专业概述</div>
+        <p class="desc">金融学是研究资金融通和资产定价的学科，涵盖公司金融、投资学、金融市场、风险管理、国际金融等领域。毕业生去向广泛：银行、证券、基金、保险、信托等传统金融机构，以及互联网金融、风险投资、企业财务等新兴方向。金融行业在国民经济中占据核心地位，头部岗位（投行、基金、PE/VC）薪资极高但门槛也极高（顶级名校+硕士+CFA/CPA证书）。普通院校金融毕业生的就业质量和薪资水平则相对平庸，两极分化严重。</p>
+      </div>
+    </div>
+
+    <div class="info-row"><span class="ilabel">✅ 适合人群</span><span class="ival">数学好 · 对商业感兴趣 · 抗压能力强 · 目标名校</span></div>
+    <div class="info-row"><span class="ilabel">📚 课程硬核度</span><span class="ival stars">★★★☆☆</span></div>
+
+    <div class="info-grid">
+      <div class="info-row"><span class="ilabel">💼 热门岗位</span><span class="ival">投资银行分析师 · 基金经理 · 风险管理师 · 金融分析师</span></div>
+      <div class="info-row"><span class="ilabel">🏢 核心行业</span><span class="ival">银行 · 证券/基金 · 保险</span></div>
+      <div class="info-row"><span class="ilabel">🏙️ 就业城市</span><span class="ival">上海 · 北京 · 深圳 · 香港 · 广州</span></div>
+      <div class="info-row"><span class="ilabel">🎯 头部雇主</span><span class="ival">中信证券 · 中国工商银行 · 中国平安 · 中金公司(摩根士丹利合资)</span></div>
+    </div>
+
+    <div class="info-row">
+      <span class="ilabel">🏫 对口院校</span>
+      <span class="ival">北京大学光华管理学院 · 清华大学五道口金融学院 · 复旦大学经济学院 · 上海交通大学上海高级金融学院 · 中国人民大学财政金融学院</span>
+      <span class="note-tip">（各省投档线差异大，分数线请自查）</span>
+    </div>
+
+    <div class="decision-row">
+      <div class="dcard"><span class="dd">🎓 考研</span><span class="dv">建议读研，券商/投行/研究岗普遍要求硕士</span></div>
+      <div class="dcard"><span class="dd">🏛️ 考公</span><span class="dv">有对口岗位，发改委/统计局/银保监等经济类岗位较多</span></div>
+      <div class="dcard"><span class="dd">🔄 转专业</span><span class="dv">容易，经管类课程体系灵活，转金融/管理/数据科学都可</span></div>
+    </div>
+
+    <div class="info-row ai-warn"><span class="ilabel">⚠️ AI风险</span><span class="ival">量化交易、风控建模等方向已被AI深度渗透，传统信贷审批、基础财务分析等工作在加速自动化。但高端的投资决策、客户关系和结构化产品设计仍需人类判断。金融+编程的复合型人才更抗AI。</span></div>
+
+    <div class="info-row"><span class="ilabel">🔗 相关专业</span><span class="ival">会计学 · 经济学 · 金融工程 · 国际经济与贸易</span></div>
+
+    <div class="faq-section"><div class="sec-title">❓ 核心问答</div><div class="faq-item"><p class="faq-q">Q: 金融学和经济学有什么区别？</p><p class="faq-a">A: 经济学偏理论研究（宏观经济、产业政策），金融学偏实务操作（投资、融资、风险管理）。简单说：经济学是'为什么'，金融学是'怎么做'。就业来看金融学更贴近行业，经济学考公更有利。</p></div><div class="faq-item"><p class="faq-q">Q: 非名校学金融有出路吗？</p><p class="faq-a">A: 普通院校金融毕业生进头部券商/基金的难度极大，但可以考虑商业银行、保险、企业财务、互联网金融等方向。考证（CFA/FRM/CPA）可以一定程度弥补学历短板。</p></div></div>
+
+    <div class="pf"><span>标签：高薪上限高 · 两极分化 · 行业稳定 · AI冲击 · 考证重要</span><span>专业就业通 · 免费试读版 · 第 10 页</span></div>
+  </div>
+<div class="mp wm" data-wm="AGI前哨站 · 免费试读版">
+    <div class="mh">
+      <span class="mn">#8</span>
+      <span class="mname">会计学</span>
+      <span class="mcat">管理学 · 管理学学士 · 4年</span>
+      <span class="roi-badge roi-b">ROI B</span>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kl">起薪</div><div class="kv c-blue">6.5K</div></div>
+      <div class="kpi"><div class="kl">3年薪资</div><div class="kv c-dark">11.0K</div></div>
+      <div class="kpi"><div class="kl">5年涨幅</div><div class="kv" style="color:#0d904f">+177%</div></div>
+      <div class="kpi"><div class="kl">就业率</div><div class="kv c-orange">91.2%</div></div>
+      <div class="kpi"><div class="kl">对口率</div><div class="kv c-gray">85.0%</div></div>
+      <div class="kpi"><div class="kl">满意度</div><div class="kv c-gray">7.2 /10</div></div>
+      <div class="kpi"><div class="kl">AI风险</div><div class="kv" style="color:#d93025">高</div></div>
+      <div class="kpi"><div class="kl">男女比</div><div class="kv c-gray" style="font-size:19px">男2:女8</div></div>
+    </div>
+
+    <div class="dual">
+      <div class="dual-l"><div class="salary-chart"><div class="chart-title">📊 五年薪资走势</div><div class="bars"><div class="bar-col"><div class="bar-fill" style="height:32.35294117647059%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">5.5K</span><span class="bar-y">Y1</span></div><div class="bar-col"><div class="bar-fill" style="height:44.11764705882353%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">7.5K</span><span class="bar-y">Y2</span></div><div class="bar-col"><div class="bar-fill" style="height:58.82352941176471%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">10.0K</span><span class="bar-y">Y3</span></div><div class="bar-col"><div class="bar-fill" style="height:79.41176470588235%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">13.5K</span><span class="bar-y">Y4</span></div><div class="bar-col"><div class="bar-fill" style="height:100%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">17.0K</span><span class="bar-y">Y5</span></div></div></div></div>
+      <div class="dual-r">
+        <div class="sec-title">📝 专业概述</div>
+        <p class="desc">会计学是商科中最具刚需属性的专业。任何企业、政府机构、非营利组织都需要会计人员进行财务核算、税务申报和内部控制。会计学课程包括基础会计、中级财务会计、成本会计、管理会计、审计学、税法等。毕业生主要进入会计师事务所、企业财务部门、税务师事务所或政府财税部门。会计是典型的'越老越吃香'职业，经验价值随时间递增。CPA（注册会计师）证书是核心竞争力，通过CPA后职业发展将大幅加速。</p>
+      </div>
+    </div>
+
+    <div class="info-row"><span class="ilabel">✅ 适合人群</span><span class="ival">细心耐心 · 数字敏感 · 愿意考证 · 数学一般即可</span></div>
+    <div class="info-row"><span class="ilabel">📚 课程硬核度</span><span class="ival stars">★★★☆☆</span></div>
+
+    <div class="info-grid">
+      <div class="info-row"><span class="ilabel">💼 热门岗位</span><span class="ival">审计师 · 税务顾问 · 财务经理 · 管理会计师</span></div>
+      <div class="info-row"><span class="ilabel">🏢 核心行业</span><span class="ival">会计师事务所 · 企业财务 · 银行</span></div>
+      <div class="info-row"><span class="ilabel">🏙️ 就业城市</span><span class="ival">北京 · 上海 · 深圳 · 广州 · 杭州</span></div>
+      <div class="info-row"><span class="ilabel">🎯 头部雇主</span><span class="ival">普华永道/德勤/安永/毕马威 · 各大企业财务部 · 税务局 · 审计署</span></div>
+    </div>
+
+    <div class="info-row">
+      <span class="ilabel">🏫 对口院校</span>
+      <span class="ival">中央财经大学 · 上海财经大学 · 厦门大学 · 中南财经政法大学 · 东北财经大学</span>
+      <span class="note-tip">（各省投档线差异大，分数线请自查）</span>
+    </div>
+
+    <div class="decision-row">
+      <div class="dcard"><span class="dd">🎓 考研</span><span class="dv">本科可就业，CPA/考研都能提升竞争力</span></div>
+      <div class="dcard"><span class="dd">🏛️ 考公</span><span class="dv">岗位多，各类机关都需要财务人员</span></div>
+      <div class="dcard"><span class="dd">🔄 转专业</span><span class="dv">容易，课程壁垒低，转市场营销/运营/HR等灵活</span></div>
+    </div>
+
+    <div class="info-row ai-warn"><span class="ilabel">⚠️ AI风险</span><span class="ival">基础的记账、报税、发票处理工作正在被财务软件和AI快速自动化。但高端的财务分析、税务筹划、审计判断、内部控制等需要专业判断的领域仍然稳固。未来会计将从'记录型'转向'分析决策型'。</span></div>
+
+    <div class="info-row"><span class="ilabel">🔗 相关专业</span><span class="ival">金融学 · 审计学 · 财务管理 · shuiwu</span></div>
+
+    <div class="faq-section"><div class="sec-title">❓ 核心问答</div><div class="faq-item"><p class="faq-q">Q: CPA证书真的那么重要吗？</p><p class="faq-a">A: 是的。CPA是会计行业含金量最高的证书，通过后薪资平均提升30%-50%。四大会计师事务所更是将CPA作为晋升硬指标。建议大学期间开始备考，毕业后2-3年内通过。</p></div><div class="faq-item"><p class="faq-q">Q: 会计会被AI取代吗？</p><p class="faq-a">A: 基础核算岗位已经在大幅减少，但管理会计、税务筹划、审计等高阶岗位需求在增加。未来的会计需要懂业务、会分析、能决策，而不是只会记账。</p></div></div>
+
+    <div class="pf"><span>标签：万金油 · 需求稳定 · 考证 · AI冲击大 · 铁饭碗</span><span>专业就业通 · 免费试读版 · 第 11 页</span></div>
+  </div>
+<div class="mp wm" data-wm="AGI前哨站 · 免费试读版">
+    <div class="mh">
+      <span class="mn">#9</span>
+      <span class="mname">法学</span>
+      <span class="mcat">法学 · 法学学士 · 4年</span>
+      <span class="roi-badge roi-c">ROI C</span>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kl">起薪</div><div class="kv c-blue">6.0K</div></div>
+      <div class="kpi"><div class="kl">3年薪资</div><div class="kv c-dark">12.0K</div></div>
+      <div class="kpi"><div class="kl">5年涨幅</div><div class="kv" style="color:#0d904f">+267%</div></div>
+      <div class="kpi"><div class="kl">就业率</div><div class="kv c-orange">82.5%</div></div>
+      <div class="kpi"><div class="kl">对口率</div><div class="kv c-gray">68.0%</div></div>
+      <div class="kpi"><div class="kl">满意度</div><div class="kv c-gray">7.3 /10</div></div>
+      <div class="kpi"><div class="kl">AI风险</div><div class="kv" style="color:#d93025">中低</div></div>
+      <div class="kpi"><div class="kl">男女比</div><div class="kv c-gray" style="font-size:19px">男4:女6</div></div>
+    </div>
+
+    <div class="dual">
+      <div class="dual-l"><div class="salary-chart"><div class="chart-title">📊 五年薪资走势</div><div class="bars"><div class="bar-col"><div class="bar-fill" style="height:25%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">5.0K</span><span class="bar-y">Y1</span></div><div class="bar-col"><div class="bar-fill" style="height:37.5%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">7.5K</span><span class="bar-y">Y2</span></div><div class="bar-col"><div class="bar-fill" style="height:55.00000000000001%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">11.0K</span><span class="bar-y">Y3</span></div><div class="bar-col"><div class="bar-fill" style="height:80%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">16.0K</span><span class="bar-y">Y4</span></div><div class="bar-col"><div class="bar-fill" style="height:100%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">20.0K</span><span class="bar-y">Y5</span></div></div></div></div>
+      <div class="dual-r">
+        <div class="sec-title">📝 专业概述</div>
+        <p class="desc">法学是研究法律规范、法律制度及其应用的学科，培养具备法律思维和法律实务能力的专业人才。法学核心课程包括法理学、宪法学、民法学、刑法学、行政法学、经济法学、国际法学等。毕业生传统去向为公检法机关（需通过公务员考试）、律师事务所、企业法务部门。近年来合规管理、数据隐私、知识产权等新兴领域对法律人才需求旺盛。法学是典型的'精英化'专业——名校+法考+实践经验缺一不可，普通院校法学毕业生就业压力较大。</p>
+      </div>
+    </div>
+
+    <div class="info-row"><span class="ilabel">✅ 适合人群</span><span class="ival">记忆力好 · 逻辑表达强 · 善于辩论 · 对公平正义有追求</span></div>
+    <div class="info-row"><span class="ilabel">📚 课程硬核度</span><span class="ival stars">★★★★☆</span></div>
+
+    <div class="info-grid">
+      <div class="info-row"><span class="ilabel">💼 热门岗位</span><span class="ival">律师 · 法官 · 检察官 · 企业法务总监</span></div>
+      <div class="info-row"><span class="ilabel">🏢 核心行业</span><span class="ival">律师事务所 · 公检法机关 · 企业法务</span></div>
+      <div class="info-row"><span class="ilabel">🏙️ 就业城市</span><span class="ival">北京 · 上海 · 深圳 · 广州 · 杭州</span></div>
+      <div class="info-row"><span class="ilabel">🎯 头部雇主</span><span class="ival">金杜/中伦/方达等一线律所 · 各级法院/检察院 · 公司法务部 · 政府法制办</span></div>
+    </div>
+
+    <div class="info-row">
+      <span class="ilabel">🏫 对口院校</span>
+      <span class="ival">中国政法大学 · 北京大学法学院 · 中国人民大学法学院 · 华东政法大学 · 武汉大学法学院</span>
+      <span class="note-tip">（各省投档线差异大，分数线请自查）</span>
+    </div>
+
+    <div class="decision-row">
+      <div class="dcard"><span class="dd">🎓 考研</span><span class="dv">建议读研，通过法考后本科也能就业，但好所/体制内偏好硕士</span></div>
+      <div class="dcard"><span class="dd">🏛️ 考公</span><span class="dv">岗位数量最多，法院/检察院/司法局等大量对口岗位</span></div>
+      <div class="dcard"><span class="dd">🔄 转专业</span><span class="dv">中等，课程体系相对独立，转出以考公/管理岗为主</span></div>
+    </div>
+
+    <div class="info-row ai-warn"><span class="ilabel">⚠️ AI风险</span><span class="ival">法律文书检索、合同审查等基础工作正在被AI法律工具替代。但法律的核心——解释、论证和说服——仍高度依赖人类专业判断。AI是法律人的效率工具而非替代品。</span></div>
+
+    <div class="info-row"><span class="ilabel">🔗 相关专业</span><span class="ival">知识产权 · zhengzhi-xue · 社会学 · xinwen-xue</span></div>
+
+    <div class="faq-section"><div class="sec-title">❓ 核心问答</div><div class="faq-item"><p class="faq-q">Q: 法考真的很难吗？</p><p class="faq-a">A: 国家统一法律职业资格考试（法考）通过率约10-15%，需要系统备考6-12个月。名校法学专业的一次通过率显著高于平均水平（30-40%）。没有通过法考的法学毕业生就业选择面大受限制。</p></div><div class="faq-item"><p class="faq-q">Q: 法学一定要读研吗？</p><p class="faq-a">A: 越来越有必要。近年来很多法院检察院的招录要求硕士学历，红圈所（顶级律所）几乎只招硕士。法学硕士在考公和律所求职中都有明显优势。</p></div></div>
+
+    <div class="pf"><span>标签：社会地位高 · 长期回报好 · 竞争激烈 · 考证 · 公务员可选</span><span>专业就业通 · 免费试读版 · 第 12 页</span></div>
+  </div>
+<div class="mp wm" data-wm="AGI前哨站 · 免费试读版">
+    <div class="mh">
+      <span class="mn">#10</span>
+      <span class="mname">电子商务</span>
+      <span class="mcat">管理学 · 管理学学士 · 4年</span>
+      <span class="roi-badge roi-c">ROI C</span>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kl">起薪</div><div class="kv c-blue">6.5K</div></div>
+      <div class="kpi"><div class="kl">3年薪资</div><div class="kv c-dark">12.0K</div></div>
+      <div class="kpi"><div class="kl">5年涨幅</div><div class="kv" style="color:#0d904f">+208%</div></div>
+      <div class="kpi"><div class="kl">就业率</div><div class="kv c-orange">88.0%</div></div>
+      <div class="kpi"><div class="kl">对口率</div><div class="kv c-gray">65.0%</div></div>
+      <div class="kpi"><div class="kl">满意度</div><div class="kv c-gray">7.2 /10</div></div>
+      <div class="kpi"><div class="kl">AI风险</div><div class="kv" style="color:#e67e22">中</div></div>
+      <div class="kpi"><div class="kl">男女比</div><div class="kv c-gray" style="font-size:19px">男4:女6</div></div>
+    </div>
+
+    <div class="dual">
+      <div class="dual-l"><div class="salary-chart"><div class="chart-title">📊 五年薪资走势</div><div class="bars"><div class="bar-col"><div class="bar-fill" style="height:28.947368421052634%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">5.5K</span><span class="bar-y">Y1</span></div><div class="bar-col"><div class="bar-fill" style="height:42.10526315789473%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">8.0K</span><span class="bar-y">Y2</span></div><div class="bar-col"><div class="bar-fill" style="height:57.89473684210527%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">11.0K</span><span class="bar-y">Y3</span></div><div class="bar-col"><div class="bar-fill" style="height:78.94736842105263%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">15.0K</span><span class="bar-y">Y4</span></div><div class="bar-col"><div class="bar-fill" style="height:100%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">19.0K</span><span class="bar-y">Y5</span></div></div></div></div>
+      <div class="dual-r">
+        <div class="sec-title">📝 专业概述</div>
+        <p class="desc">电子商务是管理学、计算机科学和市场营销的交叉学科，培养具备电商平台运营、数字营销和供应链管理能力的复合型人才。课程包括电子商务概论、网络营销、供应链与物流管理、电商数据分析、电商系统开发等。在直播电商、社交电商和跨境电商三大浪潮推动下，电子商务专业毕业生在电商平台（淘宝/京东/拼多多）、品牌方电商运营、MCN机构和跨境电商企业等方向有大量就业机会。但需注意：电商行业变化极快，学校课程可能滞后于行业…</p>
+      </div>
+    </div>
+
+    <div class="info-row"><span class="ilabel">✅ 适合人群</span><span class="ival">关注商业趋势 · 喜欢数据分析 · 有创业精神 · 自学能力强</span></div>
+    <div class="info-row"><span class="ilabel">📚 课程硬核度</span><span class="ival stars">★★☆☆☆</span></div>
+
+    <div class="info-grid">
+      <div class="info-row"><span class="ilabel">💼 热门岗位</span><span class="ival">电商运营经理 · 直播运营 · 新媒体运营 · 跨境电商运营</span></div>
+      <div class="info-row"><span class="ilabel">🏢 核心行业</span><span class="ival">电商平台 · 品牌电商 · 跨境电商</span></div>
+      <div class="info-row"><span class="ilabel">🏙️ 就业城市</span><span class="ival">杭州 · 深圳 · 广州 · 上海 · 北京</span></div>
+      <div class="info-row"><span class="ilabel">🎯 头部雇主</span><span class="ival">各大企业管理部门 · 公务员/事业单位 · 咨询公司 · 银行</span></div>
+    </div>
+
+    <div class="info-row">
+      <span class="ilabel">🏫 对口院校</span>
+      <span class="ival">对外经济贸易大学 · 浙江工商大学 · 上海财经大学 · 广东工业大学</span>
+      <span class="note-tip">（各省投档线差异大，分数线请自查）</span>
+    </div>
+
+    <div class="decision-row">
+      <div class="dcard"><span class="dd">🎓 考研</span><span class="dv">本科可就业，考研加分但不必须</span></div>
+      <div class="dcard"><span class="dd">🏛️ 考公</span><span class="dv">有一定对口岗位，以综合管理岗为主</span></div>
+      <div class="dcard"><span class="dd">🔄 转专业</span><span class="dv">容易，课程壁垒低，转市场营销/运营/HR等灵活</span></div>
+    </div>
+
+    <div class="info-row ai-warn"><span class="ilabel">⚠️ AI风险</span><span class="ival">AI在电商中的应用已经非常深入：AI客服、智能推荐、自动生成商品描述等。但电商运营的核心——选品策略、营销创意、用户洞察、供应链决策——仍是人类的主导领域。掌握AI工具的电商运营效率更高。</span></div>
+
+    <div class="info-row"><span class="ilabel">🔗 相关专业</span><span class="ival">市场营销 · 物流管理 · 国际经济与贸易 · 工商管理</span></div>
+
+    <div class="faq-section"><div class="sec-title">❓ 核心问答</div><div class="faq-item"><p class="faq-q">Q: 电子商务专业的课有用吗？</p><p class="faq-a">A: 实话实说：电商行业变化太快，大学教材可能落后业界3-5年。好学校的电商专业教的底层逻辑（供应链、数据分析、消费者行为）仍然有价值，但实操技能（店铺运营、直播、投流）建议自己开个淘宝店/抖音号学得更快。</p></div><div class="faq-item"><p class="faq-q">Q: 电商就业前景怎么样？</p><p class="faq-a">A: 总量大（中国电商GMV超15万亿），但竞争也大（门槛低，任何专业都能做）。想脱颖而出，要么在数据分析方向做深（电商数据分析师），要么在跨境方向做出差异（英语+电商）。</p></div></div>
+
+    <div class="pf"><span>标签：电商 · 运营 · 互联网 · 实践导向 · 杭州主场</span><span>专业就业通 · 免费试读版 · 第 13 页</span></div>
+  </div>
+<div class="mp wm" data-wm="AGI前哨站 · 免费试读版">
+    <div class="mh">
+      <span class="mn">#11</span>
+      <span class="mname">心理学</span>
+      <span class="mcat">理学 · 理学学士 · 4年</span>
+      <span class="roi-badge roi-c">ROI C</span>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kl">起薪</div><div class="kv c-blue">6.5K</div></div>
+      <div class="kpi"><div class="kl">3年薪资</div><div class="kv c-dark">11.0K</div></div>
+      <div class="kpi"><div class="kl">5年涨幅</div><div class="kv" style="color:#0d904f">+177%</div></div>
+      <div class="kpi"><div class="kl">就业率</div><div class="kv c-orange">83.0%</div></div>
+      <div class="kpi"><div class="kl">对口率</div><div class="kv c-gray">55.0%</div></div>
+      <div class="kpi"><div class="kl">满意度</div><div class="kv c-gray">7.1 /10</div></div>
+      <div class="kpi"><div class="kl">AI风险</div><div class="kv" style="color:#0d904f">低</div></div>
+      <div class="kpi"><div class="kl">男女比</div><div class="kv c-gray" style="font-size:19px">男2:女8</div></div>
+    </div>
+
+    <div class="dual">
+      <div class="dual-l"><div class="salary-chart"><div class="chart-title">📊 五年薪资走势</div><div class="bars"><div class="bar-col"><div class="bar-fill" style="height:32.35294117647059%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">5.5K</span><span class="bar-y">Y1</span></div><div class="bar-col"><div class="bar-fill" style="height:44.11764705882353%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">7.5K</span><span class="bar-y">Y2</span></div><div class="bar-col"><div class="bar-fill" style="height:58.82352941176471%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">10.0K</span><span class="bar-y">Y3</span></div><div class="bar-col"><div class="bar-fill" style="height:79.41176470588235%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">13.5K</span><span class="bar-y">Y4</span></div><div class="bar-col"><div class="bar-fill" style="height:100%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">17.0K</span><span class="bar-y">Y5</span></div></div></div></div>
+      <div class="dual-r">
+        <div class="sec-title">📝 专业概述</div>
+        <p class="desc">心理学是研究人类心理活动和行为的科学，是理学和社会科学的交叉学科。核心课程包括普通心理学、实验心理学、发展心理学、社会心理学、心理测量学、认知心理学等。在大众心理健康意识不断提升和互联网产品对用户研究需求增长的背景下，心理学毕业生的就业空间正在拓宽：传统方向包括学校心理健康教育和心理咨询，新兴方向包括互联网用户研究（UX Research）、游戏策划、人力资源和消费者行为分析。但需注意：成为执业的…</p>
+      </div>
+    </div>
+
+    <div class="info-row"><span class="ilabel">✅ 适合人群</span><span class="ival">善于倾听 · 对人感兴趣 · 逻辑分析能力强 · 有同理心</span></div>
+    <div class="info-row"><span class="ilabel">📚 课程硬核度</span><span class="ival stars">★★★☆☆</span></div>
+
+    <div class="info-grid">
+      <div class="info-row"><span class="ilabel">💼 热门岗位</span><span class="ival">心理咨询师 · 用户研究员（UX Researcher） · HR专员 · 游戏用户研究员</span></div>
+      <div class="info-row"><span class="ilabel">🏢 核心行业</span><span class="ival">教育/学校 · 心理咨询 · 互联网/IT</span></div>
+      <div class="info-row"><span class="ilabel">🏙️ 就业城市</span><span class="ival">北京 · 上海 · 深圳 · 广州 · 杭州</span></div>
+      <div class="info-row"><span class="ilabel">🎯 头部雇主</span><span class="ival">中科院 · 各高校 · 相关研究所 · 教育培训机构</span></div>
+    </div>
+
+    <div class="info-row">
+      <span class="ilabel">🏫 对口院校</span>
+      <span class="ival">北京师范大学心理学部 · 北京大学心理与认知科学学院 · 华东师范大学 · 华南师范大学 · 浙江大学</span>
+      <span class="note-tip">（各省投档线差异大，分数线请自查）</span>
+    </div>
+
+    <div class="decision-row">
+      <div class="dcard"><span class="dd">🎓 考研</span><span class="dv">建议读研</span></div>
+      <div class="dcard"><span class="dd">🏛️ 考公</span><span class="dv">以三不限为主，对口岗位较少</span></div>
+      <div class="dcard"><span class="dd">🔄 转专业</span><span class="dv">中等，理学基础扎实，转相关应用学科可行</span></div>
+    </div>
+
+    <div class="info-row ai-warn"><span class="ilabel">⚠️ AI风险</span><span class="ival">AI心理咨询聊天机器人可以处理轻度情绪问题，但深度心理治疗需要的共情、信任关系和复杂判断能力是AI短期难以具备的。用户体验研究和行为分析中的定性洞察仍高度依赖心理学专业训练。</span></div>
+
+    <div class="info-row"><span class="ilabel">🔗 相关专业</span><span class="ival">社会学 · 教育学 · renli-ziyuan · 生物科学</span></div>
+
+    <div class="faq-section"><div class="sec-title">❓ 核心问答</div><div class="faq-item"><p class="faq-q">Q: 心理学毕业就是当心理医生吗？</p><p class="faq-a">A: 这是最大的误解。心理医生（精神科医生）需要医学学位。心理学专业毕业生成为心理咨询师需要硕士学历+长期督导训练。多数心理学毕业生去了教育、人力资源、用户研究等领域，而非传统的心理咨询。</p></div><div class="faq-item"><p class="faq-q">Q: 心理学就业难吗？</p><p class="faq-a">A: 纯心理学方向确实不轻松。但心理学+数据分析/编程（学Python/SPSS/统计学）的交叉方向——如用户研究、消费者行为分析等——在互联网行业需求不小。建议及早确定细分方向。</p></div></div>
+
+    <div class="pf"><span>标签：文理兼收 · 就业多元 · 需深造 · 互联网新方向 · 社会需求增长</span><span>专业就业通 · 免费试读版 · 第 14 页</span></div>
+  </div>
+<div class="mp wm" data-wm="AGI前哨站 · 免费试读版">
+    <div class="mh">
+      <span class="mn">#12</span>
+      <span class="mname">电气工程及其自动化</span>
+      <span class="mcat">工学 · 工学学士 · 4年</span>
+      <span class="roi-badge roi-b">ROI B</span>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kl">起薪</div><div class="kv c-blue">8.0K</div></div>
+      <div class="kpi"><div class="kl">3年薪资</div><div class="kv c-dark">14.0K</div></div>
+      <div class="kpi"><div class="kl">5年涨幅</div><div class="kv" style="color:#0d904f">+150%</div></div>
+      <div class="kpi"><div class="kl">就业率</div><div class="kv c-orange">94.0%</div></div>
+      <div class="kpi"><div class="kl">对口率</div><div class="kv c-gray">84.0%</div></div>
+      <div class="kpi"><div class="kl">满意度</div><div class="kv c-gray">8.1 /10</div></div>
+      <div class="kpi"><div class="kl">AI风险</div><div class="kv" style="color:#0d904f">低</div></div>
+      <div class="kpi"><div class="kl">男女比</div><div class="kv c-gray" style="font-size:19px">男8:女2</div></div>
+    </div>
+
+    <div class="dual">
+      <div class="dual-l"><div class="salary-chart"><div class="chart-title">📊 五年薪资走势</div><div class="bars"><div class="bar-col"><div class="bar-fill" style="height:35.8974358974359%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">7.0K</span><span class="bar-y">Y1</span></div><div class="bar-col"><div class="bar-fill" style="height:48.717948717948715%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">9.5K</span><span class="bar-y">Y2</span></div><div class="bar-col"><div class="bar-fill" style="height:66.66666666666666%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">13.0K</span><span class="bar-y">Y3</span></div><div class="bar-col"><div class="bar-fill" style="height:84.61538461538461%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">16.5K</span><span class="bar-y">Y4</span></div><div class="bar-col"><div class="bar-fill" style="height:100%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">19.5K</span><span class="bar-y">Y5</span></div></div></div></div>
+      <div class="dual-r">
+        <div class="sec-title">📝 专业概述</div>
+        <p class="desc">电气工程是研究电能生产、传输、分配和应用的工科专业，是电力系统的核心学科。课程包括电路原理、电机学、电力系统分析、高电压技术、电力电子技术等。毕业生最主要的去向是国家电网、南方电网及五大发电集团——这是国内最大规模的应届生雇主之一，每年招聘数万人。电气工程是进国企体制内最稳定的工科通道之一。近年来新能源（光伏、风电、储能）和电动汽车产业的爆发为电气工程师提供了更多市场化选择。</p>
+      </div>
+    </div>
+
+    <div class="info-row"><span class="ilabel">✅ 适合人群</span><span class="ival">物理好 · 追求稳定 · 能接受体制内 · 对电力/能源有兴趣</span></div>
+    <div class="info-row"><span class="ilabel">📚 课程硬核度</span><span class="ival stars">★★★★☆</span></div>
+
+    <div class="info-grid">
+      <div class="info-row"><span class="ilabel">💼 热门岗位</span><span class="ival">电气工程师 · 电力系统工程师 · 新能源工程师 · 变电/配电工程师</span></div>
+      <div class="info-row"><span class="ilabel">🏢 核心行业</span><span class="ival">电力/电网 · 新能源 · 电气设备制造</span></div>
+      <div class="info-row"><span class="ilabel">🏙️ 就业城市</span><span class="ival">北京 · 上海 · 广州 · 南京 · 武汉</span></div>
+      <div class="info-row"><span class="ilabel">🎯 头部雇主</span><span class="ival">国家电网 · 华为 · 西门子 · 比亚迪</span></div>
+    </div>
+
+    <div class="info-row">
+      <span class="ilabel">🏫 对口院校</span>
+      <span class="ival">清华大学 · 西安交通大学 · 华中科技大学 · 浙江大学 · 华北电力大学</span>
+      <span class="note-tip">（各省投档线差异大，分数线请自查）</span>
+    </div>
+
+    <div class="decision-row">
+      <div class="dcard"><span class="dd">🎓 考研</span><span class="dv">建议读研，大厂研发岗普遍要求硕士以上</span></div>
+      <div class="dcard"><span class="dd">🏛️ 考公</span><span class="dv">少数对口岗位，以三不限为主</span></div>
+      <div class="dcard"><span class="dd">🔄 转专业</span><span class="dv">中等，需要一定硬件基础</span></div>
+    </div>
+
+    <div class="info-row ai-warn"><span class="ilabel">⚠️ AI风险</span><span class="ival">电力系统的安全和可靠性要求极高，决策需要综合工程判断和制度规范。AI用于电网调度优化和故障预警，但不参与关键决策。电网运维必须由持证工程师现场操作。</span></div>
+
+    <div class="info-row"><span class="ilabel">🔗 相关专业</span><span class="ival">自动化 · 电子信息工程 · xinnengyuan-kexue · 通信工程</span></div>
+
+    <div class="faq-section"><div class="sec-title">❓ 核心问答</div><div class="faq-item"><p class="faq-q">Q: 进国家电网需要什么条件？</p><p class="faq-a">A: 电气工程专业对口，通过国家电网统一考试（笔试+面试）。985/211院校毕业生有优势但非绝对。华北电力大学是国家电网的'亲儿子'，录用比例最高。电工类专业是国家电网招聘的最主力专业。</p></div><div class="faq-item"><p class="faq-q">Q: 电气工程师收入高吗？</p><p class="faq-a">A: 电网体系内：起薪中上（发达省份12-18万年薪），增长稳定，福利好（六险二金+住房补贴），但天花板有限。新能源企业：薪资弹性更大，顶尖储能/逆变器工程师年薪50万+。</p></div></div>
+
+    <div class="pf"><span>标签：国企 · 稳定 · 国家电网 · 新能源 · 铁饭碗</span><span>专业就业通 · 免费试读版 · 第 15 页</span></div>
+  </div>
+<div class="mp wm" data-wm="AGI前哨站 · 免费试读版">
+    <div class="mh">
+      <span class="mn">#13</span>
+      <span class="mname">护理学</span>
+      <span class="mcat">医学 · 理学学士 · 4年</span>
+      <span class="roi-badge roi-c">ROI C</span>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kl">起薪</div><div class="kv c-blue">5.5K</div></div>
+      <div class="kpi"><div class="kl">3年薪资</div><div class="kv c-dark">9.0K</div></div>
+      <div class="kpi"><div class="kl">5年涨幅</div><div class="kv" style="color:#0d904f">+136%</div></div>
+      <div class="kpi"><div class="kl">就业率</div><div class="kv c-orange">98.0%</div></div>
+      <div class="kpi"><div class="kl">对口率</div><div class="kv c-gray">95.0%</div></div>
+      <div class="kpi"><div class="kl">满意度</div><div class="kv c-gray">6.8 /10</div></div>
+      <div class="kpi"><div class="kl">AI风险</div><div class="kv" style="color:#d93025">极低</div></div>
+      <div class="kpi"><div class="kl">男女比</div><div class="kv c-gray" style="font-size:19px">男1:女9</div></div>
+    </div>
+
+    <div class="dual">
+      <div class="dual-l"><div class="salary-chart"><div class="chart-title">📊 五年薪资走势</div><div class="bars"><div class="bar-col"><div class="bar-fill" style="height:40%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">5.0K</span><span class="bar-y">Y1</span></div><div class="bar-col"><div class="bar-fill" style="height:52%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">6.5K</span><span class="bar-y">Y2</span></div><div class="bar-col"><div class="bar-fill" style="height:68%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">8.5K</span><span class="bar-y">Y3</span></div><div class="bar-col"><div class="bar-fill" style="height:84%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">10.5K</span><span class="bar-y">Y4</span></div><div class="bar-col"><div class="bar-fill" style="height:100%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">12.5K</span><span class="bar-y">Y5</span></div></div></div></div>
+      <div class="dual-r">
+        <div class="sec-title">📝 专业概述</div>
+        <p class="desc">护理学是培养临床护理和健康管理专业人才的学科。课程包括基础护理学、内科护理学、外科护理学、妇产科护理学、儿科护理学、急危重症护理学等。在当前老龄化社会背景下，护理人才是医疗体系中最紧缺的一环——全国护士缺口已达百万级。护理学毕业生的最大优势是就业率极高（接近100%），且稳定在体制内（公立医院）。但缺点也很明显：三班倒工作强度大、职业晋升空间有限、社会地位不及医生。近年高端护理方向（ICU专科护士…</p>
+      </div>
+    </div>
+
+    <div class="info-row"><span class="ilabel">✅ 适合人群</span><span class="ival">有耐心和同情心 · 动手能力强 · 抗压能力好 · 生物好</span></div>
+    <div class="info-row"><span class="ilabel">📚 课程硬核度</span><span class="ival stars">★★★★★</span></div>
+
+    <div class="info-grid">
+      <div class="info-row"><span class="ilabel">💼 热门岗位</span><span class="ival">注册护士 · 专科护士（ICU/手术室） · 护士长 · 医美护士</span></div>
+      <div class="info-row"><span class="ilabel">🏢 核心行业</span><span class="ival">公立医院 · 社区卫生 · 养老机构</span></div>
+      <div class="info-row"><span class="ilabel">🏙️ 就业城市</span><span class="ival">北京 · 上海 · 广州 · 成都 · 武汉</span></div>
+      <div class="info-row"><span class="ilabel">🎯 头部雇主</span><span class="ival">各省三甲医院 · 社区医疗中心 · 养老机构 · 国际医疗机构</span></div>
+    </div>
+
+    <div class="info-row">
+      <span class="ilabel">🏫 对口院校</span>
+      <span class="ival">北京协和医学院护理学院 · 四川大学华西护理学院 · 北京大学护理学院 · 复旦大学护理学院</span>
+      <span class="note-tip">（各省投档线差异大，分数线请自查）</span>
+    </div>
+
+    <div class="decision-row">
+      <div class="dcard"><span class="dd">🎓 考研</span><span class="dv">通常需要读研/读博，本科就业面很窄</span></div>
+      <div class="dcard"><span class="dd">🏛️ 考公</span><span class="dv">医院/卫健委体系为主，公务员岗位较少但事业编较多</span></div>
+      <div class="dcard"><span class="dd">🔄 转专业</span><span class="dv">很难，医学课程体系封闭，学分互认困难</span></div>
+    </div>
+
+    <div class="info-row ai-warn"><span class="ilabel">⚠️ AI风险</span><span class="ival">护理工作是医疗AI最难以替代的职业之一——需要大量物理接触、情感支持和即时临床判断。AI可以辅助生命体征监测和用药提醒，但注射、翻身、心理安抚等实操完全依赖护士。老龄化社会只会让护理需求持续增长。</span></div>
+
+    <div class="info-row"><span class="ilabel">🔗 相关专业</span><span class="ival">临床医学 · 预防医学 · kangfu-zhiliao · 社会工作</span></div>
+
+    <div class="faq-section"><div class="sec-title">❓ 核心问答</div><div class="faq-item"><p class="faq-q">Q: 护理学是不是'伺候人'的？</p><p class="faq-a">A: 这是一个很大的误解。现代护理学需要扎实的医学知识基础和精细的临床操作技能。ICU护士需要会看监护仪数据、会做CRRT/ECMO等高精护理操作。护理是专业性很强的医疗技术岗位，不是简单的'伺候人'。</p></div><div class="faq-item"><p class="faq-q">Q: 护士收入低吗？</p><p class="faq-a">A: 公立三甲医院编制内护士的收入并不低（一线城市月薪1-2万+各种福利），且有稳定编制。但私立医院和基层医院确实偏低。专科护士（ICU/手术室/助产士）收入高于普通护士。</p></div></div>
+
+    <div class="pf"><span>标签：铁饭碗 · 就业率极高 · 三班倒 · 社会需求大 · AI免疫</span><span>专业就业通 · 免费试读版 · 第 16 页</span></div>
+  </div>
+<div class="mp wm" data-wm="AGI前哨站 · 免费试读版">
+    <div class="mh">
+      <span class="mn">#14</span>
+      <span class="mname">英语</span>
+      <span class="mcat">文学 · 文学学士 · 4年</span>
+      <span class="roi-badge roi-c">ROI C</span>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kl">起薪</div><div class="kv c-blue">6.0K</div></div>
+      <div class="kpi"><div class="kl">3年薪资</div><div class="kv c-dark">10.0K</div></div>
+      <div class="kpi"><div class="kl">5年涨幅</div><div class="kv" style="color:#0d904f">+167%</div></div>
+      <div class="kpi"><div class="kl">就业率</div><div class="kv c-orange">82.0%</div></div>
+      <div class="kpi"><div class="kl">对口率</div><div class="kv c-gray">55.0%</div></div>
+      <div class="kpi"><div class="kl">满意度</div><div class="kv c-gray">7.2 /10</div></div>
+      <div class="kpi"><div class="kl">AI风险</div><div class="kv" style="color:#d93025">高</div></div>
+      <div class="kpi"><div class="kl">男女比</div><div class="kv c-gray" style="font-size:19px">男1:女9</div></div>
+    </div>
+
+    <div class="dual">
+      <div class="dual-l"><div class="salary-chart"><div class="chart-title">📊 五年薪资走势</div><div class="bars"><div class="bar-col"><div class="bar-fill" style="height:32.25806451612903%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">5.0K</span><span class="bar-y">Y1</span></div><div class="bar-col"><div class="bar-fill" style="height:45.16129032258064%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">7.0K</span><span class="bar-y">Y2</span></div><div class="bar-col"><div class="bar-fill" style="height:61.29032258064516%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">9.5K</span><span class="bar-y">Y3</span></div><div class="bar-col"><div class="bar-fill" style="height:80.64516129032258%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">12.5K</span><span class="bar-y">Y4</span></div><div class="bar-col"><div class="bar-fill" style="height:100%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">15.5K</span><span class="bar-y">Y5</span></div></div></div></div>
+      <div class="dual-r">
+        <div class="sec-title">📝 专业概述</div>
+        <p class="desc">英语专业是培养英语语言能力和跨文化交际能力的人文学科。课程包括综合英语、高级英语、英语听说、英美文学、语言学、翻译理论与实践等。在AI翻译工具（如DeepL/ChatGPT）快速进步的背景下，基础的翻译和语言服务工作确实面临挑战。但英语专业的核心价值不在于'会说英语'（这一点AI可以替代），而在于跨文化理解能力、批判性思维和用英语进行深度专业交流的能力。英语+X（英语+法律→涉外律师，英语+贸易→…</p>
+      </div>
+    </div>
+
+    <div class="info-row"><span class="ilabel">✅ 适合人群</span><span class="ival">英语基础好 · 对跨文化交流有兴趣 · 辅修一个专业方向 · 计划当老师</span></div>
+    <div class="info-row"><span class="ilabel">📚 课程硬核度</span><span class="ival stars">★★☆☆☆</span></div>
+
+    <div class="info-grid">
+      <div class="info-row"><span class="ilabel">💼 热门岗位</span><span class="ival">英语教师 · 外贸经理 · 跨境电商运营 · 翻译/本地化专员</span></div>
+      <div class="info-row"><span class="ilabel">🏢 核心行业</span><span class="ival">教育/培训 · 外贸/跨境电商 · 翻译/本地化</span></div>
+      <div class="info-row"><span class="ilabel">🏙️ 就业城市</span><span class="ival">上海 · 北京 · 深圳 · 广州 · 杭州</span></div>
+      <div class="info-row"><span class="ilabel">🎯 头部雇主</span><span class="ival">外交部 · 新华社 · 字节跳动(国际化) · 新东方</span></div>
+    </div>
+
+    <div class="info-row">
+      <span class="ilabel">🏫 对口院校</span>
+      <span class="ival">北京外国语大学 · 上海外国语大学 · 广东外语外贸大学 · 北京大学外国语学院 · 南京大学</span>
+      <span class="note-tip">（各省投档线差异大，分数线请自查）</span>
+    </div>
+
+    <div class="decision-row">
+      <div class="dcard"><span class="dd">🎓 考研</span><span class="dv">建议读研，教师/编辑/翻译等岗位硕士更具竞争力</span></div>
+      <div class="dcard"><span class="dd">🏛️ 考公</span><span class="dv">有一定对口，外语类有外事办等少量岗位</span></div>
+      <div class="dcard"><span class="dd">🔄 转专业</span><span class="dv">容易，文科跨转灵活，但转理工科需补大量基础课</span></div>
+    </div>
+
+    <div class="info-row ai-warn"><span class="ilabel">⚠️ AI风险</span><span class="ival">AI翻译质量在过去3年出现了质的飞跃，基础翻译（文件翻译、日常口译）正在快速被替代。但高端翻译（文学作品、法律文件）、跨文化谈判和内容本地化等需要深度文化理解的工作仍是AI的短板。纯语言能力已不足够。</span></div>
+
+    <div class="info-row"><span class="ilabel">🔗 相关专业</span><span class="ival">国际经济与贸易 · 汉语言文学 · 翻译 · waijiao-waishi</span></div>
+
+    <div class="faq-section"><div class="sec-title">❓ 核心问答</div><div class="faq-item"><p class="faq-q">Q: AI会让英语专业消失吗？</p><p class="faq-a">A: 纯英语技能（一般翻译/日常交流）的价值确实在下降。但英语+专业能力的组合（英语+法律/金融/IT）仍然非常有竞争力。英语专业学生的方向应该是'用英语做事'而不是'教英语/翻译英语'。</p></div><div class="faq-item"><p class="faq-q">Q: 英语专业考编有出路吗？</p><p class="faq-a">A: 中小学英语教师招聘量较大且稳定，是英语专业毕业生的传统优势方向。一线城市编制竞争激烈，但二三线城市仍有缺口。有教师资格证的竞争力明显增强。</p></div></div>
+
+    <div class="pf"><span>标签：语言 · AI冲击大 · 教师路 · 复合型才有竞争力 · 考编</span><span>专业就业通 · 免费试读版 · 第 17 页</span></div>
+  </div>
+<div class="mp wm" data-wm="AGI前哨站 · 免费试读版">
+    <div class="mh">
+      <span class="mn">#15</span>
+      <span class="mname">通信工程</span>
+      <span class="mcat">工学 · 工学学士 · 4年</span>
+      <span class="roi-badge roi-a">ROI A</span>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kl">起薪</div><div class="kv c-blue">9.0K</div></div>
+      <div class="kpi"><div class="kl">3年薪资</div><div class="kv c-dark">16.5K</div></div>
+      <div class="kpi"><div class="kl">5年涨幅</div><div class="kv" style="color:#0d904f">+178%</div></div>
+      <div class="kpi"><div class="kl">就业率</div><div class="kv c-orange">92.8%</div></div>
+      <div class="kpi"><div class="kl">对口率</div><div class="kv c-gray">79.5%</div></div>
+      <div class="kpi"><div class="kl">满意度</div><div class="kv c-gray">7.8 /10</div></div>
+      <div class="kpi"><div class="kl">AI风险</div><div class="kv" style="color:#0d904f">低</div></div>
+      <div class="kpi"><div class="kl">男女比</div><div class="kv c-gray" style="font-size:19px">男7:女3</div></div>
+    </div>
+
+    <div class="dual">
+      <div class="dual-l"><div class="salary-chart"><div class="chart-title">📊 五年薪资走势</div><div class="bars"><div class="bar-col"><div class="bar-fill" style="height:33.33333333333333%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">8.0K</span><span class="bar-y">Y1</span></div><div class="bar-col"><div class="bar-fill" style="height:45.83333333333333%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">11.0K</span><span class="bar-y">Y2</span></div><div class="bar-col"><div class="bar-fill" style="height:62.5%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">15.0K</span><span class="bar-y">Y3</span></div><div class="bar-col"><div class="bar-fill" style="height:81.25%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">19.5K</span><span class="bar-y">Y4</span></div><div class="bar-col"><div class="bar-fill" style="height:100%;background:linear-gradient(180deg,#1e5fd9 0%,#3b82f6 100%)"></div><span class="bar-v">24.0K</span><span class="bar-y">Y5</span></div></div></div></div>
+      <div class="dual-r">
+        <div class="sec-title">📝 专业概述</div>
+        <p class="desc">通信工程是研究信息传输和信号处理的工科专业，覆盖从物理层的光纤、无线电波到网络层的交换、路由协议。核心课程包括信号与系统、数字信号处理、通信原理、移动通信、光纤通信、网络协议等。在5G商用、6G研发和卫星互联网加速部署的大背景下，通信工程师的战略价值持续提升。主要就业方向包括通信设备商（华为、中兴）、运营商（移动/电信/联通）、互联网公司的网络和基础设施部门、以及军工通信等。</p>
+      </div>
+    </div>
+
+    <div class="info-row"><span class="ilabel">✅ 适合人群</span><span class="ival">物理/数学好 · 对通信/网络感兴趣 · 能接受底层技术 · 就业导向</span></div>
+    <div class="info-row"><span class="ilabel">📚 课程硬核度</span><span class="ival stars">★★★★☆</span></div>
+
+    <div class="info-grid">
+      <div class="info-row"><span class="ilabel">💼 热门岗位</span><span class="ival">通信工程师 · 射频工程师 · 网络架构师 · 5G研发工程师</span></div>
+      <div class="info-row"><span class="ilabel">🏢 核心行业</span><span class="ival">通信设备 · 电信运营商 · 互联网/IT</span></div>
+      <div class="info-row"><span class="ilabel">🏙️ 就业城市</span><span class="ival">深圳 · 北京 · 上海 · 成都 · 西安</span></div>
+      <div class="info-row"><span class="ilabel">🎯 头部雇主</span><span class="ival">华为 · 中兴 · 小米 · 中国移动</span></div>
+    </div>
+
+    <div class="info-row">
+      <span class="ilabel">🏫 对口院校</span>
+      <span class="ival">北京邮电大学 · 电子科技大学 · 西安电子科技大学 · 东南大学 · 北京理工大学</span>
+      <span class="note-tip">（各省投档线差异大，分数线请自查）</span>
+    </div>
+
+    <div class="decision-row">
+      <div class="dcard"><span class="dd">🎓 考研</span><span class="dv">建议读研，大厂研发岗普遍要求硕士以上</span></div>
+      <div class="dcard"><span class="dd">🏛️ 考公</span><span class="dv">少数对口岗位，以三不限为主</span></div>
+      <div class="dcard"><span class="dd">🔄 转专业</span><span class="dv">中等，需要一定硬件基础</span></div>
+    </div>
+
+    <div class="info-row ai-warn"><span class="ilabel">⚠️ AI风险</span><span class="ival">通信网络的物理层和协议层设计需要深厚的领域知识，AI主要应用于网络优化和运维层面而非核心研发。5G/6G标准制定和芯片设计是AI难以替代的高壁垒工作。</span></div>
+
+    <div class="info-row"><span class="ilabel">🔗 相关专业</span><span class="ival">电子信息工程 · 计算机科学与技术 · 网络工程 · guangdian-xinxi</span></div>
+
+    <div class="faq-section"><div class="sec-title">❓ 核心问答</div><div class="faq-item"><p class="faq-q">Q: 通信工程就业面窄吗？</p><p class="faq-a">A: 传统通信设备商和运营商确实是主要去向，但这个'窄'恰恰是壁垒——通信领域的专业知识门槛高，外人难以进入，所以竞争反而比计算机小。而且近年互联网公司对通信背景的人才需求在增加（云网络、数据中心）。</p></div><div class="faq-item"><p class="faq-q">Q: 通信工程和电子信息工程哪个好？</p><p class="faq-a">A: 通信工程更专（侧重通信协议、信号处理），电信更广（软硬通吃）。如果你明确想做通信方向选通信，不确定的话电信选择面更宽。</p></div></div>
+
+    <div class="pf"><span>标签：5G · 通信 · 华为 · 稳定 · 国家战略</span><span>专业就业通 · 免费试读版 · 第 18 页</span></div>
+  </div>
+
+<div class="cta-page wm" data-wm="AGI前哨站 · 免费试读版">
+  <h2>试读完 15 个专业，还想看全部 244 个？</h2>
+  <div class="ctaprice">《2026 专业报考完整指南》<strong>¥49</strong></div>
+  <ul class="fl">
+    <li>全部 244 个专业完整数据（非仅 15 个试读）</li>
+    <li>每个专业 30 项核心指标全覆盖</li>
+    <li>5 年薪资走势柱状图（直观对比专业间差异）</li>
+    <li>考研/考公/转专业三维度决策建议</li>
+    <li>头部雇主 + 就业城市，规划地域和行业方向</li>
+    <li>AI 替代风险评估（全网独家）</li>
+    <li>购买后一年内数据更新免费推送</li>
+  </ul>
+  <div class="buy"><h3>购买方式</h3><div class="wx">加微信 <strong>swgk44</strong></div><p>备注「完整版」→ 转账 ¥49 → 发截图 → 2 小时内收到 PDF</p><p class="note">或关注公众号「AGI前哨站」回复「完整版」获取最新购买方式</p></div>
+  <div class="fn">www.zhuanyeyun.com · 数据更新至 2026 年 6 月</div>
+</div>
+
+</body></html>

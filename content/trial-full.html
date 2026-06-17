@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans SC','Microsoft YaHei','PingFang SC','SimHei',sans-serif;color:#1a1a2e;background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+
+.cover{width:210mm;height:297mm;background:linear-gradient(135deg,#0d3b8c 0%,#1e5fd9 40%,#3b82f6 100%);display:flex;flex-direction:column;justify-content:center;padding:60px}
+.cover::before{content:'';position:absolute;top:38%;left:0;right:0;height:2px;background:rgba(255,255,255,0.15)}
+.cover::after{content:'';position:absolute;top:66%;left:0;right:0;height:2px;background:rgba(255,255,255,0.15)}
+.cover .badge{display:inline-block;background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.9);padding:6px 18px;border-radius:20px;font-size:13px;font-weight:500;letter-spacing:2px;margin-bottom:30px;width:fit-content}
+.cover h1{font-size:42px;font-weight:900;color:#fff;line-height:1.2;margin-bottom:16px;letter-spacing:2px}
+.cover .sub{font-size:24px;font-weight:300;color:rgba(255,255,255,0.85);margin-bottom:40px;letter-spacing:4px}
+.cover .feat{display:flex;flex-direction:column;gap:14px;margin-bottom:60px}
+.cover .feat span{font-size:15px;color:rgba(255,255,255,0.7);font-weight:300}
+.cover .feat span::before{content:'▸ ';color:rgba(255,255,255,0.4)}
+.cover .ds{font-size:10px;color:rgba(255,255,255,0.4);margin-top:auto;line-height:1.6}
+.cover .ctab{display:flex;gap:20px;margin-top:20px}
+.cover .ctab span{font-size:12px;color:rgba(255,255,255,0.75);font-weight:500}
+.cover .ctab span:last-child{color:rgba(255,255,255,0.5);font-weight:400}
+
+.toc{width:210mm;height:297mm;padding:50px 55px;background:#fff}
+.toc h2{font-size:26px;font-weight:700;color:#1a1a2e;margin-bottom:35px;letter-spacing:4px}
+.tl{list-style:none;display:flex;flex-direction:column}
+.tl li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dotted #dadce0;font-size:14px;color:#5f6368}
+.tl li.toc-cta{font-weight:700;color:#1e5fd9;border-bottom:2px solid #1e5fd9}
+.tl li .pn{color:#9aa0a6;font-weight:400}
+
+.guide{width:210mm;height:297mm;padding:50px 55px;background:#fff}
+.guide h2{font-size:24px;font-weight:700;color:#1a1a2e;margin-bottom:30px;letter-spacing:2px}
+.gc{background:#f8f9fb;border-radius:10px;padding:22px 24px;margin-bottom:18px;border-left:4px solid #1e5fd9}
+.gc h3{font-size:14px;font-weight:700;color:#1a1a2e;margin-bottom:8px}
+.gc p{font-size:12px;color:#5f6368;line-height:1.7;font-weight:400}
+
+.mp{width:210mm;min-height:297mm;padding:40px 50px 30px;background:#fff}
+.mh{display:flex;align-items:center;gap:12px;padding:14px 18px;background:#e8f0fe;border-radius:8px;margin-bottom:24px}
+.mn{font-size:18px;font-weight:900;color:#1e5fd9;min-width:30px}
+.mname{font-size:20px;font-weight:700;color:#1a1a2e}
+.mm{font-size:11px;color:#9aa0a6;margin-left:auto}
+
+.mr{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.mc{background:#f8f9fb;border-radius:10px;padding:16px 18px;text-align:left;border:1px solid #dadce0}
+.mcl{font-size:10px;color:#9aa0a6;font-weight:500;letter-spacing:1px;margin-bottom:6px}
+.mcv{font-size:26px;font-weight:900;margin-bottom:2px}
+.mcs{font-size:9px;color:#9aa0a6}
+
+.sb{margin-bottom:14px}
+.st{font-size:12px;font-weight:700;color:#1a1a2e;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.st::before{content:'';width:3px;height:14px;background:#1e5fd9;border-radius:2px;display:inline-block}
+.sc{font-size:11px;color:#5f6368;line-height:1.7;padding-left:12px;font-style:italic}
+
+.tr{display:flex;flex-wrap:wrap;gap:8px;padding-left:12px}
+.tag{display:inline-block;background:#e8f0fe;color:#1a1a2e;font-size:11px;padding:5px 12px;border-radius:6px;border:1px solid #dadce0;font-weight:500}
+.sl{list-style:none;padding-left:12px;display:flex;flex-wrap:wrap;gap:6px 16px}
+.sl li{font-size:11px;color:#5f6368}
+.sl li::before{content:'▸ ';color:#1e5fd9;font-size:9px}
+
+.pf{display:flex;justify-content:space-between;align-items:center;padding-top:12px;border-top:1px solid #dadce0;margin-top:16px}
+.pf span{font-size:9px;color:#9aa0a6}
+.pfc{color:#1e5fd9!important;font-weight:700}
+
+.cta-page{width:210mm;height:297mm;padding:60px 55px;background:#f8f9fb}
+.cta-page h2{font-size:28px;font-weight:900;color:#1a1a2e;margin-bottom:8px}
+.ctaprice{font-size:22px;font-weight:700;color:#1e5fd9;margin-bottom:30px}
+.fl{list-style:none;margin-bottom:40px}
+.fl li{font-size:14px;color:#1a1a2e;padding:8px 0;padding-left:20px;position:relative}
+.fl li::before{content:'✓';position:absolute;left:0;color:#0d904f;font-weight:900}
+.buy{background:#fff;border-radius:12px;padding:28px 32px;border:2px solid #1e5fd9}
+.buy h3{font-size:18px;font-weight:700;color:#1a1a2e;margin-bottom:16px}
+.buy .wx{font-size:20px;font-weight:900;color:#1e5fd9}
+.buy p{font-size:13px;color:#5f6368;margin-top:6px}
+.buy .note{margin-top:14px;font-size:12px;color:#9aa0a6}
+.fn{margin-top:auto;font-size:10px;color:#9aa0a6;padding-top:40px}
+
+@page{size:A4;margin:0}
+@media print{body{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style></head>
+<body>
+
+<div class="cover" style="position:relative">
+  <div class="badge">2026 最新版</div>
+  <h1>专业报考指南</h1>
+  <div class="sub">免费试读版</div>
+  <div class="feat"><span>15 个热门专业 · 完整数据解读</span><span>薪资趋势 · 就业率 · AI 风险评估</span><span>给家长和考生的择专业决策参考</span></div>
+  <div class="ds">数据来源：教育部公开数据 · 招聘平台大数据 · 国家统计局 · AI 风险模型</div>
+  <div class="ctab"><span>公众号「AGI前哨站」回复「报考指南」免费领取</span><span>完整版 244 个专业 · ¥49 · 微信 swgk44</span></div>
+</div>
+
+<div class="toc">
+  <h2>目&emsp;录</h2>
+  <ul class="tl">
+    <li style="font-weight:500;color:#1a1a2e"><span>如何使用这份指南</span><span class="pn">3</span></li>
+    <li><span>计算机科学与技术</span><span class="pn">4</span></li>
+<li><span>软件工程</span><span class="pn">5</span></li>
+<li><span>人工智能</span><span class="pn">6</span></li>
+<li><span>数据科学与大数据技术</span><span class="pn">7</span></li>
+<li><span>临床医学</span><span class="pn">8</span></li>
+<li><span>口腔医学</span><span class="pn">9</span></li>
+<li><span>金融学</span><span class="pn">10</span></li>
+<li><span>会计学</span><span class="pn">11</span></li>
+<li><span>法学</span><span class="pn">12</span></li>
+<li><span>电子商务</span><span class="pn">13</span></li>
+<li><span>心理学</span><span class="pn">14</span></li>
+<li><span>电气工程及其自动化</span><span class="pn">15</span></li>
+<li><span>护理学</span><span class="pn">16</span></li>
+<li><span>英语</span><span class="pn">17</span></li>
+<li><span>通信工程</span><span class="pn">18</span></li>
+    <li class="toc-cta"><span>获取完整版指南（244个专业）</span><span class="pn">19</span></li>
+  </ul>
+</div>
+
+<div class="guide">
+  <h2>如何使用这份指南</h2>
+  <div class="gc"><h3>怎么看薪资数据？</h3><p>「起薪」是毕业第一年典型月薪；「3年薪资」反映成长速度；「5年涨幅」体现行业红利。高起薪不等于高天花板，有些专业起薪一般但5年后翻倍。</p></div>
+  <div class="gc"><h3>AI 风险评估怎么看？</h3><p>每个专业都有 AI 替代风险评分（5-90），越低越安全。基于自研「任务可自动化程度」模型，综合考量重复性工作占比、创造性要求、人际互动复杂度等因素。</p></div>
+  <div class="gc"><h3>专业对口率是什么意思？</h3><p>毕业后从事本专业相关工作的比例。对口率低不一定是坏事——文科专业对口率普遍低，但毕业生去互联网、体制内的很多。关键是看「就业岗位」列表里有没有你感兴趣的方向。</p></div>
+  <div class="gc"><h3>ROI 指数是什么？</h3><p>自研的投入产出比指数（0-100），综合学习难度、就业薪资、行业前景。ROI 高 = 同样努力回报更大，适合不确定喜欢什么的学生参考。</p></div>
+</div>
+
+<div class="mp">
+  <div class="mh"><span class="mn">#1</span><span class="mname">计算机科学与技术</span><span class="mm">工学 · 工学学士 · 4年</span></div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">起薪</div><div class="mcv" style="color:#1e5fd9">12.5K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">3年薪资</div><div class="mcv" style="color:#1a1a2e">22.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">5年涨幅</div><div class="mcv" style="color:#0d904f">+180%</div><div class="mcs">增长率</div></div>
+    <div class="mc"><div class="mcl">就业率</div><div class="mcv" style="color:#f4511e">95.2%</div><div class="mcs">毕业当年</div></div>
+  </div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">对口率</div><div class="mcv" style="color:#5f6368">78.5%</div><div class="mcs">专业相关</div></div>
+    <div class="mc"><div class="mcl">满意度</div><div class="mcv" style="color:#5f6368">8.2 / 10</div><div class="mcs">综合评分</div></div>
+    <div class="mc"><div class="mcl">ROI 指数</div><div class="mcv" style="color:#0d904f">94</div><div class="mcs">回报指数</div></div>
+    <div class="mc"><div class="mcl">AI 风险</div><div class="mcv" style="color:#0d904f">低</div><div class="mcs">评分 15</div></div>
+  </div><div class="sb"><div class="st">AI 风险评估</div><div class="sc">计算机专业毕业生是AI工具的创造者而非被替代者。虽然基础编程工作可能被AI辅助，但系统架构设计、复杂问题求解、跨领域创新等核心能力仍不可替代。该专业毕业生掌握AI底层技术，在AI时代反而需求更大。</div></div><div class="sb"><div class="st">热门就业岗位</div><div class="tr"><span class="tag">软件开发工程师</span><span class="tag">算法工程师</span><span class="tag">系统架构师</span><span class="tag">数据分析师</span><span class="tag">产品经理</span></div></div><div class="sb"><div class="st">核心就业行业</div><div class="sc">互联网/IT · 金融科技 · 人工智能 · 游戏开发 · 通信</div></div><div class="sb"><div class="st">主要就业城市</div><div class="sc">北京 · 深圳 · 上海 · 杭州 · 成都</div></div><div class="sb"><div class="st">对口院校 TOP5</div><ul class="sl"><li>清华大学</li><li>北京大学</li><li>浙江大学</li><li>上海交通大学</li><li>北京航空航天大学</li></ul></div><div class="sb"><div class="st">一句话了解</div><div class="sc">计算机科学与技术是研究计算机的设计与制造、信息的获取与处理以及计算机软件与理论的一门学科。作为信息技术的核心基础，该专业涵盖了从底层硬件到上层应用的完整知识体系，包括计算机体系结构、操作系统、算法与数据结构、编程语言、人工智能、数据库系统、计算机网络等核心领域。毕业生具备扎实的数学基础和编程能力，能够从事软件开发、系统架构、AI算法、网络安全等工作。在数字经济和人工智能快速发展的大背景下，计算机科学与技术连续多年位居热门专业榜首，薪资水平和就业率在各专业中名列前茅。该专业对数学和逻辑思维要求较高，适合喜欢解决问题、保持持续学习能力的同学。</div></div><div class="pf"><span>专业就业通 · zhuanyeyun.com · 第 4 页</span><span class="pfc">公众号「AGI前哨站」回复「报考指南」免费领取更多</span></div></div>
+<div class="mp">
+  <div class="mh"><span class="mn">#2</span><span class="mname">软件工程</span><span class="mm">工学 · 工学学士 · 4年</span></div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">起薪</div><div class="mcv" style="color:#1e5fd9">12.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">3年薪资</div><div class="mcv" style="color:#1a1a2e">21.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">5年涨幅</div><div class="mcv" style="color:#0d904f">+175%</div><div class="mcs">增长率</div></div>
+    <div class="mc"><div class="mcl">就业率</div><div class="mcv" style="color:#f4511e">94.8%</div><div class="mcs">毕业当年</div></div>
+  </div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">对口率</div><div class="mcv" style="color:#5f6368">80.2%</div><div class="mcs">专业相关</div></div>
+    <div class="mc"><div class="mcl">满意度</div><div class="mcv" style="color:#5f6368">8.0 / 10</div><div class="mcs">综合评分</div></div>
+    <div class="mc"><div class="mcl">ROI 指数</div><div class="mcv" style="color:#0d904f">92</div><div class="mcs">回报指数</div></div>
+    <div class="mc"><div class="mcl">AI 风险</div><div class="mcv" style="color:#0d904f">低</div><div class="mcs">评分 20</div></div>
+  </div><div class="sb"><div class="st">AI 风险评估</div><div class="sc">软件工程强调工程管理和团队协作，AI工具可以提升编码效率但无法替代需求理解、架构决策和项目管理。软件工程师在使用AI辅助开发后生产力大幅提高，需求不减反增。</div></div><div class="sb"><div class="st">热门就业岗位</div><div class="tr"><span class="tag">全栈开发工程师</span><span class="tag">前端开发工程师</span><span class="tag">后端开发工程师</span><span class="tag">技术项目经理</span><span class="tag">DevOps工程师</span></div></div><div class="sb"><div class="st">核心就业行业</div><div class="sc">互联网/IT · 金融科技 · 企业服务SaaS · 游戏 · 电商</div></div><div class="sb"><div class="st">主要就业城市</div><div class="sc">北京 · 深圳 · 上海 · 杭州 · 广州</div></div><div class="sb"><div class="st">对口院校 TOP5</div><ul class="sl"><li>清华大学</li><li>北京大学</li><li>华东师范大学</li><li>武汉大学</li><li>电子科技大学</li></ul></div><div class="sb"><div class="st">一句话了解</div><div class="sc">软件工程专业聚焦于大规模软件系统的开发、维护和管理，强调工程化的方法论和团队协作能力。与计算机科学相比，软件工程更注重实践应用，课程包括软件需求分析、软件设计模式、软件测试与质量保证、软件项目管理、DevOps等。毕业生具备完整的软件开发生命周期管理能力，能够胜任软件开发工程师、测试工程师、技术项目经理等岗位。在互联网和数字化转型浪潮中，软件工程人才需求持续旺盛，培养的工程化思维也便于毕业生快速成长为技术管理者。</div></div><div class="pf"><span>专业就业通 · zhuanyeyun.com · 第 5 页</span><span class="pfc">公众号「AGI前哨站」回复「报考指南」免费领取更多</span></div></div>
+<div class="mp">
+  <div class="mh"><span class="mn">#3</span><span class="mname">人工智能</span><span class="mm">工学 · 工学学士 · 4年</span></div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">起薪</div><div class="mcv" style="color:#1e5fd9">15.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">3年薪资</div><div class="mcv" style="color:#1a1a2e">28.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">5年涨幅</div><div class="mcv" style="color:#0d904f">+200%</div><div class="mcs">增长率</div></div>
+    <div class="mc"><div class="mcl">就业率</div><div class="mcv" style="color:#f4511e">93.5%</div><div class="mcs">毕业当年</div></div>
+  </div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">对口率</div><div class="mcv" style="color:#5f6368">75.0%</div><div class="mcs">专业相关</div></div>
+    <div class="mc"><div class="mcl">满意度</div><div class="mcv" style="color:#5f6368">8.5 / 10</div><div class="mcs">综合评分</div></div>
+    <div class="mc"><div class="mcl">ROI 指数</div><div class="mcv" style="color:#0d904f">91</div><div class="mcs">回报指数</div></div>
+    <div class="mc"><div class="mcl">AI 风险</div><div class="mcv" style="color:#d93025">极低</div><div class="mcs">评分 5</div></div>
+  </div><div class="sb"><div class="st">AI 风险评估</div><div class="sc">AI专业毕业生本身就是AI技术的创造者和推动者，不仅不存在被替代风险，反而处于AI产业爆发的核心位置。但需注意本科阶段所学可能深度不足，建议继续深造。</div></div><div class="sb"><div class="st">热门就业岗位</div><div class="tr"><span class="tag">算法工程师</span><span class="tag">机器学习工程师</span><span class="tag">NLP工程师</span><span class="tag">计算机视觉工程师</span><span class="tag">AI研究员</span></div></div><div class="sb"><div class="st">核心就业行业</div><div class="sc">人工智能 · 互联网/IT · 自动驾驶 · 金融科技 · 智能制造</div></div><div class="sb"><div class="st">主要就业城市</div><div class="sc">北京 · 深圳 · 上海 · 杭州 · 苏州</div></div><div class="sb"><div class="st">对口院校 TOP5</div><ul class="sl"><li>清华大学</li><li>北京大学</li><li>浙江大学</li><li>上海交通大学</li></ul></div><div class="sb"><div class="st">一句话了解</div><div class="sc">人工智能专业是近年新增的热门专业，系统培养学生在机器学习、深度学习、自然语言处理、计算机视觉、机器人学等领域的能力。课程涵盖数学基础（高等数学、线性代数、概率统计）、编程能力（Python、C++）和AI核心算法。作为第四次工业革命的核心驱动力，人工智能正在重塑所有行业，人才需求处于爆发式增长阶段。但需要注意的是，人工智能对数学基础和科研能力要求极高，本科就业面目前相对集中于算法工程师岗位，建议有深造计划的同学优先考虑。</div></div><div class="pf"><span>专业就业通 · zhuanyeyun.com · 第 6 页</span><span class="pfc">公众号「AGI前哨站」回复「报考指南」免费领取更多</span></div></div>
+<div class="mp">
+  <div class="mh"><span class="mn">#4</span><span class="mname">数据科学与大数据技术</span><span class="mm">工学 · 工学学士 · 4年</span></div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">起薪</div><div class="mcv" style="color:#1e5fd9">11.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">3年薪资</div><div class="mcv" style="color:#1a1a2e">20.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">5年涨幅</div><div class="mcv" style="color:#0d904f">+182%</div><div class="mcs">增长率</div></div>
+    <div class="mc"><div class="mcl">就业率</div><div class="mcv" style="color:#f4511e">93.8%</div><div class="mcs">毕业当年</div></div>
+  </div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">对口率</div><div class="mcv" style="color:#5f6368">76.5%</div><div class="mcs">专业相关</div></div>
+    <div class="mc"><div class="mcl">满意度</div><div class="mcv" style="color:#5f6368">8.1 / 10</div><div class="mcs">综合评分</div></div>
+    <div class="mc"><div class="mcl">ROI 指数</div><div class="mcv" style="color:#0d904f">89</div><div class="mcs">回报指数</div></div>
+    <div class="mc"><div class="mcl">AI 风险</div><div class="mcv" style="color:#0d904f">低</div><div class="mcs">评分 18</div></div>
+  </div><div class="sb"><div class="st">AI 风险评估</div><div class="sc">数据分析的很多基础工作正在被AI工具自动化（如自动生成报表），但深度分析和商业洞察仍需人类判断。未来数据科学家将从'做报表'转向'做决策'，价值不减反增。</div></div><div class="sb"><div class="st">热门就业岗位</div><div class="tr"><span class="tag">数据分析师</span><span class="tag">数据工程师</span><span class="tag">商业智能分析师</span><span class="tag">数据产品经理</span><span class="tag">大数据开发工程师</span></div></div><div class="sb"><div class="st">核心就业行业</div><div class="sc">互联网/IT · 金融 · 电商零售 · 咨询 · 医疗健康</div></div><div class="sb"><div class="st">主要就业城市</div><div class="sc">北京 · 上海 · 深圳 · 杭州 · 广州</div></div><div class="sb"><div class="st">对口院校 TOP5</div><ul class="sl"><li>北京大学</li><li>中国人民大学</li><li>复旦大学</li><li>华东师范大学</li></ul></div><div class="sb"><div class="st">一句话了解</div><div class="sc">数据科学与大数据技术专业培养具备数据采集、处理、分析和可视化能力的复合型人才。核心课程包括统计学、机器学习、数据挖掘、数据库系统、大数据平台（Hadoop/Spark）等。毕业生能够在互联网、金融、零售、医疗等任何有数据积累的行业从事数据分析师、数据工程师、商业智能分析师等工作。在数据驱动的商业时代，几乎所有企业都需要数据分析能力，就业面极广。该专业对数学和编程都有一定要求，但比纯AI专业门槛稍低，更适合本科就业。</div></div><div class="pf"><span>专业就业通 · zhuanyeyun.com · 第 7 页</span><span class="pfc">公众号「AGI前哨站」回复「报考指南」免费领取更多</span></div></div>
+<div class="mp">
+  <div class="mh"><span class="mn">#5</span><span class="mname">临床医学</span><span class="mm">医学 · 医学学士 · 5年</span></div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">起薪</div><div class="mcv" style="color:#1e5fd9">6.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">3年薪资</div><div class="mcv" style="color:#1a1a2e">9.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">5年涨幅</div><div class="mcv" style="color:#0d904f">+150%</div><div class="mcs">增长率</div></div>
+    <div class="mc"><div class="mcl">就业率</div><div class="mcv" style="color:#f4511e">96.8%</div><div class="mcs">毕业当年</div></div>
+  </div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">对口率</div><div class="mcv" style="color:#5f6368">95.0%</div><div class="mcs">专业相关</div></div>
+    <div class="mc"><div class="mcl">满意度</div><div class="mcv" style="color:#5f6368">7.5 / 10</div><div class="mcs">综合评分</div></div>
+    <div class="mc"><div class="mcl">ROI 指数</div><div class="mcv" style="color:#0d904f">72</div><div class="mcs">回报指数</div></div>
+    <div class="mc"><div class="mcl">AI 风险</div><div class="mcv" style="color:#d93025">极低</div><div class="mcs">评分 3</div></div>
+  </div><div class="sb"><div class="st">AI 风险评估</div><div class="sc">医疗诊断需要复杂的综合判断、医患沟通和实操技能，AI在可预见的未来只能作为辅助诊断工具，无法替代临床医生。医学是AI抗风险能力最强的专业之一。</div></div><div class="sb"><div class="st">热门就业岗位</div><div class="tr"><span class="tag">临床医生</span><span class="tag">住院医师</span><span class="tag">主治医师</span><span class="tag">医学研究员</span></div></div><div class="sb"><div class="st">核心就业行业</div><div class="sc">医疗卫生 · 医学研究 · 公共卫生 · 医学教育</div></div><div class="sb"><div class="st">主要就业城市</div><div class="sc">北京 · 上海 · 广州 · 成都 · 武汉</div></div><div class="sb"><div class="st">对口院校 TOP5</div><ul class="sl"><li>北京协和医学院</li><li>北京大学医学部</li><li>复旦大学上海医学院</li><li>上海交通大学医学院</li><li>四川大学华西医学中心</li></ul></div><div class="sb"><div class="st">一句话了解</div><div class="sc">临床医学是医学领域的核心专业，培养具备基础医学和临床医学系统知识的专业医学人才。学制5年本科+3年规培或专硕，是典型的长周期高回报专业。课程涵盖人体解剖学、病理学、药理学、内科学、外科学等。毕业生主要进入各级医院从事临床医疗工作。在人口老龄化和医疗需求持续增长的大背景下，医生的职业稳定性和社会地位在各行业中名列前茅。但需要注意：医学学习强度极高、培养周期长（至少8年才能独立执业）、工作压力大，不适合追求快速回报的同学。</div></div><div class="pf"><span>专业就业通 · zhuanyeyun.com · 第 8 页</span><span class="pfc">公众号「AGI前哨站」回复「报考指南」免费领取更多</span></div></div>
+<div class="mp">
+  <div class="mh"><span class="mn">#6</span><span class="mname">口腔医学</span><span class="mm">医学 · 医学学士 · 5年</span></div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">起薪</div><div class="mcv" style="color:#1e5fd9">8.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">3年薪资</div><div class="mcv" style="color:#1a1a2e">15.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">5年涨幅</div><div class="mcv" style="color:#0d904f">+213%</div><div class="mcs">增长率</div></div>
+    <div class="mc"><div class="mcl">就业率</div><div class="mcv" style="color:#f4511e">95.5%</div><div class="mcs">毕业当年</div></div>
+  </div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">对口率</div><div class="mcv" style="color:#5f6368">93.0%</div><div class="mcs">专业相关</div></div>
+    <div class="mc"><div class="mcl">满意度</div><div class="mcv" style="color:#5f6368">8.3 / 10</div><div class="mcs">综合评分</div></div>
+    <div class="mc"><div class="mcl">ROI 指数</div><div class="mcv" style="color:#0d904f">82</div><div class="mcs">回报指数</div></div>
+    <div class="mc"><div class="mcl">AI 风险</div><div class="mcv" style="color:#d93025">极低</div><div class="mcs">评分 8</div></div>
+  </div><div class="sb"><div class="st">AI 风险评估</div><div class="sc">口腔治疗依赖精细的手工操作和患者个体化方案设计，AI可以辅助影像诊断和方案规划，但实际操作完全依赖医生。口腔治疗的强操作属性使其成为医疗领域最难被AI替代的方向之一。</div></div><div class="sb"><div class="st">热门就业岗位</div><div class="tr"><span class="tag">口腔医生</span><span class="tag">正畸医生</span><span class="tag">种植医生</span><span class="tag">口腔诊所合伙人</span></div></div><div class="sb"><div class="st">核心就业行业</div><div class="sc">医疗卫生 · 口腔连锁机构 · 私人诊所 · 口腔材料/器械</div></div><div class="sb"><div class="st">主要就业城市</div><div class="sc">北京 · 上海 · 广州 · 深圳 · 成都</div></div><div class="sb"><div class="st">对口院校 TOP5</div><ul class="sl"><li>四川大学华西口腔医学院</li><li>北京大学口腔医学院</li><li>上海交通大学口腔医学院</li><li>武汉大学口腔医学院</li><li>中山大学光华口腔医学院</li></ul></div><div class="sb"><div class="st">一句话了解</div><div class="sc">口腔医学是医学中性价比最高的细分领域之一。相比临床医学，口腔医学的执业方式更灵活（可以开私人诊所），夜班和急诊较少，工作强度相对可控。课程涵盖口腔解剖生理学、口腔内科学、口腔颌面外科学、口腔修复学、口腔正畸学等。毕业生可在综合医院口腔科、口腔专科医院、私人连锁口腔诊所或自主创业执业。在消费升级和颜值经济推动下，正畸、种植等高端口腔服务需求快速增长，口腔医生的收入天花板远高于同等资历的临床医生。</div></div><div class="pf"><span>专业就业通 · zhuanyeyun.com · 第 9 页</span><span class="pfc">公众号「AGI前哨站」回复「报考指南」免费领取更多</span></div></div>
+<div class="mp">
+  <div class="mh"><span class="mn">#7</span><span class="mname">金融学</span><span class="mm">经济学 · 经济学学士 · 4年</span></div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">起薪</div><div class="mcv" style="color:#1e5fd9">8.5K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">3年薪资</div><div class="mcv" style="color:#1a1a2e">16.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">5年涨幅</div><div class="mcv" style="color:#0d904f">+229%</div><div class="mcs">增长率</div></div>
+    <div class="mc"><div class="mcl">就业率</div><div class="mcv" style="color:#f4511e">88.5%</div><div class="mcs">毕业当年</div></div>
+  </div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">对口率</div><div class="mcv" style="color:#5f6368">72.0%</div><div class="mcs">专业相关</div></div>
+    <div class="mc"><div class="mcl">满意度</div><div class="mcv" style="color:#5f6368">7.6 / 10</div><div class="mcs">综合评分</div></div>
+    <div class="mc"><div class="mcl">ROI 指数</div><div class="mcv" style="color:#0d904f">78</div><div class="mcs">回报指数</div></div>
+    <div class="mc"><div class="mcl">AI 风险</div><div class="mcv" style="color:#f4511e">中</div><div class="mcs">评分 45</div></div>
+  </div><div class="sb"><div class="st">AI 风险评估</div><div class="sc">量化交易、风控建模等方向已被AI深度渗透，传统信贷审批、基础财务分析等工作在加速自动化。但高端的投资决策、客户关系和结构化产品设计仍需人类判断。金融+编程的复合型人才更抗AI。</div></div><div class="sb"><div class="st">热门就业岗位</div><div class="tr"><span class="tag">投资银行分析师</span><span class="tag">基金经理</span><span class="tag">风险管理师</span><span class="tag">金融分析师</span><span class="tag">财务顾问</span></div></div><div class="sb"><div class="st">核心就业行业</div><div class="sc">银行 · 证券/基金 · 保险 · 金融科技 · 企业财务</div></div><div class="sb"><div class="st">主要就业城市</div><div class="sc">上海 · 北京 · 深圳 · 香港 · 广州</div></div><div class="sb"><div class="st">对口院校 TOP5</div><ul class="sl"><li>北京大学光华管理学院</li><li>清华大学五道口金融学院</li><li>复旦大学经济学院</li><li>上海交通大学上海高级金融学院</li><li>中国人民大学财政金融学院</li></ul></div><div class="sb"><div class="st">一句话了解</div><div class="sc">金融学是研究资金融通和资产定价的学科，涵盖公司金融、投资学、金融市场、风险管理、国际金融等领域。毕业生去向广泛：银行、证券、基金、保险、信托等传统金融机构，以及互联网金融、风险投资、企业财务等新兴方向。金融行业在国民经济中占据核心地位，头部岗位（投行、基金、PE/VC）薪资极高但门槛也极高（顶级名校+硕士+CFA/CPA证书）。普通院校金融毕业生的就业质量和薪资水平则相对平庸，两极分化严重。</div></div><div class="pf"><span>专业就业通 · zhuanyeyun.com · 第 10 页</span><span class="pfc">公众号「AGI前哨站」回复「报考指南」免费领取更多</span></div></div>
+<div class="mp">
+  <div class="mh"><span class="mn">#8</span><span class="mname">会计学</span><span class="mm">管理学 · 管理学学士 · 4年</span></div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">起薪</div><div class="mcv" style="color:#1e5fd9">6.5K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">3年薪资</div><div class="mcv" style="color:#1a1a2e">11.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">5年涨幅</div><div class="mcv" style="color:#0d904f">+177%</div><div class="mcs">增长率</div></div>
+    <div class="mc"><div class="mcl">就业率</div><div class="mcv" style="color:#f4511e">91.2%</div><div class="mcs">毕业当年</div></div>
+  </div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">对口率</div><div class="mcv" style="color:#5f6368">85.0%</div><div class="mcs">专业相关</div></div>
+    <div class="mc"><div class="mcl">满意度</div><div class="mcv" style="color:#5f6368">7.2 / 10</div><div class="mcs">综合评分</div></div>
+    <div class="mc"><div class="mcl">ROI 指数</div><div class="mcv" style="color:#0d904f">74</div><div class="mcs">回报指数</div></div>
+    <div class="mc"><div class="mcl">AI 风险</div><div class="mcv" style="color:#d93025">高</div><div class="mcs">评分 72</div></div>
+  </div><div class="sb"><div class="st">AI 风险评估</div><div class="sc">基础的记账、报税、发票处理工作正在被财务软件和AI快速自动化。但高端的财务分析、税务筹划、审计判断、内部控制等需要专业判断的领域仍然稳固。未来会计将从'记录型'转向'分析决策型'。</div></div><div class="sb"><div class="st">热门就业岗位</div><div class="tr"><span class="tag">审计师</span><span class="tag">税务顾问</span><span class="tag">财务经理</span><span class="tag">管理会计师</span><span class="tag">财务总监</span></div></div><div class="sb"><div class="st">核心就业行业</div><div class="sc">会计师事务所 · 企业财务 · 银行 · 税务/审计 · 政府</div></div><div class="sb"><div class="st">主要就业城市</div><div class="sc">北京 · 上海 · 深圳 · 广州 · 杭州</div></div><div class="sb"><div class="st">对口院校 TOP5</div><ul class="sl"><li>中央财经大学</li><li>上海财经大学</li><li>厦门大学</li><li>中南财经政法大学</li><li>东北财经大学</li></ul></div><div class="sb"><div class="st">一句话了解</div><div class="sc">会计学是商科中最具刚需属性的专业。任何企业、政府机构、非营利组织都需要会计人员进行财务核算、税务申报和内部控制。会计学课程包括基础会计、中级财务会计、成本会计、管理会计、审计学、税法等。毕业生主要进入会计师事务所、企业财务部门、税务师事务所或政府财税部门。会计是典型的'越老越吃香'职业，经验价值随时间递增。CPA（注册会计师）证书是核心竞争力，通过CPA后职业发展将大幅加速。</div></div><div class="pf"><span>专业就业通 · zhuanyeyun.com · 第 11 页</span><span class="pfc">公众号「AGI前哨站」回复「报考指南」免费领取更多</span></div></div>
+<div class="mp">
+  <div class="mh"><span class="mn">#9</span><span class="mname">法学</span><span class="mm">法学 · 法学学士 · 4年</span></div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">起薪</div><div class="mcv" style="color:#1e5fd9">6.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">3年薪资</div><div class="mcv" style="color:#1a1a2e">12.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">5年涨幅</div><div class="mcv" style="color:#0d904f">+267%</div><div class="mcs">增长率</div></div>
+    <div class="mc"><div class="mcl">就业率</div><div class="mcv" style="color:#f4511e">82.5%</div><div class="mcs">毕业当年</div></div>
+  </div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">对口率</div><div class="mcv" style="color:#5f6368">68.0%</div><div class="mcs">专业相关</div></div>
+    <div class="mc"><div class="mcl">满意度</div><div class="mcv" style="color:#5f6368">7.3 / 10</div><div class="mcs">综合评分</div></div>
+    <div class="mc"><div class="mcl">ROI 指数</div><div class="mcv" style="color:#0d904f">68</div><div class="mcs">回报指数</div></div>
+    <div class="mc"><div class="mcl">AI 风险</div><div class="mcv" style="color:#d93025">中低</div><div class="mcs">评分 35</div></div>
+  </div><div class="sb"><div class="st">AI 风险评估</div><div class="sc">法律文书检索、合同审查等基础工作正在被AI法律工具替代。但法律的核心——解释、论证和说服——仍高度依赖人类专业判断。AI是法律人的效率工具而非替代品。</div></div><div class="sb"><div class="st">热门就业岗位</div><div class="tr"><span class="tag">律师</span><span class="tag">法官</span><span class="tag">检察官</span><span class="tag">企业法务总监</span><span class="tag">合规官</span></div></div><div class="sb"><div class="st">核心就业行业</div><div class="sc">律师事务所 · 公检法机关 · 企业法务 · 政府法制部门 · 合规咨询</div></div><div class="sb"><div class="st">主要就业城市</div><div class="sc">北京 · 上海 · 深圳 · 广州 · 杭州</div></div><div class="sb"><div class="st">对口院校 TOP5</div><ul class="sl"><li>中国政法大学</li><li>北京大学法学院</li><li>中国人民大学法学院</li><li>华东政法大学</li><li>武汉大学法学院</li></ul></div><div class="sb"><div class="st">一句话了解</div><div class="sc">法学是研究法律规范、法律制度及其应用的学科，培养具备法律思维和法律实务能力的专业人才。法学核心课程包括法理学、宪法学、民法学、刑法学、行政法学、经济法学、国际法学等。毕业生传统去向为公检法机关（需通过公务员考试）、律师事务所、企业法务部门。近年来合规管理、数据隐私、知识产权等新兴领域对法律人才需求旺盛。法学是典型的'精英化'专业——名校+法考+实践经验缺一不可，普通院校法学毕业生就业压力较大。</div></div><div class="pf"><span>专业就业通 · zhuanyeyun.com · 第 12 页</span><span class="pfc">公众号「AGI前哨站」回复「报考指南」免费领取更多</span></div></div>
+<div class="mp">
+  <div class="mh"><span class="mn">#10</span><span class="mname">电子商务</span><span class="mm">管理学 · 管理学学士 · 4年</span></div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">起薪</div><div class="mcv" style="color:#1e5fd9">6.5K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">3年薪资</div><div class="mcv" style="color:#1a1a2e">12.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">5年涨幅</div><div class="mcv" style="color:#0d904f">+208%</div><div class="mcs">增长率</div></div>
+    <div class="mc"><div class="mcl">就业率</div><div class="mcv" style="color:#f4511e">88.0%</div><div class="mcs">毕业当年</div></div>
+  </div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">对口率</div><div class="mcv" style="color:#5f6368">65.0%</div><div class="mcs">专业相关</div></div>
+    <div class="mc"><div class="mcl">满意度</div><div class="mcv" style="color:#5f6368">7.2 / 10</div><div class="mcs">综合评分</div></div>
+    <div class="mc"><div class="mcl">ROI 指数</div><div class="mcv" style="color:#0d904f">65</div><div class="mcs">回报指数</div></div>
+    <div class="mc"><div class="mcl">AI 风险</div><div class="mcv" style="color:#f4511e">中</div><div class="mcs">评分 48</div></div>
+  </div><div class="sb"><div class="st">AI 风险评估</div><div class="sc">AI在电商中的应用已经非常深入：AI客服、智能推荐、自动生成商品描述等。但电商运营的核心——选品策略、营销创意、用户洞察、供应链决策——仍是人类的主导领域。掌握AI工具的电商运营效率更高。</div></div><div class="sb"><div class="st">热门就业岗位</div><div class="tr"><span class="tag">电商运营经理</span><span class="tag">直播运营</span><span class="tag">新媒体运营</span><span class="tag">跨境电商运营</span><span class="tag">供应链管理</span></div></div><div class="sb"><div class="st">核心就业行业</div><div class="sc">电商平台 · 品牌电商 · 跨境电商 · MCN/直播 · 物流/供应链</div></div><div class="sb"><div class="st">主要就业城市</div><div class="sc">杭州 · 深圳 · 广州 · 上海 · 北京</div></div><div class="sb"><div class="st">对口院校 TOP5</div><ul class="sl"><li>对外经济贸易大学</li><li>浙江工商大学</li><li>上海财经大学</li><li>广东工业大学</li></ul></div><div class="sb"><div class="st">一句话了解</div><div class="sc">电子商务是管理学、计算机科学和市场营销的交叉学科，培养具备电商平台运营、数字营销和供应链管理能力的复合型人才。课程包括电子商务概论、网络营销、供应链与物流管理、电商数据分析、电商系统开发等。在直播电商、社交电商和跨境电商三大浪潮推动下，电子商务专业毕业生在电商平台（淘宝/京东/拼多多）、品牌方电商运营、MCN机构和跨境电商企业等方向有大量就业机会。但需注意：电商行业变化极快，学校课程可能滞后于行业实践，自学和实践经验远比课堂知识重要。</div></div><div class="pf"><span>专业就业通 · zhuanyeyun.com · 第 13 页</span><span class="pfc">公众号「AGI前哨站」回复「报考指南」免费领取更多</span></div></div>
+<div class="mp">
+  <div class="mh"><span class="mn">#11</span><span class="mname">心理学</span><span class="mm">理学 · 理学学士 · 4年</span></div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">起薪</div><div class="mcv" style="color:#1e5fd9">6.5K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">3年薪资</div><div class="mcv" style="color:#1a1a2e">11.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">5年涨幅</div><div class="mcv" style="color:#0d904f">+177%</div><div class="mcs">增长率</div></div>
+    <div class="mc"><div class="mcl">就业率</div><div class="mcv" style="color:#f4511e">83.0%</div><div class="mcs">毕业当年</div></div>
+  </div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">对口率</div><div class="mcv" style="color:#5f6368">55.0%</div><div class="mcs">专业相关</div></div>
+    <div class="mc"><div class="mcl">满意度</div><div class="mcv" style="color:#5f6368">7.1 / 10</div><div class="mcs">综合评分</div></div>
+    <div class="mc"><div class="mcl">ROI 指数</div><div class="mcv" style="color:#0d904f">56</div><div class="mcs">回报指数</div></div>
+    <div class="mc"><div class="mcl">AI 风险</div><div class="mcv" style="color:#0d904f">低</div><div class="mcs">评分 28</div></div>
+  </div><div class="sb"><div class="st">AI 风险评估</div><div class="sc">AI心理咨询聊天机器人可以处理轻度情绪问题，但深度心理治疗需要的共情、信任关系和复杂判断能力是AI短期难以具备的。用户体验研究和行为分析中的定性洞察仍高度依赖心理学专业训练。</div></div><div class="sb"><div class="st">热门就业岗位</div><div class="tr"><span class="tag">心理咨询师</span><span class="tag">用户研究员（UX Researcher）</span><span class="tag">HR专员</span><span class="tag">游戏用户研究员</span><span class="tag">学校心理教师</span></div></div><div class="sb"><div class="st">核心就业行业</div><div class="sc">教育/学校 · 心理咨询 · 互联网/IT · 人力资源 · 市场调研</div></div><div class="sb"><div class="st">主要就业城市</div><div class="sc">北京 · 上海 · 深圳 · 广州 · 杭州</div></div><div class="sb"><div class="st">对口院校 TOP5</div><ul class="sl"><li>北京师范大学心理学部</li><li>北京大学心理与认知科学学院</li><li>华东师范大学</li><li>华南师范大学</li><li>浙江大学</li></ul></div><div class="sb"><div class="st">一句话了解</div><div class="sc">心理学是研究人类心理活动和行为的科学，是理学和社会科学的交叉学科。核心课程包括普通心理学、实验心理学、发展心理学、社会心理学、心理测量学、认知心理学等。在大众心理健康意识不断提升和互联网产品对用户研究需求增长的背景下，心理学毕业生的就业空间正在拓宽：传统方向包括学校心理健康教育和心理咨询，新兴方向包括互联网用户研究（UX Research）、游戏策划、人力资源和消费者行为分析。但需注意：成为执业的心理咨询师需要硕士学历+长期临床训练，门槛不低。</div></div><div class="pf"><span>专业就业通 · zhuanyeyun.com · 第 14 页</span><span class="pfc">公众号「AGI前哨站」回复「报考指南」免费领取更多</span></div></div>
+<div class="mp">
+  <div class="mh"><span class="mn">#12</span><span class="mname">电气工程及其自动化</span><span class="mm">工学 · 工学学士 · 4年</span></div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">起薪</div><div class="mcv" style="color:#1e5fd9">8.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">3年薪资</div><div class="mcv" style="color:#1a1a2e">14.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">5年涨幅</div><div class="mcv" style="color:#0d904f">+150%</div><div class="mcs">增长率</div></div>
+    <div class="mc"><div class="mcl">就业率</div><div class="mcv" style="color:#f4511e">94.0%</div><div class="mcs">毕业当年</div></div>
+  </div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">对口率</div><div class="mcv" style="color:#5f6368">84.0%</div><div class="mcs">专业相关</div></div>
+    <div class="mc"><div class="mcl">满意度</div><div class="mcv" style="color:#5f6368">8.1 / 10</div><div class="mcs">综合评分</div></div>
+    <div class="mc"><div class="mcl">ROI 指数</div><div class="mcv" style="color:#0d904f">81</div><div class="mcs">回报指数</div></div>
+    <div class="mc"><div class="mcl">AI 风险</div><div class="mcv" style="color:#0d904f">低</div><div class="mcs">评分 18</div></div>
+  </div><div class="sb"><div class="st">AI 风险评估</div><div class="sc">电力系统的安全和可靠性要求极高，决策需要综合工程判断和制度规范。AI用于电网调度优化和故障预警，但不参与关键决策。电网运维必须由持证工程师现场操作。</div></div><div class="sb"><div class="st">热门就业岗位</div><div class="tr"><span class="tag">电气工程师</span><span class="tag">电力系统工程师</span><span class="tag">新能源工程师</span><span class="tag">变电/配电工程师</span><span class="tag">继电保护工程师</span></div></div><div class="sb"><div class="st">核心就业行业</div><div class="sc">电力/电网 · 新能源 · 电气设备制造 · 铁路/地铁 · 建筑/工业</div></div><div class="sb"><div class="st">主要就业城市</div><div class="sc">北京 · 上海 · 广州 · 南京 · 武汉</div></div><div class="sb"><div class="st">对口院校 TOP5</div><ul class="sl"><li>清华大学</li><li>西安交通大学</li><li>华中科技大学</li><li>浙江大学</li><li>华北电力大学</li></ul></div><div class="sb"><div class="st">一句话了解</div><div class="sc">电气工程是研究电能生产、传输、分配和应用的工科专业，是电力系统的核心学科。课程包括电路原理、电机学、电力系统分析、高电压技术、电力电子技术等。毕业生最主要的去向是国家电网、南方电网及五大发电集团——这是国内最大规模的应届生雇主之一，每年招聘数万人。电气工程是进国企体制内最稳定的工科通道之一。近年来新能源（光伏、风电、储能）和电动汽车产业的爆发为电气工程师提供了更多市场化选择。</div></div><div class="pf"><span>专业就业通 · zhuanyeyun.com · 第 15 页</span><span class="pfc">公众号「AGI前哨站」回复「报考指南」免费领取更多</span></div></div>
+<div class="mp">
+  <div class="mh"><span class="mn">#13</span><span class="mname">护理学</span><span class="mm">医学 · 理学学士 · 4年</span></div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">起薪</div><div class="mcv" style="color:#1e5fd9">5.5K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">3年薪资</div><div class="mcv" style="color:#1a1a2e">9.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">5年涨幅</div><div class="mcv" style="color:#0d904f">+136%</div><div class="mcs">增长率</div></div>
+    <div class="mc"><div class="mcl">就业率</div><div class="mcv" style="color:#f4511e">98.0%</div><div class="mcs">毕业当年</div></div>
+  </div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">对口率</div><div class="mcv" style="color:#5f6368">95.0%</div><div class="mcs">专业相关</div></div>
+    <div class="mc"><div class="mcl">满意度</div><div class="mcv" style="color:#5f6368">6.8 / 10</div><div class="mcs">综合评分</div></div>
+    <div class="mc"><div class="mcl">ROI 指数</div><div class="mcv" style="color:#0d904f">62</div><div class="mcs">回报指数</div></div>
+    <div class="mc"><div class="mcl">AI 风险</div><div class="mcv" style="color:#d93025">极低</div><div class="mcs">评分 5</div></div>
+  </div><div class="sb"><div class="st">AI 风险评估</div><div class="sc">护理工作是医疗AI最难以替代的职业之一——需要大量物理接触、情感支持和即时临床判断。AI可以辅助生命体征监测和用药提醒，但注射、翻身、心理安抚等实操完全依赖护士。老龄化社会只会让护理需求持续增长。</div></div><div class="sb"><div class="st">热门就业岗位</div><div class="tr"><span class="tag">注册护士</span><span class="tag">专科护士（ICU/手术室）</span><span class="tag">护士长</span><span class="tag">医美护士</span><span class="tag">护理教育者</span></div></div><div class="sb"><div class="st">核心就业行业</div><div class="sc">公立医院 · 社区卫生 · 养老机构 · 医美 · 口腔诊所</div></div><div class="sb"><div class="st">主要就业城市</div><div class="sc">北京 · 上海 · 广州 · 成都 · 武汉</div></div><div class="sb"><div class="st">对口院校 TOP5</div><ul class="sl"><li>北京协和医学院护理学院</li><li>四川大学华西护理学院</li><li>北京大学护理学院</li><li>复旦大学护理学院</li></ul></div><div class="sb"><div class="st">一句话了解</div><div class="sc">护理学是培养临床护理和健康管理专业人才的学科。课程包括基础护理学、内科护理学、外科护理学、妇产科护理学、儿科护理学、急危重症护理学等。在当前老龄化社会背景下，护理人才是医疗体系中最紧缺的一环——全国护士缺口已达百万级。护理学毕业生的最大优势是就业率极高（接近100%），且稳定在体制内（公立医院）。但缺点也很明显：三班倒工作强度大、职业晋升空间有限、社会地位不及医生。近年高端护理方向（ICU专科护士、康复护理、社区护理）和医美/口腔护理等市场化方向为护士提供了更多选择。</div></div><div class="pf"><span>专业就业通 · zhuanyeyun.com · 第 16 页</span><span class="pfc">公众号「AGI前哨站」回复「报考指南」免费领取更多</span></div></div>
+<div class="mp">
+  <div class="mh"><span class="mn">#14</span><span class="mname">英语</span><span class="mm">文学 · 文学学士 · 4年</span></div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">起薪</div><div class="mcv" style="color:#1e5fd9">6.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">3年薪资</div><div class="mcv" style="color:#1a1a2e">10.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">5年涨幅</div><div class="mcv" style="color:#0d904f">+167%</div><div class="mcs">增长率</div></div>
+    <div class="mc"><div class="mcl">就业率</div><div class="mcv" style="color:#f4511e">82.0%</div><div class="mcs">毕业当年</div></div>
+  </div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">对口率</div><div class="mcv" style="color:#5f6368">55.0%</div><div class="mcs">专业相关</div></div>
+    <div class="mc"><div class="mcl">满意度</div><div class="mcv" style="color:#5f6368">7.2 / 10</div><div class="mcs">综合评分</div></div>
+    <div class="mc"><div class="mcl">ROI 指数</div><div class="mcv" style="color:#0d904f">54</div><div class="mcs">回报指数</div></div>
+    <div class="mc"><div class="mcl">AI 风险</div><div class="mcv" style="color:#d93025">高</div><div class="mcs">评分 75</div></div>
+  </div><div class="sb"><div class="st">AI 风险评估</div><div class="sc">AI翻译质量在过去3年出现了质的飞跃，基础翻译（文件翻译、日常口译）正在快速被替代。但高端翻译（文学作品、法律文件）、跨文化谈判和内容本地化等需要深度文化理解的工作仍是AI的短板。纯语言能力已不足够。</div></div><div class="sb"><div class="st">热门就业岗位</div><div class="tr"><span class="tag">英语教师</span><span class="tag">外贸经理</span><span class="tag">跨境电商运营</span><span class="tag">翻译/本地化专员</span><span class="tag">涉外商务</span></div></div><div class="sb"><div class="st">核心就业行业</div><div class="sc">教育/培训 · 外贸/跨境电商 · 翻译/本地化 · 旅游/酒店 · 外资企业</div></div><div class="sb"><div class="st">主要就业城市</div><div class="sc">上海 · 北京 · 深圳 · 广州 · 杭州</div></div><div class="sb"><div class="st">对口院校 TOP5</div><ul class="sl"><li>北京外国语大学</li><li>上海外国语大学</li><li>广东外语外贸大学</li><li>北京大学外国语学院</li><li>南京大学</li></ul></div><div class="sb"><div class="st">一句话了解</div><div class="sc">英语专业是培养英语语言能力和跨文化交际能力的人文学科。课程包括综合英语、高级英语、英语听说、英美文学、语言学、翻译理论与实践等。在AI翻译工具（如DeepL/ChatGPT）快速进步的背景下，基础的翻译和语言服务工作确实面临挑战。但英语专业的核心价值不在于'会说英语'（这一点AI可以替代），而在于跨文化理解能力、批判性思维和用英语进行深度专业交流的能力。英语+X（英语+法律→涉外律师，英语+贸易→外贸经理，英语+教育→国际学校教师）的复合型人才仍然抢手。</div></div><div class="pf"><span>专业就业通 · zhuanyeyun.com · 第 17 页</span><span class="pfc">公众号「AGI前哨站」回复「报考指南」免费领取更多</span></div></div>
+<div class="mp">
+  <div class="mh"><span class="mn">#15</span><span class="mname">通信工程</span><span class="mm">工学 · 工学学士 · 4年</span></div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">起薪</div><div class="mcv" style="color:#1e5fd9">9.0K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">3年薪资</div><div class="mcv" style="color:#1a1a2e">16.5K</div><div class="mcs">月薪</div></div>
+    <div class="mc"><div class="mcl">5年涨幅</div><div class="mcv" style="color:#0d904f">+178%</div><div class="mcs">增长率</div></div>
+    <div class="mc"><div class="mcl">就业率</div><div class="mcv" style="color:#f4511e">92.8%</div><div class="mcs">毕业当年</div></div>
+  </div>
+  <div class="mr">
+    <div class="mc"><div class="mcl">对口率</div><div class="mcv" style="color:#5f6368">79.5%</div><div class="mcs">专业相关</div></div>
+    <div class="mc"><div class="mcl">满意度</div><div class="mcv" style="color:#5f6368">7.8 / 10</div><div class="mcs">综合评分</div></div>
+    <div class="mc"><div class="mcl">ROI 指数</div><div class="mcv" style="color:#0d904f">85</div><div class="mcs">回报指数</div></div>
+    <div class="mc"><div class="mcl">AI 风险</div><div class="mcv" style="color:#0d904f">低</div><div class="mcs">评分 20</div></div>
+  </div><div class="sb"><div class="st">AI 风险评估</div><div class="sc">通信网络的物理层和协议层设计需要深厚的领域知识，AI主要应用于网络优化和运维层面而非核心研发。5G/6G标准制定和芯片设计是AI难以替代的高壁垒工作。</div></div><div class="sb"><div class="st">热门就业岗位</div><div class="tr"><span class="tag">通信工程师</span><span class="tag">射频工程师</span><span class="tag">网络架构师</span><span class="tag">5G研发工程师</span><span class="tag">信号处理工程师</span></div></div><div class="sb"><div class="st">核心就业行业</div><div class="sc">通信设备 · 电信运营商 · 互联网/IT · 卫星通信 · 军工电子</div></div><div class="sb"><div class="st">主要就业城市</div><div class="sc">深圳 · 北京 · 上海 · 成都 · 西安</div></div><div class="sb"><div class="st">对口院校 TOP5</div><ul class="sl"><li>北京邮电大学</li><li>电子科技大学</li><li>西安电子科技大学</li><li>东南大学</li><li>北京理工大学</li></ul></div><div class="sb"><div class="st">一句话了解</div><div class="sc">通信工程是研究信息传输和信号处理的工科专业，覆盖从物理层的光纤、无线电波到网络层的交换、路由协议。核心课程包括信号与系统、数字信号处理、通信原理、移动通信、光纤通信、网络协议等。在5G商用、6G研发和卫星互联网加速部署的大背景下，通信工程师的战略价值持续提升。主要就业方向包括通信设备商（华为、中兴）、运营商（移动/电信/联通）、互联网公司的网络和基础设施部门、以及军工通信等。</div></div><div class="pf"><span>专业就业通 · zhuanyeyun.com · 第 18 页</span><span class="pfc">公众号「AGI前哨站」回复「报考指南」免费领取更多</span></div></div>
+
+<div class="cta-page">
+  <h2>想要 244 个专业完整数据？</h2>
+  <div class="ctaprice">《2026 专业报考完整指南》¥49</div>
+  <ul class="fl">
+    <li>全部 244 个专业的完整数据（非仅 15 个试读）</li>
+    <li>每个专业 5 年薪资趋势详细数据</li>
+    <li>20+ 所对口院校及参考分数线</li>
+    <li>AI 替代风险评估（全网独家模型）</li>
+    <li>专业对比矩阵（同时对比 3 个专业）</li>
+    <li>买后一年内数据更新免费推送</li>
+  </ul>
+  <div class="buy"><h3>购买方式</h3><div class="wx">加微信 swgk44</div><p>备注「完整版」→ 转账 49 元 → 发截图 → 2 小时内收到 PDF</p><p class="note">或关注公众号「AGI前哨站」回复「完整版」获取</p></div>
+  <div class="fn">www.zhuanyeyun.com</div>
+</div>
+
+</body></html>
